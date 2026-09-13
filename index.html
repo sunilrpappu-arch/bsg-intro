@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Who Wants to Be a Bodhisattva - BSG Introductory Exam 2024 Level 2 practice hall.">
+<meta name="theme-color" content="#F6F1E7">
+<title>Who Wants to Be a Bodhisattva &middot; Level 2</title>
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="icon" type="image/png" sizes="180x180" href="icon-180.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Bodhisattva L2">
+<meta name="mobile-web-app-capable" content="yes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Who Wants to Be a Bodhisattva · Level 2">
+<meta property="og:description" content="307 questions across seven topics for the BSG Introductory Exam. Four ways to practise. Nothing is scored against anyone.">
+<meta property="og:image" content="https://sunilrpappu-arch.github.io/bsg-intro/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://sunilrpappu-arch.github.io/bsg-intro/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+
+:root{
+  /* Level 2 - the day hall. Same system as Level 1, ground and ink exchanged. */
+  --ink:#F6F1E7; --ink-2:#FFFFFF; --ink-3:#F2EBDC; --ink-4:#E6DCC7;
+  --gold:#7F611D; --gold-dim:#75590F; --gold-bright:#543D0C; --gold-ghost:rgba(138,106,34,.13);
+  --ivory:#161C3E; --ivory-2:#434A6B; --ivory-3:#62687F;
+  --jade:#12735A; --jade-deep:#DDF2EB; --lotus:#A8455F; --lotus-deep:#FAE4EA;
+  --stage:900px;
+  --f-disp:"Bodoni Moda",'Iowan Old Style','Palatino Linotype',Georgia,'Times New Roman',serif;
+  --f-body:"Archivo",'Helvetica Neue',Helvetica,Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--ink); color:var(--ivory); color-scheme:light;
+  font-family:var(--f-body); font-size:16px; line-height:1.55;
+  background-image:
+    radial-gradient(120% 80% at 50% -20%, rgba(96,88,168,.13) 0%, rgba(246,241,231,0) 62%),
+    radial-gradient(90% 60% at 50% 118%, rgba(138,106,34,.15) 0%, rgba(246,241,231,0) 60%);
+  background-attachment:fixed;
+  min-height:100vh;
+}
+h1,h2,h3{font-family:var(--f-disp); font-weight:500; margin:0; text-wrap:balance; letter-spacing:.01em}
+p{margin:0}
+button{font:inherit; color:inherit; background:none; border:none; cursor:pointer}
+:focus-visible{outline:2px solid var(--gold); outline-offset:3px; border-radius:2px}
+.mono{font-family:var(--f-mono); font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--stage); margin:0 auto; padding:0 20px}
+.screen{display:none; animation:fade .45s ease both}
+.screen.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ---------- masthead (Level 2 treatment: framed plate + numeral seal) ---------- */
+.mast{padding:46px 0 26px; text-align:center}
+.plate{
+  position:relative; max-width:660px; margin:0 auto; padding:38px 30px 32px;
+  border-top:1px solid rgba(138,106,34,.42); border-bottom:1px solid rgba(138,106,34,.42);
+  background:radial-gradient(120% 130% at 50% 0%, rgba(138,106,34,.09), rgba(246,241,231,0) 70%);
+}
+.plate::before,.plate::after{
+  content:""; position:absolute; left:0; right:0; height:1px; background:rgba(138,106,34,.14);
+}
+.plate::before{top:4px} .plate::after{bottom:4px}
+.seal{position:absolute; top:-15px; left:50%; transform:translateX(-50%); font-family:var(--f-disp); font-size:12.5px; letter-spacing:.34em; font-weight:700; color:var(--gold-bright); background:var(--ink); padding:4px 15px 4px 19px; border:1px solid var(--gold-dim); border-radius:999px}
+.tower{width:54px;height:54px;margin:0 auto 18px;display:block}
+.mast h1{
+  font-size:clamp(30px,6.2vw,58px); line-height:1.03; font-weight:700;
+  background:linear-gradient(176deg,#8A6A22 2%,#6B5013 46%,#402D05 100%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.mast .sub{margin-top:15px; color:var(--ivory-2); font-size:15px; letter-spacing:.02em}
+.mast .badge{
+  display:inline-flex; align-items:center; gap:14px; margin-top:20px;
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold);
+}
+.mast .badge i{display:block; width:34px; height:1px; background:linear-gradient(90deg,rgba(138,106,34,0),var(--gold-dim))}
+.mast .badge i+i{background:linear-gradient(90deg,var(--gold-dim),rgba(138,106,34,0))}
+.creed{
+  max-width:660px; margin:34px auto 0; padding:22px 26px;
+  border-left:2px solid var(--gold-dim);
+  font-family:var(--f-disp); font-size:clamp(16px,2.3vw,19px); line-height:1.6;
+  color:var(--ivory); text-align:left; font-style:italic;
+}
+.creed span{display:block; margin-top:10px; font-family:var(--f-body); font-style:normal; font-size:13.5px; color:var(--ivory-3); line-height:1.5}
+
+/* ---------- mode cards ---------- */
+.modes{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); margin:38px 0 10px}
+.mode{
+  text-align:left; padding:22px 22px 20px; border-radius:3px;
+  background:linear-gradient(165deg,#FFFFFF,#F4EDDE);
+  border:1px solid rgba(138,106,34,.26); box-shadow:0 1px 2px rgba(22,28,62,.05);
+  transition:border-color .22s, transform .22s, background .22s, box-shadow .22s;
+  display:flex; flex-direction:column; gap:9px; min-height:100%;
+}
+.mode:hover{border-color:var(--gold); transform:translateY(-3px); background:linear-gradient(165deg,#FFFFFF,#FAF4E8); box-shadow:0 8px 20px rgba(22,28,62,.10)}
+.mode .n{font-family:var(--f-mono); font-size:11px; letter-spacing:.2em; color:var(--gold-dim)}
+.mode h3{font-size:22px; color:var(--gold-bright)}
+.mode p{font-size:13.5px; color:var(--ivory-2); line-height:1.5}
+.mode .meta{margin-top:auto; padding-top:12px; font-family:var(--f-mono); font-size:11px; color:var(--ivory-3); letter-spacing:.06em}
+
+/* ---------- generic panel / list ---------- */
+.head{display:flex; align-items:flex-start; justify-content:space-between; gap:18px; padding:44px 0 22px; flex-wrap:wrap}
+.head h2{font-size:clamp(26px,4.6vw,38px); color:var(--gold-bright)}
+.head p{color:var(--ivory-2); font-size:14px; margin-top:8px; max-width:60ch}
+.back{font-family:var(--f-mono); font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--ivory-3); padding:9px 0; transition:color .2s}
+.back:hover{color:var(--gold)}
+.rows{display:flex; flex-direction:column; gap:9px; margin-bottom:56px}
+.row{
+  display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:16px;
+  width:100%; text-align:left; padding:16px 20px; border-radius:3px;
+  background:var(--ink-2); border:1px solid rgba(138,106,34,.22); box-shadow:0 1px 2px rgba(22,28,62,.04);
+  transition:border-color .2s, background .2s;
+}
+.row:hover{border-color:var(--gold); background:#FBF6EC}
+.row .idx{font-family:var(--f-mono); font-size:12px; color:var(--gold-dim); width:2.2em}
+.row .nm{font-size:15.5px; font-weight:500; color:var(--ivory); display:block}
+.row .cat{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--ivory-3); margin-top:3px; display:block}
+.row .rt{text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:5px}
+.row .ct{font-family:var(--f-mono); font-size:12px; color:var(--ivory-2)}
+.bar{width:88px; height:3px; background:rgba(22,28,62,.12); border-radius:2px; overflow:hidden}
+.bar i{display:block; height:100%; background:linear-gradient(90deg,var(--gold-dim),var(--gold)); border-radius:2px}
+.done{font-family:var(--f-mono); font-size:10px; color:#0B5A44; letter-spacing:.1em}
+.again{font-family:var(--f-mono); font-size:9.5px; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--gold-dim); border:1px solid rgba(138,106,34,.32); background:#FFFFFF;
+  padding:5px 9px; border-radius:2px; transition:border-color .2s, color .2s, background .2s; white-space:nowrap}
+.again:hover{border-color:var(--gold); color:var(--gold-bright); background:#FBF6EC}
+.again.arm{border-color:#3F2C04; color:#FFF8E9; background:linear-gradient(180deg,#7A5C15,#553D07)}
+.fresh{margin:26px 0 0; padding:18px 22px; border-radius:3px; border:1px dashed rgba(138,106,34,.34);
+  background:rgba(138,106,34,.045); display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+.fresh p{font-size:13px; color:var(--ivory-2); line-height:1.55; margin:0; flex:1; min-width:230px}
+.fresh p b{color:var(--gold-bright); font-weight:600}
+.fresh .acts{display:flex; gap:10px; flex-wrap:wrap}
+.fresh .btn{padding:10px 16px; font-size:11.5px; letter-spacing:.12em}
+.grp{margin:26px 0 11px; display:flex; align-items:center; gap:13px}
+.grp b{font-family:var(--f-mono); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); font-weight:500}
+.grp hr{flex:1; border:none; border-top:1px solid rgba(138,106,34,.18); margin:0}
+
+/* ---------- controls ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  padding:14px 28px; border-radius:2px; font-weight:600; font-size:14px;
+  letter-spacing:.04em; border:1px solid var(--gold-dim); color:var(--gold-bright);
+  background:linear-gradient(180deg,rgba(138,106,34,.13),rgba(138,106,34,.04));
+  transition:border-color .2s, background .2s, color .2s;
+}
+.btn:hover{border-color:var(--gold); background:linear-gradient(180deg,rgba(138,106,34,.24),rgba(138,106,34,.08))}
+.btn.primary{background:linear-gradient(180deg,#7A5C15,#553D07); color:#FFF8E9; border-color:#3F2C04; font-weight:700}
+.btn.primary:hover{background:linear-gradient(180deg,#8E6C1E,#674A0D)}
+.btn.quiet{border-color:rgba(22,28,62,.20); color:var(--ivory-2); background:none}
+.btn.quiet:hover{border-color:var(--ivory-3); color:var(--ivory)}
+.btn[disabled]{opacity:.32; pointer-events:none}
+.opts{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+.chip{
+  padding:9px 17px; border-radius:999px; border:1px solid rgba(22,28,62,.20);
+  font-family:var(--f-mono); font-size:12px; letter-spacing:.08em; color:var(--ivory-2); transition:all .18s; background:#FFFFFF;
+}
+.chip:hover{border-color:rgba(138,106,34,.55); color:var(--ivory)}
+.chip[aria-pressed="true"]{border-color:var(--gold); color:var(--gold-bright); background:var(--gold-ghost)}
+.field{display:flex; flex-direction:column; gap:10px; margin-bottom:26px}
+.field > label:not(.check){font-family:var(--f-mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-dim)}
+.check{display:flex; gap:12px; align-items:flex-start; cursor:pointer; padding:15px 18px; border:1px solid rgba(22,28,62,.16); border-radius:3px; background:var(--ink-2); transition:border-color .2s}
+.check:hover{border-color:rgba(138,106,34,.5)}
+.check input{margin:3px 0 0; accent-color:var(--gold); width:16px; height:16px; flex:none}
+.check .t{font-family:var(--f-body); font-size:14px; font-weight:600; letter-spacing:normal; text-transform:none; color:var(--ivory); display:block}
+.check .d{font-family:var(--f-body); font-size:12.5px; letter-spacing:normal; text-transform:none; color:var(--ivory-2); margin-top:3px; line-height:1.45; display:block}
+
+/* ---------- quiz stage ---------- */
+.stage{display:grid; grid-template-columns:1fr; gap:0; padding-bottom:70px}
+.topbar{
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:18px 0 16px; border-bottom:1px solid rgba(138,106,34,.26); flex-wrap:wrap;
+  position:sticky; top:0; z-index:20; background:linear-gradient(180deg,var(--ink) 76%,rgba(246,241,231,0));
+  backdrop-filter:blur(6px);
+}
+.topbar .who{display:flex; flex-direction:column; gap:2px; min-width:0}
+.topbar .who b{font-family:var(--f-disp); font-size:16px; font-weight:500; color:var(--gold-bright); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.topbar .who span{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--ivory-3)}
+.tools{display:flex; align-items:center; gap:9px; flex-wrap:wrap}
+.timer{font-family:var(--f-mono); font-size:17px; letter-spacing:.06em; color:var(--gold-bright); background:#FFFFFF; padding:7px 13px; border:1px solid var(--gold-dim); border-radius:2px}
+.timer.warn{color:var(--lotus); border-color:var(--lotus); animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.55}}
+.tool{
+  padding:8px 13px; border:1px solid rgba(138,106,34,.42); border-radius:2px; background:#FFFFFF;
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.09em; color:var(--gold); transition:all .18s;
+}
+.tool:hover{background:rgba(138,106,34,.08); border-color:var(--gold); color:var(--gold-bright)}
+.tool.quiet{border-color:rgba(22,28,62,.20); color:var(--ivory-2)}
+.tool.quiet:hover{border-color:var(--ivory-3); color:var(--ivory); background:none}
+.tool.spent{opacity:.26; pointer-events:none; text-decoration:line-through}
+.qmeter{height:2px; background:rgba(22,28,62,.12); margin-bottom:30px}
+.qmeter i{display:block; height:100%; background:linear-gradient(90deg,var(--gold-dim),var(--gold-bright)); transition:width .45s cubic-bezier(.4,0,.2,1)}
+
+/* ladder — base first, media override AFTER */
+.ladder{display:none; position:sticky; top:98px; padding-top:26px}
+.ladder .cap{font-family:var(--f-mono); font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-dim); margin-bottom:14px}
+.ladder ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column-reverse; gap:2px}
+.ladder li{
+  display:flex; align-items:center; gap:9px; padding:6px 9px; border-radius:2px;
+  font-size:12px; color:var(--ivory-3); transition:all .4s;
+}
+.ladder li .dot{width:5px;height:5px;border-radius:50%;background:rgba(22,28,62,.22); flex:none; transition:all .4s}
+.ladder li.reached{color:var(--ivory-2)}
+.ladder li.reached .dot{background:var(--gold-dim)}
+.ladder li.here{background:var(--gold-ghost); color:var(--gold-bright); font-weight:600; box-shadow:inset 2px 0 0 var(--gold)}
+.ladder li.here .dot{background:var(--gold); box-shadow:0 0 0 3px rgba(138,106,34,.18)}
+.ladder .note{margin-top:16px; font-size:11.5px; color:var(--ivory-3); line-height:1.5; border-top:1px solid rgba(138,106,34,.14); padding-top:13px}
+.ladder .note em{font-style:italic; color:var(--ivory-2)}
+@media(min-width:1010px){
+  .stage{grid-template-columns:186px 1fr; gap:46px; align-items:start}
+  .ladder{display:block}
+}
+
+/* question */
+.qcard{margin-bottom:26px}
+.qnum{font-family:var(--f-mono); font-size:11px; letter-spacing:.2em; color:var(--gold-dim); margin-bottom:13px; display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+.qnum em{font-style:normal; color:var(--ivory-3); letter-spacing:.1em}
+.qtext{
+  font-family:var(--f-disp); font-size:clamp(18px,2.9vw,23px); line-height:1.46; color:var(--ivory);
+  padding:26px 28px; background:linear-gradient(165deg,#FFFFFF,#F5EEE0);
+  border:1px solid rgba(138,106,34,.30); border-radius:3px;
+}
+.answers{display:grid; grid-template-columns:1fr; gap:10px; margin-top:20px}
+.ans{
+  display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:center;
+  text-align:left; padding:15px 19px; border-radius:2px;
+  background:linear-gradient(170deg,#FFFFFF,#F4EDDE);
+  border:1px solid rgba(22,28,62,.14); box-shadow:0 1px 2px rgba(22,28,62,.04);
+  font-size:14.5px; line-height:1.42; color:var(--ivory);
+  transition:border-color .2s, background .2s, transform .12s, opacity .3s;
+}
+.ans:hover:not(.locked){border-color:var(--gold); transform:translateY(-1px)}
+.ans .k{font-family:var(--f-mono); font-size:13px; font-weight:600; color:var(--gold); width:1.3em}
+.ans.sel{border-color:var(--gold); background:linear-gradient(170deg,rgba(138,106,34,.20),rgba(138,106,34,.07)); box-shadow:0 0 0 1px var(--gold)}
+.ans.sel .k{color:var(--gold-bright)}
+.ans.right{border-color:var(--jade); background:linear-gradient(170deg,rgba(18,115,90,.14),var(--jade-deep)); box-shadow:0 0 0 1px var(--jade)}
+.ans.right .k{color:var(--jade)}
+.ans.miss{border-color:var(--lotus); background:linear-gradient(170deg,rgba(168,69,95,.12),var(--lotus-deep))}
+.ans.miss .k{color:var(--lotus)}
+.ans.gone{opacity:.30; pointer-events:none}
+.ans.locked{cursor:default}
+@media(min-width:720px){
+  .answers{grid-template-columns:1fr 1fr}
+  .answers .ans:nth-child(5){grid-column:1 / -1}
+}
+
+/* verdict + stage footer */
+.verdict{margin-top:20px; padding:19px 22px; border-radius:3px; border-left:2px solid var(--gold-dim); background:var(--ink-2); border-top:1px solid rgba(22,28,62,.08); border-right:1px solid rgba(22,28,62,.08); border-bottom:1px solid rgba(22,28,62,.08); display:none}
+.verdict.on{display:block; animation:fade .35s ease both}
+.verdict.good{border-left-color:var(--jade)}
+.verdict.soft{border-left-color:var(--lotus)}
+.verdict b{display:block; font-family:var(--f-disp); font-size:19px; margin-bottom:6px; color:var(--gold-bright)}
+.verdict.good b{color:var(--jade)}
+.verdict.soft b{color:var(--lotus)}
+.verdict p{font-size:14px; color:var(--ivory-2); line-height:1.55}
+.verdict .quote{margin-top:12px; padding-top:12px; border-top:1px solid rgba(22,28,62,.09); font-family:var(--f-disp); font-style:italic; font-size:14.5px; color:var(--ivory-2)}
+.verdict .quote .lbl{font-family:var(--f-mono); font-style:normal; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ivory-3); display:block; margin-bottom:5px}
+.navrow{display:flex; gap:11px; align-items:center; margin-top:26px; flex-wrap:wrap}
+.navrow .sp{flex:1}
+.tally{font-family:var(--f-mono); font-size:12px; color:var(--ivory-3); letter-spacing:.06em}
+.tally b{color:var(--gold); font-weight:500}
+
+/* ---------- results ---------- */
+.result{padding:52px 0 70px; text-align:center}
+.ring{width:190px;height:190px;margin:0 auto 8px; position:relative}
+.ring svg{transform:rotate(-90deg); display:block}
+.ring .val{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px}
+.ring .val b{font-family:var(--f-mono); font-size:42px; font-weight:500; color:var(--gold-bright); line-height:1}
+.ring .val span{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--ivory-3)}
+.result h2{font-size:clamp(27px,5.2vw,42px); color:var(--gold-bright); margin-top:16px}
+.result .msg{max-width:58ch; margin:16px auto 0; color:var(--ivory-2); font-size:15px; line-height:1.62}
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(128px,1fr)); gap:1px; background:rgba(138,106,34,.16); border:1px solid rgba(138,106,34,.16); margin:36px 0; border-radius:3px; overflow:hidden}
+.stat{background:var(--ink-2); padding:19px 14px}
+.stat b{display:block; font-family:var(--f-mono); font-size:25px; color:var(--gold-bright); line-height:1.15}
+.stat span{font-family:var(--f-mono); font-size:10px; letter-spacing:.15em; text-transform:uppercase; color:var(--ivory-3)}
+.bd{text-align:left; margin:34px 0}
+.bdrow{display:grid; grid-template-columns:1fr 84px 52px; align-items:center; gap:15px; padding:11px 0; border-bottom:1px solid rgba(22,28,62,.07); font-size:13.5px}
+.bdrow:last-child{border-bottom:none}
+.bdrow .bar{width:100%}
+.bdrow .pc{font-family:var(--f-mono); font-size:12.5px; color:var(--ivory-2); text-align:right}
+.rvw{text-align:left; display:flex; flex-direction:column; gap:11px; margin-top:14px}
+.rq{padding:18px 20px; border-radius:3px; background:var(--ink-2); border:1px solid rgba(22,28,62,.11); border-left:2px solid var(--jade); box-shadow:0 1px 2px rgba(22,28,62,.04)}
+.rq.bad{border-left-color:var(--lotus)}
+.rq .qh{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.15em; text-transform:uppercase; color:var(--ivory-3); margin-bottom:9px; display:flex; gap:12px; flex-wrap:wrap}
+.rq .qt{font-family:var(--f-disp); font-size:16.5px; line-height:1.45; margin-bottom:12px}
+.rq .line{font-size:13.5px; padding:6px 0; display:flex; gap:10px; align-items:baseline}
+.rq .line .lb{font-family:var(--f-mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase; color:var(--ivory-3); flex:none; width:74px; padding-top:2px}
+.rq .line.ok .tx{color:var(--jade)}
+.rq .line.no .tx{color:var(--lotus)}
+.footnote{margin:60px 0 40px; padding-top:24px; border-top:1px solid rgba(138,106,34,.14); font-size:12.5px; color:var(--ivory-3); line-height:1.6; text-align:center}
+.footnote em{font-style:normal; color:var(--gold-dim)}
+.toast{position:fixed; left:50%; bottom:26px; transform:translate(-50%,20px); opacity:0; pointer-events:none; background:#FFFFFF; border:1px solid var(--gold-dim); color:var(--gold-bright); padding:12px 20px; border-radius:2px; font-size:13.5px; box-shadow:0 8px 26px rgba(22,28,62,.16); transition:all .3s; z-index:60; max-width:90vw; text-align:center}
+.toast.on{opacity:1; transform:translate(-50%,0)}
+@media(max-width:620px){
+  .qtext{padding:21px 19px}
+  .row{grid-template-columns:auto 1fr; padding:14px 16px}
+  .row .rt{grid-column:2; align-items:center; flex-direction:row; gap:12px}
+  .mast{padding:34px 0 18px}
+  .plate{padding:32px 20px 26px}
+  .bdrow{grid-template-columns:1fr 56px 46px; gap:10px; font-size:12.5px}
+  .row .ct{white-space:nowrap; font-size:11.5px}
+  .row .bar{width:52px}
+  .fresh{flex-direction:column; align-items:stretch; gap:14px; padding:16px 17px}
+  .fresh .acts{flex-direction:column}
+  .fresh .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<main>
+<!-- ================= HOME ================= -->
+<section class="screen on" id="s-home">
+  <div class="wrap">
+    <div class="mast">
+      <div class="plate">
+        <span class="seal">LEVEL II</span>
+        <svg class="tower" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 6l4.6 6.4H27.4L32 6z" fill="#8A6A22"/>
+          <path d="M32 12.4v5.2" stroke="#B08B3C" stroke-width="1"/>
+          <rect x="24" y="17.6" width="16" height="11" fill="none" stroke="#8A6A22" stroke-width="1.3"/>
+          <path d="M19 28.6h26" stroke="#8A6A22" stroke-width="1.3"/>
+          <path d="M16.5 33.4h31l-2.5-4.8H19l-2.5 4.8z" fill="none" stroke="#B08B3C" stroke-width="1"/>
+          <rect x="20" y="33.4" width="24" height="13" fill="none" stroke="#8A6A22" stroke-width="1.3"/>
+          <path d="M32 36.6v6.8M28.6 40h6.8" stroke="#B08B3C" stroke-width="1"/>
+          <path d="M13 51.4h38l-3.4-4.8H16.4L13 51.4z" fill="none" stroke="#B08B3C" stroke-width="1"/>
+          <path d="M9 55.6h46" stroke="#B08B3C" stroke-width="1"/>
+        </svg>
+        <h1>Who Wants to Be<br>a Bodhisattva?</h1>
+        <p class="sub">BSG Introductory Exam 2024 &middot; Level 2 &middot; Practice Hall</p>
+        <div class="badge"><i></i><span id="m-badge">307 questions &middot; 7 topics &middot; 7 mock papers</span><i></i></div>
+      </div>
+      <blockquote class="creed">
+        &ldquo;Exert yourself in the two ways of practice and study.&rdquo;
+        <span>There is no passing or failing here. We study to strengthen our conviction &mdash; and conviction is built by attempting, not by already knowing. Every question you open is a step. Take as many as you like, as often as you like.</span>
+      </blockquote>
+    </div>
+
+    <div class="grp"><b>Choose how you want to practice</b><hr></div>
+    <div class="modes">
+      <button class="mode" data-go="topics">
+        <span class="n">01</span>
+        <h3>Topic by Topic</h3>
+        <p>Work through one topic at a time, with the answer and a word of encouragement the moment you lock in. The gentlest way in.</p>
+        <span class="meta" id="m-topics"></span>
+      </button>
+      <button class="mode" data-go="full">
+        <span class="n">02</span>
+        <h3>The Full Climb</h3>
+        <p>All 307 questions in order, from the Lotus Sutra through to the Gosho passages. Your place is saved &mdash; stop and return any time.</p>
+        <span class="meta" id="m-full"></span>
+      </button>
+      <button class="mode" data-go="papers">
+        <span class="n">03</span>
+        <h3>The Seven Mock Papers</h3>
+        <p>Sets 1&ndash;7 exactly as they were written, in their original order &mdash; one topic per paper. Answers held back until you submit.</p>
+        <span class="meta" id="m-papers"></span>
+      </button>
+      <button class="mode" data-go="gen">
+        <span class="n">04</span>
+        <h3>Generate a Mock Exam</h3>
+        <p>A fresh paper each time &mdash; questions drawn across every topic in proportion, on the clock, reviewed in full afterwards. Exam conditions, at home.</p>
+        <span class="meta" id="m-gen">30&ndash;40 questions &middot; 30/60/90 min</span>
+      </button>
+    </div>
+
+    <div class="fresh" id="fresh" hidden>
+      <p id="fresh-note"></p>
+      <div class="acts">
+        <button class="btn quiet" id="fresh-full" hidden>Begin the Full Climb again</button>
+        <button class="btn quiet" id="fresh-all">Clear everything and start fresh</button>
+      </div>
+    </div>
+
+    <p class="footnote">
+      <em>A note on this hall.</em><br>
+      Study in Buddhism is a lifelong journey. The only reason to sit an exam is to deepen our conviction in faith and practice &mdash; never to be measured against anyone.
+      Nothing here is recorded or sent anywhere; your progress stays in this browser alone &mdash; and you can set any of it back to the beginning at any time, as often as you want.
+    </p>
+  </div>
+</section>
+
+<!-- ================= TOPICS ================= -->
+<section class="screen" id="s-topics">
+  <div class="wrap">
+    <button class="back" data-go="home">&larr; Practice Hall</button>
+    <div class="head">
+      <div>
+        <h2>Topic by Topic</h2>
+        <p>Pick any topic. Answers and encouragement appear the moment you lock in &mdash; this is the mode for building familiarity without any pressure. Your progress in each topic is remembered, and any topic you have already opened can be set back to the start with <b>Take it again</b>.</p>
+      </div>
+    </div>
+    <div class="rows" id="topic-list"></div>
+  </div>
+</section>
+
+<!-- ================= PAPERS ================= -->
+<section class="screen" id="s-papers">
+  <div class="wrap">
+    <button class="back" data-go="home">&larr; Practice Hall</button>
+    <div class="head">
+      <div>
+        <h2>The Seven Mock Papers</h2>
+        <p>These are the original sets, question for question, in their original order &mdash; each paper covers one topic. Together they make up the whole question bank.</p>
+      </div>
+    </div>
+    <div class="field" style="margin-bottom:28px">
+      <label>Before you begin</label>
+      <label class="check">
+        <input type="checkbox" id="paper-coach">
+        <span><span class="t">Show me the answers as I go</span><span class="d">Off by default, so the paper works like the real exam &mdash; you submit, then review everything. Turn it on if you would rather learn question by question.</span></span>
+      </label>
+    </div>
+    <div class="rows" id="paper-list"></div>
+  </div>
+</section>
+
+<!-- ================= GENERATE ================= -->
+<section class="screen" id="s-gen">
+  <div class="wrap">
+    <button class="back" data-go="home">&larr; Practice Hall</button>
+    <div class="head">
+      <div>
+        <h2>Generate a Mock Exam</h2>
+        <p>Questions are drawn at random across all seven topics, in proportion to how much of the bank each topic occupies &mdash; so every paper is balanced, and no two are ever the same.</p>
+      </div>
+    </div>
+    <div class="field">
+      <label>Number of questions</label>
+      <div class="opts" id="gen-count">
+        <button class="chip" data-v="30" aria-pressed="false">30</button>
+        <button class="chip" data-v="35" aria-pressed="true">35</button>
+        <button class="chip" data-v="40" aria-pressed="false">40</button>
+      </div>
+    </div>
+    <div class="field">
+      <label>Time allowed</label>
+      <div class="opts" id="gen-time">
+        <button class="chip" data-v="30" aria-pressed="false">30 min</button>
+        <button class="chip" data-v="60" aria-pressed="true">60 min</button>
+        <button class="chip" data-v="90" aria-pressed="false">90 min</button>
+        <button class="chip" data-v="0" aria-pressed="false">No clock</button>
+      </div>
+    </div>
+    <div class="field">
+      <label>Draw from</label>
+      <div class="opts" id="gen-scope"></div>
+    </div>
+    <div class="field">
+      <label class="check">
+        <input type="checkbox" id="gen-coach">
+        <span><span class="t">Show me the answers as I go</span><span class="d">Leave this off for true exam conditions &mdash; the full review arrives when you submit.</span></span>
+      </label>
+    </div>
+    <div class="navrow" style="margin-bottom:70px">
+      <button class="btn primary" id="gen-start">Begin the paper</button>
+      <span class="tally" id="gen-note"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section class="screen" id="s-quiz">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="who">
+        <b id="q-title">&nbsp;</b>
+        <span id="q-sub">&nbsp;</span>
+      </div>
+      <div class="tools">
+        <span class="timer" id="q-timer" hidden>60:00</span>
+        <button class="tool" id="t-5050" title="Remove three of the options">50&thinsp;:&thinsp;50</button>
+        <button class="tool" id="t-enc" title="A word of encouragement">Encourage me</button>
+        <button class="tool quiet" id="t-quit">Leave</button>
+      </div>
+    </div>
+    <div class="qmeter"><i id="q-meter" style="width:0%"></i></div>
+
+    <div class="stage">
+      <aside class="ladder" id="ladder" aria-hidden="true">
+        <div class="cap" id="ladder-cap">The climb ahead</div>
+        <ol id="ladder-list"></ol>
+        <p class="note">The Ten Worlds rise with every question you <em>attempt</em> &mdash; not with every one you get right. In this hall you only ever climb.</p>
+      </aside>
+
+      <div>
+        <div class="qcard">
+          <div class="qnum"><span id="q-pos">&nbsp;</span><em id="q-topic"></em></div>
+          <div class="qtext" id="q-text"></div>
+          <div class="answers" id="q-answers"></div>
+          <div class="verdict" id="q-verdict"><b id="v-head"></b><p id="v-body"></p><div class="quote" id="v-quote" hidden></div></div>
+          <div class="navrow">
+            <button class="btn quiet" id="q-prev">&larr; Back</button>
+            <button class="btn primary" id="q-lock">Lock it in</button>
+            <button class="btn" id="q-next">Next &rarr;</button>
+            <button class="btn primary" id="q-submit" hidden>Submit paper</button>
+            <span class="sp"></span>
+            <span class="tally" id="q-tally"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULT ================= -->
+<section class="screen" id="s-result">
+  <div class="wrap">
+    <div class="result">
+      <div class="ring">
+        <svg width="190" height="190" viewBox="0 0 190 190">
+          <circle cx="95" cy="95" r="83" fill="none" stroke="rgba(22,28,62,.10)" stroke-width="9"/>
+          <circle id="r-arc" cx="95" cy="95" r="83" fill="none" stroke="#8A6A22" stroke-width="9" stroke-linecap="round" stroke-dasharray="521.5" stroke-dashoffset="521.5" style="transition:stroke-dashoffset 1.1s cubic-bezier(.4,0,.2,1)"/>
+        </svg>
+        <div class="val"><b id="r-pct">0%</b><span id="r-frac">0 of 0</span></div>
+      </div>
+      <h2 id="r-head"></h2>
+      <p class="msg" id="r-msg"></p>
+      <div class="stats" id="r-stats"></div>
+      <div class="grp"><b>How each topic went</b><hr></div>
+      <div class="bd" id="r-breakdown"></div>
+      <div class="grp"><b>Every question, reviewed</b><hr></div>
+      <div class="opts" style="margin-bottom:18px">
+        <button class="chip" data-rv="all" aria-pressed="true">Show all</button>
+        <button class="chip" data-rv="wrong" aria-pressed="false">Only the ones to revisit</button>
+      </div>
+      <div class="rvw" id="r-review"></div>
+      <div class="navrow" style="justify-content:center; margin:44px 0 20px">
+        <button class="btn primary" id="r-again">Take another paper</button>
+        <button class="btn quiet" data-go="home">Practice Hall</button>
+      </div>
+      <p class="footnote" id="r-foot"></p>
+    </div>
+  </div>
+</section>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+const DATA = {"sections":[{"id":"t1","name":"Nichiren Daishonin and the Lotus Sutra","short":"Lotus Sutra","count":55},{"id":"t2","name":"Three Thousand Realms in a Single Moment of Life","short":"3,000 Realms","count":51},{"id":"t3","name":"Embracing the Gohonzon Is in Itself Observing One's Own Mind","short":"The Gohonzon","count":41},{"id":"t4","name":"The Mission and Practice of the Bodhisattvas of the Earth","short":"Bodhisattvas of the Earth","count":45},{"id":"t5","name":"The Lineage and Tradition of Buddhist Humanism","short":"Buddhist Humanism","count":38},{"id":"t6","name":"Repudiating the Nichiren Shoshu Priesthood under Nikken","short":"The Nikken Sect","count":30},{"id":"t7","name":"Gosho Passages","short":"Gosho Passages","count":47}],"questions":[{"id":"t1-1","s":"t1","q":"Which is the scripture that embodies the essence of Mahayana Buddhism?","o":["Lotus Sutra","Nirvana Sutra","Pre-Lotus Sutra","Diamond Sutra","Brahma net sutra"],"a":0},{"id":"t1-2","s":"t1","q":"Lotus Sutra teaches that ______","o":["Women cannot attain buddhahood","Evil people cannot attain buddhahood","All people can attain buddhahood","No one can attain buddhahood","Persons of two vehicles cannot attain buddhahood"],"a":2},{"id":"t1-3","s":"t1","q":"The Sutras that Shakyamuni taught during the more than 40 years before the Lotus Sutra teach that _______","o":["Supernatural beings can attain buddhahood","Ordinary people cannot attain buddhahood","Ordinary people can attain buddhahood","Pratyekabuddhas can attain buddhahood","Voice hearers can attain buddhahood"],"a":1},{"id":"t1-4","s":"t1","q":"The Sutras before Lotus Sutra teach that","o":["one stays in one of the nine worlds other than buddhahood until they die and only then move to another in rebirth","One must carry out Buddhist practices through numerous lifetimes until they eradicate all their earthly desires","When one attains buddhahood none of the nine worlds remain in their lives","All the above","None of the above"],"a":3},{"id":"t1-5","s":"t1","q":"In the Lotus Sutra, Shakyamuni reveals the truth that","o":["Buddhahood exists inherently in the lives of ordinary people","Everyone can attain buddhahood immediately by bringing it forth from within their lives","Nine worlds exist in the life of a Buddha","All of the above","None of the above"],"a":3},{"id":"t1-6","s":"t1","q":"The teaching of Lotus Sutra is founded on two doctrines","o":["True aspect of all phenomena and attainment of Buddhahood in the remote past","True aspect of all phenomena and the four noble truths","The Eight fold path and attainment of Buddhahood in the remote past","Abhidhamma and doctrines of rebirth","Four noble truths and three secret laws"],"a":0},{"id":"t1-7","s":"t1","q":"The first 14 chapters of the 28 chapters of the Lotus Sutra called the theoretical teachings have two central doctrines","o":["True aspect of all phenomena and attainment of Buddhahood by persons of two vehicles","True aspect of all phenomena and attainment of Buddhahood in the remote past","True aspect of all phenomena and the four noble truths","The Eight fold path and attainment of Buddhahood in the remote past","Four noble truths and the eight fold path"],"a":0},{"id":"t1-8","s":"t1","q":"The true aspect of all phenomena is a principle expounded in the _____ chapter of the Lotus Sutra.","o":["16th (Life Span chapter)","1st (Introduction Chapter)","2nd (Expedient Means chapter)","10th (Teacher of the Law chapter)","15th (Emerging from the earth chapter)"],"a":2},{"id":"t1-9","s":"t1","q":"\"All Phenomena\" means ______","o":["The world around us and its various workings including the affairs of life and society","The universe in its entirety","Only spiritual phenomena","Natural elements and their cycles","The workings of the mind and soul"],"a":0},{"id":"t1-10","s":"t1","q":"\"True aspect\" means ______","o":["The visible surface of all phenomena","The ultimate reality or true nature","The illusion behind all things","The external perception of reality","A temporary state of being"],"a":1},{"id":"t1-11","s":"t1","q":"Once one perceives this truth or reality of all things one understands that","o":["All phenomena and their true aspect are not two separate things","All phenomena and their true aspect are completely separate things","All Phenomena are not the manifestation of their true aspect","There is no phenomena and everything is conjured by one's mind","Reality is just maya"],"a":0},{"id":"t1-12","s":"t1","q":"Nichiren Daishonin clarifies that \"all phenomena\" refers specifically to","o":["All non-living things","Being in the nine world","Natural phenomena","All living beings of the ten worlds and their respective environments","Supernatural beings and heaven"],"a":3},{"id":"t1-13","s":"t1","q":"According to Nichiren, \"true aspect\" refers to:","o":["Myoho renge kyo","Amida Butsu","Heavenly beings","Gods and protective forces","Devil king of the sixth heaven"],"a":0},{"id":"t1-14","s":"t1","q":"Nichiren Daishonin states in \"The true aspect of all Phenomena\" that all beings and environments of the ten worlds, from hell, the lowest, to Buddhahood, the highest, are without exception manifestations of ______.","o":["Myoho renge kyo","Amida Butsu","Heavenly beings","Gods and protective forces","Devil king of the sixth heaven"],"a":0},{"id":"t1-15","s":"t1","q":"Based on the principle of the true aspect of all phenomena, the Lotus Sutra reveals that ______ can attain buddhahood:","o":["Voice hearers and cause awakened ones (persons of two vehicles)","Evil persons","Women","All of the above","None of the above"],"a":3},{"id":"t1-16","s":"t1","q":"The 'Expedient Means' chapter goes on to explain the reason or purpose for which all buddhas appear in this world","o":["To open the door of Buddha wisdom","To enable all people to reveal the Buddha wisdom","To carry out Buddhist practice based on that wisdom","To achieve a state of life equal to that of the Buddhas themselves","All the above"],"a":4},{"id":"t1-17","s":"t1","q":"Shakyamuni vowed in the Lotus Sutra to _____","o":["Bring peace to all beings","Make all people equal to me, without distinction between us","Guide the world into enlightenment","Teach the Noble Eightfold Path","Eradicate suffering forever"],"a":1},{"id":"t1-18","s":"t1","q":"A principle central to the essential teaching (the latter half) of the Lotus Sutra is the revaluation of Shakyamuni's","o":["Attainment of Buddhahood in this lifetime","Attainment of Buddhahood in the remote past","Attainment of Buddhahood in future lifetime","Attainment of Buddhahood in previous lifetime","None of the above"],"a":1},{"id":"t1-19","s":"t1","q":"The 'life span' (16th) chapter offers a description of a period known as ______ to explain the vastness of time that has passed since Shakyamuni originally attained Buddhahood.","o":["\"numberless major world system dust particle kalpas\"","\"countless yojanas\"","\"minor kalpas\"","\"major world systems\"","“minor world systems\""],"a":0},{"id":"t1-20","s":"t1","q":"\"It has been immeasurable, boundless hundreds, thousands, ten thousands, millions of nayutas of kalpas, since I in fact attained Buddhahood\" signifies that","o":["Life state of Buddha is finite","Life state of Buddha is indeterminate","Life state of Buddha is abstract","Life state of Buddha is eternal and always present","Life state of Buddhahood cannot be achieved"],"a":3},{"id":"t1-21","s":"t1","q":"\"Originally I practiced the Bodhisattva way, and the life span that I acquired then has yet to come to an end but will last twice the number of years that have already passed\" signifies that","o":["The nine worlds represented by the life state of Bodhisattva also eternal and always present","The nine worlds cannot be eradicated","The Bodhisattva way is very difficult","The life of a Bodhisattva is longer than that of a Buddha","It's hard to fathom the life span of a Bodhisattva"],"a":0},{"id":"t1-22","s":"t1","q":"The eternal Buddha always dwells in the ____ which is none other than _____ where ordinary people of the nine worlds live.","o":["Land of perfect bliss; Hell","Land of pure land; Hungry spirits","Land of eternally tranquil light; Saha world","Impure land; pure land","Underworld; Heaven"],"a":2},{"id":"t1-23","s":"t1","q":"When one believes in and practices the Lotus Sutra, one’s innate Buddhahood emerges, and at the same time one’s environment becomes a Buddha land. This is known as","o":["The principle that the Saha world is the Land of eternally tranquil light","The principle of Amida Buddha in the land of pure bliss","The principle of incongruence","The eight fold path","The four noble truths"],"a":0},{"id":"t1-24","s":"t1","q":"The ______ functions as the internal cause which in response to the right conditions brings about at any time or any place the reward of Buddhahood in one's own being and in the environment.","o":["Innate Buddha nature","Nine world's","Devil king of the sixth heaven","Heavenly beings","Bodhisattva"],"a":0},{"id":"t1-25","s":"t1","q":"It is the principle of Shakyamuni's attainment of Buddhahood in the remote past that sheds light on the true nature of life namely","o":["From the most distant past into the limitless future, everyone is essentially a Buddha","Only in the remote past can one attain buddhahood","One can attain buddhahood only in the distant future","One cannot attain buddhahood without undergoing countless lifetimes of Bodhisattva practice","Attaining buddhahood in one lifetime is impossible"],"a":0},{"id":"t1-26","s":"t1","q":"In the 'Emerging from the Earth' (15th) chapter of the Lotus Sutra, Shakyamuni summons countless Bodhisattvas for the purpose of entrusting them with the propagation of his teaching in the evil age after his passing. They are known as:","o":["Bodhisattva Never Disparaging","Bodhisattva awesome sound","Bodhisattva Nagarjuna","Bodhisattvas of the earth","Bodhisattvas of the sun"],"a":3},{"id":"t1-27","s":"t1","q":"The Bodhisattvas of the Earth are led by","o":["Superior Practices","Boundless Practices","Pure Practices","Firmly established practices","All of the above"],"a":4},{"id":"t1-28","s":"t1","q":"Nichiren Daishonin makes it clear that the time when Bodhisattvas of the Earth will appear is in the ______, and the great law they will spread is the _______.","o":["Latter day of the Law; Mystics law or Nam-Myoho-Renge-Kyo","Former day of the law; law of perfect bliss","Middle day of the law; law of supernatural beings","Remote past; law of pure land","Infinite future; law of Amida"],"a":0},{"id":"t1-29","s":"t1","q":"It is Daishonin who appeared at the beginning of the Latter Day of the law, taught Nam-Myoho-Renge-Kyo to all people, and spread it with selfless dedication. In that sense, Daishonin is himself a Bodhisattva of the Earth whose role accords in particular with that of:","o":["Bodhisattva Superior Practices","Bodhisattva Pure Practices","Bodhisattva Boundless Practices","Bodhisattva Firmly established practices","Bodhisattva Never Disparaging"],"a":0},{"id":"t1-30","s":"t1","q":"\"If you are of the same mind as Nichiren, you must be a ______. And if you are a _____, there is not the slightest doubt that you have been a disciple of Shakyamuni Buddha from the remote past.","o":["Buddha, Buddha","Disciple, Disciple","Bodhisattva of the Earth, Bodhisattva of the Earth","Monk, Monk","Teacher, Teacher"],"a":2},{"id":"t1-31","s":"t1","q":"Everyone who accepts and believes in the Daishonin's teachings, propagates them, and works to achieve Kosen-rufu is without exception a ______.","o":["Buddha","Bodhisattva of the Earth","Disciple of Nichiren","Enlightened being","Protector of the Law"],"a":1},{"id":"t1-32","s":"t1","q":"The practice of ____ described in the 20th chapter of the Lotus Sutra serves as an example of how to spread the correct teaching in the evil age after Shakyamuni's passing.","o":["Bodhisattva Never Disparaging","Bodhisattva Superior Practices","Bodhisattva Wonderful Sound","Bodhisattva Emerging from the Earth","Bodhisattva Universal Worthy"],"a":0},{"id":"t1-33","s":"t1","q":"\"I have profound reverence for you, I would never dare treat you with disparagement or arrogance. Why? Because you will all practice the Bodhisattva way and will then be able to attain Buddhahood.\" This phrase is known as:","o":["The three fold way","The eight fold path","The four noble truths","The Twenty four character Lotus Sutra","The eight character Lotus Sutra"],"a":3},{"id":"t1-34","s":"t1","q":"Buddhism teaches the loftiest form of human behaviour - ______- and encourages all pe ople to act in this manner.","o":["actions that lead to enlightenment","actions that respect others","actions that create personal happiness","actions that benefit oneself","actions that align with natural law"],"a":1},{"id":"t1-35","s":"t1","q":"The heart of the Buddha's lifetime of teachings is the Lotus Sutra, and the heart of the practice of the Lotus Sutra is found in the never Disparaging chapter. What does ______ profound respect for people signify? The purpose of the appearance in this world of Shakyamuni Buddha, the lord of the teachings, lies in his behaviour as a ______.","o":["Bodhisattva Never Disparaging’s, human being","Bodhisattva Wonderful Sound’s, guide","Bodhisattva Emerging from the Earth’s, teacher","Bodhisattva Universal Worthy’s, leader","Bodhisattva Superior Practices’, divine being"],"a":0},{"id":"t1-36","s":"t1","q":"Nichiren Daishonin referred to himself as the _____ - the genuine practitioner of the Sutra who carried out its teachings exactly as instructed while facing and overcoming great persecutions in order to propagate the mystic Law.","o":["Enlightened One","Buddha of the Middle Day","Votary of the Lotus Sutra","Disciple of Shakyamuni","Bodhisattva of the Earth"],"a":2},{"id":"t1-37","s":"t1","q":"The Lotus Sutra explains that anyone who believes in, practices and spreads the sutra's teaching after Shakyamuni's passing will be assailed by various kinds of _____.","o":["obstacles and persecutions","positive karma","followers and teachers","divine beings","assistance from the Bodhisattvas"],"a":0},{"id":"t1-38","s":"t1","q":"In the 'Teacher of the Law' (10th) chapter of the Lotus Sutra is the passage: \"since _____ towards this Sutra abound even when the thus come on [Shakyamuni Buddha] is in the world, how much more will this be so after his passing?\"","o":["hatred and jealousy","obstacles and difficulties","reverence and respect","confusion and fear","joy and enlightenment"],"a":0},{"id":"t1-39","s":"t1","q":"The 'Emergence of the Treasure Tower' (11th) chapter of the Lotus Sutra Shakyamuni describes ______ to emphasize the great difficulty of accepting and spreading the Lotus Sutra in the time after his passing.","o":["ten perfections and six virtues","eight paths and four truths","six difficult and nine easy acts","five causes and seven effects","three paths and nine doors"],"a":2},{"id":"t1-40","s":"t1","q":"Among the six difficult acts are:","o":["To propagate the Lotus Sutra widely","To recite it even for a short while","To maintain faith in it","All the above","None of the above"],"a":3},{"id":"t1-41","s":"t1","q":"Amongst the nine easy acts are:","o":["Taking up Mount Sumeru and hurling it across countless Buddha lands","Placing the earth on one's toenail and ascending to the Brahma heaven","Preaching eighty four thousand teachings","All of the above","None of the above"],"a":3},{"id":"t1-42","s":"t1","q":"The reason that propagating the Lotus Sutra is so difficult is that doing so","o":["Invites real hardships in the form of opposition and persecution","It is not fully understood even by the Buddha","The Sutras were lost during the great Kanto fire in the 12th century","No one can understand the script it was written in","There are too many teachings of the Buddha and it will take more than one lifetime to read all of them"],"a":0},{"id":"t1-43","s":"t1","q":"The three powerful enemies described in the 'Encouraging Devotion' (13th) chapter \"twenty-line verse\" of the kinds of people who strongly oppose those who spread the Sutra after Shakyamuni's passing are:","o":["Arrogant lay people","Arrogant priests","Arrogant false sages","All the above","None of the above"],"a":3},{"id":"t1-44","s":"t1","q":"People who, ignorant of the Buddhist teachings, attack the practitioners of the Lotus Sutra are called","o":["Arrogant lay people","Arrogant priests","Arrogant false sages","All the above","None of the above"],"a":0},{"id":"t1-45","s":"t1","q":"Members of the Buddhist clergy who persecute practitioners of the Lotus Sutra are called","o":["Arrogant lay people","Arrogant priests","Arrogant false sages","All the above","None of the above"],"a":1},{"id":"t1-46","s":"t1","q":"High-ranking Buddhist priests who passed themselves off as sages or saints and use their status and influence to persecute the practitioners of the Lotus Sutra are called:","o":["Arrogant lay people","Arrogant priests","Arrogant false sages","All the above","None of the above"],"a":2},{"id":"t1-47","s":"t1","q":"During the Daishonin's time, the priest Ryokan of Gokuraku-ji temple best fit the description of:","o":["Arrogant lay people","Arrogant priests","Arrogant false sages","All the above","None of the above"],"a":2},{"id":"t1-48","s":"t1","q":"Nichiren Daishonin states that he 'read the Lotus Sutra with his very life.' What does he mean by this passage:","o":["Ref. to passage from Encouraging Devotion chapter that reads: 'Again and again we will be banished'","He met persecutions on account of the Lotus Sutra","He fulfilled the predictions made in the Lotus Sutra","He encountered major persecutions at the hands of the three powerful enemies exactly as the Lotus Sutra says will befall its votary or true practitioner.","All of the above"],"a":4},{"id":"t1-49","s":"t1","q":"Nichiren Daishonin was the first to stand alone and stake his life on spreading the mystic Law as the votary of the Lotus Sutra in the latter day of the law, demonstrating his mission and behaviour accorded with that of:","o":["Bodhisattva Superior Practices","Bodhisattva Pure Practices","Bodhisattva Firmly established practices","Bodhisattva Boundless Practices","None of the above"],"a":0},{"id":"t1-50","s":"t1","q":"Having been entrusted with propagation of the Sutras teaching in the latter day of the law Bodhisattva Superior Practices and other Bodhisattvas of the Earth function as","o":["Sun","Moon","Lotus flowers","All the above","None of the above"],"a":3},{"id":"t1-51","s":"t1","q":"Nichiren Daishonin have himself the name Nichiren meaning _______ expressing his conviction that he is fulfilling the role of Superior Practices whose function is compared in the 'Supernatural Powers' and 'Emerging from the earth' chapters to the sun, moon and the Lotus flower.","o":["Sun Lotus","Enlightened Lotus","Eternal Sun","Radiant Moon","Lotus Blossom"],"a":0},{"id":"t1-52","s":"t1","q":"While in terms of his behaviour, the Daishonin was carrying out the function of Superior Practices, on a deeper level - in terms of his intrinsic, enlightened state of life - he was the:","o":["Buddha of limitless joy from time without beginning","Buddha who can fully display the dignity life inherently possesses.","Buddha of the latter day of the law","All of the above","None of the above"],"a":3},{"id":"t1-53","s":"t1","q":"When one believes in the _____ and reveals the law of ______ inherent in one's life, one can manifest the life state of the _____ of time without beginning.","o":["Gohonzon, Nam-myoho-renge-kyo, Buddha","Lotus Sutra, Eternal Law, Buddha","Enlightened Mind, Bodhisattva Law, Enlightened One","Bodhisattva Path, Mystic Law, Teacher","Threefold Path, Law of Karma, Great Sage"],"a":0},{"id":"t1-54","s":"t1","q":"On Sep 12, 1271, when Nichiren Daishonin emerged victorious from the Tatsunokuchi persecution, he shed his transient identity as an ordinary person burdened with karma and suffering and revealed his original state of life as the Buddha of limitless joy from time without beginning. This transformation is knows as ______.","o":["Great Enlightenment","Casting off the transient and revealing the true","Nirvana","Attaining Buddhahood","Liberation from Samsara"],"a":1},{"id":"t1-55","s":"t1","q":"The Daishonin expressed this fundamental life state of Buddhahood in the form of a mandala, the _______ which he modelled after the Ceremony in the air in the Lotus Sutra, establishing it as the ______ that all people of the latter day of the law should believe in and uphold in order to attain Buddhahood.","o":["Gohonzon, Object of Devotion","Lotus Sutra, Path of Enlightenment","Bodhisattva Mandala, Path of Practice","Dharma Wheel, Law of Devotion","Mystic Mandala, Object of Respect"],"a":0},{"id":"t2-1","s":"t2","q":"______ is a Buddhist teaching that reveals how ordinary people can attain Buddhahood.","o":["Three thousand realms in a single moment of life","Lotus Sutra","Chanting Nam-myoho-renge-kyo to Gohonzon","All the above","None of the above"],"a":3},{"id":"t2-2","s":"t2","q":"One of the philosophical principles forming the basis underlying Nichiren Daishonin's inscription of the Gohonzon of NMRK is the doctrine of ________.","o":["The Ten Worlds","Threefold Lotus Kyo","The Eightfold Path","Four Noble Truths","Three thousand realms in a single moment of life"],"a":4},{"id":"t2-3","s":"t2","q":"________ was formulated by the Great teacher T'ien-t'ai (Chih-i) of China in his work Great Concentration and Insight in order to help people put into practice the Lotus Sutra's teaching that all people can attain buddhahood.","o":["The Ten Worlds","Threefold Lotus Kyo","Three thousand realms in a single moment of life","The Eightfold Path","Four Noble Truths"],"a":2},{"id":"t2-4","s":"t2","q":"\"A single moment of life\" indicates ______","o":["The eternity of life","One’s life as it exists at any given moment","Life over the course of a lifetime","The stages of life from birth to death","All sentient beings"],"a":1},{"id":"t2-5","s":"t2","q":"\"Three thousand realms\" refers to _______","o":["All phenomena - all things and their varied functions","The various realms of heaven","Different stages of spiritual attainment","The path to enlightenment","The six paths of suffering"],"a":0},{"id":"t2-6","s":"t2","q":"The principle of three thousand realms in a single moment of life teaches that a single moment of life includes _______, and life at each moment _________ .","o":["Countless universes, is unchanging","Past, present, and future, is forever bound","Three thousand realms, permeates and pervades all of them","Infinite dimensions, is influenced by karma","Various stages of consciousness, fluctuates"],"a":2},{"id":"t2-7","s":"t2","q":"Life at each moment contains _________.","o":["Limitless potential","An inherent imbalance","Reincarnated energy","A final goal","Karma from the past"],"a":0},{"id":"t2-8","s":"t2","q":"When one transforms the state of one life at this moment, the ________ also changes, which can result in a change in the _______.","o":["Environment, cycle of life","Karma, future life","Universe, present moment","Environment, entire world","Spirit, physical realm"],"a":3},{"id":"t2-9","s":"t2","q":"SGI President Ikeda expresses the significance of the principle of three thousand realms in a single moment of life in describing the theme of his novel the Human Revolution as: ______.","o":["“A great human revolution in just a single individual will help achieve a change in the destiny of a nation and, further, will enable a change in the destiny of all humankind.\"","\"One moment can change the entire flow of life and all things connected to it.\"","“An individual’s life is the core of universal transformation.”","\"The power of karma is transformed by one’s inner strength.\"","“Personal revolution leads to societal enlightenment.”"],"a":0},{"id":"t2-10","s":"t2","q":"So long as one is alive, one's life at each moment possesses _______, each of which is unique and distinct from the others.","o":["Karma and consciousness","The ability to transform","Three thousand realms","Eternal existence","The potential for rebirth"],"a":2},{"id":"t2-11","s":"t2","q":"The number 'three thousand realms' comes from _____ x _____ x ______x_____.","o":["10 worlds, 10 worlds, 10 factors, 3 realms","10 worlds, 9 worlds, 12 factors, 3 realms","9 worlds, 9 worlds, 8 factors, 3 realms","12 worlds, 10 factors, 2 realms, 3 universes","9 factors, 10 realms, 10 worlds, 3 factors"],"a":0},{"id":"t2-12","s":"t2","q":"The core principle underlying three thousand realms in a single moment of life is ______.","o":["The Threefold Lotus Sutra","Mutual possession of ten worlds","The Law of Cause and Effect","The Four Noble Truths","Samsara"],"a":1},{"id":"t2-13","s":"t2","q":"The concept of mutual possession of ten worlds explains that the nine worlds have the potential for _____ and Buddhahood retains the _____.","o":["Suffering, three realms","Rebirth, karmic law","Buddhahood, nine worlds","Suffering, inherent wisdom","Liberation, cycle of death"],"a":2},{"id":"t2-14","s":"t2","q":"_____ represents the ten state of life.","o":["Eightfold Path","Samsara","Ten worlds","Four Noble Truths","Threefold Path"],"a":2},{"id":"t2-15","s":"t2","q":"The ten worlds are: ____, ____, _____, ____, ____, _____,_____,_____,_____,____.","o":["Hell, hungry spirits, animals, asuras, human beings, heavenly beings, voice-hearers, cause- awakened ones, Bodhisattvas, Buddha","Brahman, Vishnu, Shiva, Kali, Indra, Varuna, Agni, Surya, Soma, Ashvins","Heaven, earth, animals, humans, gods, demons, rakshasas, deities, spirits, beings","Buddha, asuras, Bodhisattvas, humans, heavenly beings, demons, gods, animals, hungry spirits, hell","Sun, Moon, Mercury, Earth, Venus, Mars, Jupiter, Uranus, Neptune, Pluto"],"a":0},{"id":"t2-16","s":"t2","q":"The Sutras other than the Lotus Sutra teach that each of the ten worlds is ______.","o":["Separate or distinct realm or fixed condition of life","One cannot move from any one of the ten worlds to another until one dies","After rebirth we are born into another of the ten worlds","All the above","None of the above"],"a":3},{"id":"t2-17","s":"t2","q":"Mutual possession of the ten worlds, in one sense means that Buddhas and all people of the nine worlds are _____ endowed with all Ten worlds and are therefore essentially _____.","o":["inherently, flawed","equally, divine","equally, equal","eternally, karmic","perpetually, transcendent"],"a":2},{"id":"t2-18","s":"t2","q":"The principle of mutual possession of ten worlds explains that one can elevate one's life state to that of ______ in the course of this lifetime.","o":["Nirvana","Heaven","Buddhahood","Liberation","Pratyeka Buddha"],"a":2},{"id":"t2-19","s":"t2","q":"There are ________ common to all life in any of the ten worlds.","o":["Ten aspects or factors","Four aspects or truths","Eight levels of awareness","Six stages of existence","Five Skandhas"],"a":0},{"id":"t2-20","s":"t2","q":"The ten factors describe the __________ at work behind the changes in one's state of life.","o":["law of suffering","law of impermanence","law of consciousnesses","law of causality","law of rebirth"],"a":3},{"id":"t2-21","s":"t2","q":"The section of the Expedient means (2nd) chapter of the Lotus Sutra that SGI members recite daily during gongyo describes the \"true aspect of all phenomena\" or _______.","o":["mutual possession of the evil paths","the ten factors or attributes","the Noble Eightfold Path","the cycle of samsara","the law of four noble truths"],"a":1},{"id":"t2-22","s":"t2","q":"The section of the Expedient means (2nd) chapter of the Lotus Sutra that SGI members recite daily during gongyo reads: \"The ________ can only be understood and shared between Buddhas.\"","o":["nature of all things","three thousand realms","ultimate truth","true aspect of all phenomena","eternal law"],"a":3},{"id":"t2-23","s":"t2","q":"The ten factors are: _____, _____, _____, ______, _____, _____, ______, _____, _____, _____.","o":["Appearance, nature, entity, power, influence, internal cause, relation, latent effect, manifest effect, consistency from beginning to end","Earth, water, fire, wind, space, time, perception, consciousness, mind, body","Mind, body, soul, spirit, awareness, energy, karma, potential, dharma, buddha-nature","Life, death, birth, suffering, joy, peace, conflict, impermanence, desire, liberation","Smell, touch, taste, hearing, seeing, body, conscious, subconscious, alaya conscious, amala conscious"],"a":0},{"id":"t2-24","s":"t2","q":"In the gongyo each factor is prefaced by \"Nyoze\" in Japanese meaning:","o":["Like this","Such","Thus","Any of the above","None of the above"],"a":3},{"id":"t2-25","s":"t2","q":"Among the ten factors ______ is the outward form or aspect of a living being that is subject to change from moment to moment.","o":["Nature","Consciousness","Appearance","Perception","Entity"],"a":2},{"id":"t2-26","s":"t2","q":"_______ is the innate and consistent character or intrinsic attributes.","o":["Nature","Influence","Entity","Power","Relation"],"a":0},{"id":"t2-27","s":"t2","q":"_______ is the thing or being itself, which has the aspects of appearance and nature.","o":["Power","Entity","Karma","Influence","Manifest effect"],"a":1},{"id":"t2-28","s":"t2","q":"Which factor(s) constitute the existence and essence of the living being.","o":["Appearance","Nature","Entity","All three","None"],"a":3},{"id":"t2-29","s":"t2","q":"_____ means internal energy or inner potential","o":["Relation","Power","Entity","Influence","Manifest effect"],"a":1},{"id":"t2-30","s":"t2","q":"______ is the outward expression of internal power and the influence of that power on other life or phenomena.","o":["Relation","Power","Entity","Influence","Manifest effect"],"a":3},{"id":"t2-31","s":"t2","q":"Which factors express the law of causality that governs the workings of life?","o":["Appearance, Nature, Entity, Power","Power, Influence, Nature, Appearance","Internal cause, relation, latent effect, manifest effect","Appearance, Entity, Power, Influence","Power, Influence, relation, internal cause"],"a":2},{"id":"t2-32","s":"t2","q":"_____ is a primary or direct cause inherent in life that produces an effect or result.","o":["Relation","Manifest effect","Latent effect","Inherent cause","Internal energy"],"a":3},{"id":"t2-33","s":"t2","q":"______ refers to an external condition or influence that stimulates the internal cause, functioning as a supporting or auxiliary cause to bring about an effect.","o":["Relation","Perception","Manifest effect","Volition","Conception"],"a":0},{"id":"t2-34","s":"t2","q":"______ is the intrinsic, imperceptible result arising from the interaction of the internal cause and the relation or external cause.","o":["Manifest effect","Latent effect","Consciousness","Perception","Inherent cause"],"a":1},{"id":"t2-35","s":"t2","q":"______ is the evident result that emerges from the latent effect in response to the time and to external causes or conditions.","o":["Inherent cause","Volition","Manifest effect","Internal energy","Relation"],"a":2},{"id":"t2-36","s":"t2","q":"________ means that all other factors are consistent from the beginning - the first factor, appearance - to the end - the ninth factor, manifest effect.","o":["Inherent cause","Consistency from beginning to end","Relation","Manifest effect","Nature"],"a":1},{"id":"t2-37","s":"t2","q":"A life presently in the world of Buddhahood will have the appearance of _____, the nature of ____,…manifest effect of _____.","o":["Buddhahood, Buddhahood, Buddhahood","Nirvana, Karma, Samsara","Human, Animal, Human","Buddha, Disciple, Sage","Teacher, Leader, Guide"],"a":0},{"id":"t2-38","s":"t2","q":"Anyone in any of the ten worlds can, in response to the right conditions, manifest the world of ________ and become a _____.","o":["Heaven, Deity","Nirvana, Buddha","Buddhahood, Buddha","Samsara, Sage","Human, Bodhisattva"],"a":2},{"id":"t2-39","s":"t2","q":"The 'three realms of existence' are:","o":["Realm of five components, Realm of living beings, realm of environment","The realm of living beings, realm of heavenly beings, realm of hell","Past, present and future","Realm of pisachas, realm of yakshas, realm of kimnaras","Earth, heaven, hell"],"a":0},{"id":"t2-40","s":"t2","q":"The five components are:","o":["Form, appearance, nature, entity, power","Form, perception, conception, volition and consciousness","Eyes, ears, nose, throat, mind","Conscious, subconscious, unconscious, deep rest, awake","Head, chest, torso, legs, hands"],"a":1},{"id":"t2-41","s":"t2","q":"_____ is the physical aspect of life, the body, and its physical attributes.","o":["Form","Perception","Conception","Volition","Nature"],"a":0},{"id":"t2-42","s":"t2","q":"_____ is the function of receiving and sensing information from and about the outside world through the six sense organs - eyes, ears, nose, tongue, body and mind.","o":["Form","Volition","Perception","Consciousness","Conception"],"a":2},{"id":"t2-43","s":"t2","q":"______ is the function of forming impressions or ideas about what has been perceived.","o":["Form","Volition","Perception","Consciousness","Conception"],"a":4},{"id":"t2-44","s":"t2","q":"______ is what links the conception of what is perceived to action. It accords with the various workings of the heart and mind such as will, wants, desires.","o":["Form","Volition","Perception","Consciousness","Conception"],"a":1},{"id":"t2-45","s":"t2","q":"______ describes the discerning function of life that recognizes and distinguishes things.","o":["Form","Volition","Perception","Consciousness","Conception"],"a":3},{"id":"t2-46","s":"t2","q":"In the world of hell, the five components of life have characteristics specific to the ______.","o":["Realm of living beings","World of hell","Realm of environment","Realm of perception","Realm of karma"],"a":1},{"id":"t2-47","s":"t2","q":"The \"realm of the five components\" manifests the ______.","o":["Five senses","Five elements","Ten worlds","Karma","Reincarnations"],"a":2},{"id":"t2-48","s":"t2","q":"The differences in the life state of living beings or which of the ten worlds they manifest are also manifest in the ________ those beings inhabit, that is, the _______.","o":["Land or environment, realm of environment","Five components, world of suffering","Cause and effect, karmic cycle","Rebirth, realm of beings","Body, physical realm"],"a":0},{"id":"t2-49","s":"t2","q":"From the principle of three realms of existence we can see that when the state of the five components changes, that of _______ and their ________ also changes.","o":["Enlightenment, karma","Living beings, environment","Karma, life state","Spirit, body","Mind, soul"],"a":1},{"id":"t2-50","s":"t2","q":"Change in the state of one's heart or mind will effect a change in every aspect of one's ______ and one's _____.","o":["Karma, actions","Spirit, body","Life, environment","Mind, soul","Physical state, mental state"],"a":2},{"id":"t2-51","s":"t2","q":"The principles of the mutual possession of the ten worlds, the ten factors of life, and the three realms of existence, when merged together form the _________.","o":["Lotus Sutra","Ten life states","Three thousand realms in a single moment of life","Realm of beings","Eternal truth"],"a":2},{"id":"t3-1","s":"t3","q":"Embracing the______ is itself observing one’s own mind.","o":["Adidharma","Buddha Sun Bright","Gohonzon","Nembutsu","Shinto Talisman"],"a":2},{"id":"t3-2","s":"t3","q":"The object of devotion fundamental to the faith of SGI members is the _______ of Nam- myoho-renge-kyo.","o":["Shakyamuni Buddha","Lotus Sutra","Nichiren Daishonin","Gohonzon","Bodhisattva Never Disparaging"],"a":3},{"id":"t3-3","s":"t3","q":"Shakyamuni awakened to the fundamental law that permeates all life and universe and for that reason he was called “Buddha” or awakened one. ______ is the law that enables all people to attain Buddhahood, and it is also the name of that law.","o":["Dharma","Nam-myoho-renge-kyo","Karma","Nirvana","The Eightfold Path"],"a":1},{"id":"t3-4","s":"t3","q":"Daishonin taught and directly expressed the law that constitutes the fundamental cause for attaining enlightenment as ______.","o":["Nam-myoho-renge-kyo","The Eightfold Path","Adidharma","Shinto","Nembutsu"],"a":0},{"id":"t3-5","s":"t3","q":"The ______, which is the cause, or seed, of Buddhahood, is essentially inherent in the lives of all living beings.","o":["Sutra","Dharma","Mystic Law","Karma","Nirvana"],"a":2},{"id":"t3-6","s":"t3","q":"When we revere _______ inherent in our own life as the object of devotion, the Buddha nature within us is summoned forth and manifested by our chanting of _____.","o":["Karma, Nam-myoho-renge-kyo","Nam-myoho-renge-kyo, Dharma","Mystic Law, Nembutsu","Myoho-renge-kyo, Nam-myoho-renge-kyo","Buddha Nature, Shinto"],"a":3},{"id":"t3-7","s":"t3","q":"To illustrate, when a caged bird sings, birds flying in the sky are thereby ________, and when the birds in the sky gather around, the bird in the cage ______.","o":["Protected, falls asleep","Summoned, strives to get out","Summoned, sings louder","Disturbed, becomes quiet","Summoned, remains in the cage"],"a":1},{"id":"t3-8","s":"t3","q":"In the illustration, caged bird singing is like _______. The birds flying in the sky gathering is like ________.","o":["Chanting Nam-Myoho-renge-kyo; Buddha nature of Brahma, Shakra, Buddhas, and Bodhisattvas summoned to protect us","Chanting Nembutsu, the protection of the gods","Practicing the Law, awakening the senses","Understanding the Law, seeking protection from the universe","Meditation, the emergence of the mind"],"a":0},{"id":"t3-9","s":"t3","q":"When one believes in the _____ and chants _____ one awakens and summons the world of Buddhahood within one’s life and further one calls forth the world of Buddhahood from within all things in the universe.","o":["Karma, Dharma","Gohonzon, Nam-Myoho-renge-kyo","Buddha Nature, Nirvana Sutra","Shinto, Mystic Law","Lotus Sutra, Nembutsu"],"a":1},{"id":"t3-10","s":"t3","q":"One opens up the limitless potential of ______, activates the functions of Buddhas, bodhisattvas and heavenly beings - that is the _______.","o":["One’s own life, protective forces in one’s environment","Mind, cosmic forces","Dharma, energy of karma","Karma, functions of the universe","Nirvana, path to enlightenment"],"a":0},{"id":"t3-11","s":"t3","q":"“I, Nichiren, have inscribed my life in sumi ink, so believe in the _______ with your whole heart. The Buddha’s will is the lotus sutra, but the soul of Nichiren is nothing other than ______.","o":["Karma, Dharma","Buddha Nature, Nirvana Sutra","Shinto, Mystic Law","Gohonzon, Nam-Myoho-renge-kyo","Lotus Sutra, Nembutsu"],"a":3},{"id":"t3-12","s":"t3","q":"The ______ is this an expression of the world of Buddhahood Nichiren Daishonin awakened to.","o":["Shinto Talisman","Sutra","Gohonzon","Karma","Lotus Flower"],"a":2},{"id":"t3-13","s":"t3","q":"Down the centre of the gohonzon are inscribed the words ________. This is because Nam- myoho-renge-kyo is the fundamental law for attaining Buddhahood and the Daishonin is the Buddha of the latter day of the law who revealed and taught that law for all people.","o":["Nichiren Daishonin","Buddha of Latter Day","Mystic Law","Amida Buddha","Nam-myoho-renge-kyo Nichiren"],"a":4},{"id":"t3-14","s":"t3","q":"As an ordinary person, Nichiren Daishonin opened and revealed within his life, the world of _______.","o":["Dharma","Buddhahood or Nam-myoho-renge-kyo","Heaven","Karma","Wisdom"],"a":1},{"id":"t3-15","s":"t3","q":"The Daishonin embodied it in the form of a _____ as the object of devotion, establishing the way for ordinary people to make their innate world of Buddhahood the foundation of their being.","o":["Mandala","Sutra","Lotus Flower","Talisman","Temple"],"a":0},{"id":"t3-16","s":"t3","q":"When ordinary people believe in and pray to the ______, they can immediately observe the world of ______ inherent in their lives, just as the Daishonin did.","o":["Sutra, Karma","Gohonzon, Buddhahood","Nam-myoho-renge-kyo, Nirvana","Nembutsu, Heavenly beings","Dharma, Mind"],"a":1},{"id":"t3-17","s":"t3","q":"The ______, can be viewed as a clear mirror that reflects the world of Buddhahood within ordinary people and allows them to observe it and bring it forth.","o":["Lotus Sutra","Dharma","Gohonzon","Karma","Nirvana"],"a":2},{"id":"t3-18","s":"t3","q":"The _______ begins in 'The Emergence of the Treasure Tower' (11th) chapter with the appearance of the treasure tower of the Buddha named Many Treasures and the entire assembly being suspended in the air. It ends in the 'Entrustment' (22nd) chapter with the closing of the doors of the treasure tower.","o":["Ceremony of the Light","Ceremony in the Air","Great Ceremony of Awakening","Ceremony of Dharma","Threefold transformation"],"a":1},{"id":"t3-19","s":"t3","q":"The core elements of this ceremony are:","o":["Shakyamuni revealed his true identity as the eternal Buddha","Summoned from beneath the earth, his eternal disciples Bodhisattvas of the earth","Entrusted the task of spreading the Lotus Sutra in the evil age after his passing to the Bodhisattvas of the Earth, in order to save people of that age from suffering and lead them to happiness.","All of the above","None of the above"],"a":3},{"id":"t3-20","s":"t3","q":"The Daishonin made use of the motif of the ______, which is central to the Lotus Sutra's ceremony in the air, in creating the image of the _______.","o":["Treasure Tower, Gohonzon","Mystic Law, Sutra","Gohonzon, Dharma","Lotus Flower, Mandala","Bodhisattva, Nirvana"],"a":0},{"id":"t3-21","s":"t3","q":"Daishonin depicted the treasure tower as _____ which he inscribed down the centre of the ______.","o":["Sun Lotus, Lotus Sutra","Mystic Law, Immeasurable Sutra","Nam-Myoho-Renge-Kyo, Gohonzon","Lotus Flower, Mandala","Bodhisattva, Nirvana Sutra"],"a":2},{"id":"t3-22","s":"t3","q":"The ______ represents the very life of all those who believe in the mystic Law.","o":["Lotus Sutra","Treasure Tower","Bodhi tree","Dharma","Nirvana"],"a":1},{"id":"t3-23","s":"t3","q":"The Daishonin teaches that Shakyamuni and Many Treasures as they appear in the Ceremony in the air, represent the world of _______ inherent in all living beings.","o":["Heaven","Perfect Bliss","Dharma","Nirvana","Buddhahood"],"a":4},{"id":"t3-24","s":"t3","q":"Bodhisattvas of the earth, led by Bodhisattva Superior Practices and others, indicate the world of ________ also innate within all people.","o":["Bodhisattva","Karma","Dharma","Samsara","Nirvana"],"a":0},{"id":"t3-25","s":"t3","q":"Assembled at the Ceremony in the air, are voice hearers, heavenly gods and benevolent deities and other living beings. Representatives from among these various being of each of the _____ are included in the _______.","o":["Dharma realms, Stupas","Ten worlds, Gohonzon","Lotus realms, Mahayana Sutra","Six realms, Lotus Sutra","Supernatural Beings, Mahabodhi temple"],"a":1},{"id":"t3-26","s":"t3","q":"The Sanskrit word _______ refers to a depiction of the Buddha and those who gathered to hear him preach.","o":["Mandala","Adidharma","Dharma","Sutra","Nirvana"],"a":0},{"id":"t3-27","s":"t3","q":"The Sanskrit word \"mandala\" also means:","o":["Gohonzon","Perfectly endowed","Cluster of blessings","All the above","None of the above"],"a":3},{"id":"t3-28","s":"t3","q":"The Gohonzon is perfectly endowed because it includes all of the _____.","o":["Mahayana Sutras","Ten worlds","Bodhisattvas","Elements of Karma","Teachings of the Buddha"],"a":1},{"id":"t3-29","s":"t3","q":"It is a ______ because it possesses all the wonderful attributes of the ten worlds.","o":["Cluster of blessings","Path to enlightenment","Lotus Flower","Dharma Seal","Shinto Talisman"],"a":0},{"id":"t3-30","s":"t3","q":"The _____ represents the life state of the Buddha which is _____ itself, eternally enclosed with all the ten worlds, as well as the superior attributes inherent in each of these worlds.","o":["Dharma, Karma","Lotus Sutra, Nirvana","Gohonzon, Nam-myoho-renge-kyo","Mandala, the threefold world","Buddha Nature, Dharma"],"a":2},{"id":"t3-31","s":"t3","q":"When people believe in this _______ and base their lives on it, aware that they themselves are ________, they can freely and fully display the dignified, unique attributes of each of the ten worlds inherent in their lives.","o":["Lotus Sutra, Brahma","Gohonzon, Nam-Myoho-Renge-Kyo","Dharma, Shakra","Adidharma, Bodhisattvas","Nirvana, Karma"],"a":1},{"id":"t3-32","s":"t3","q":"A living being which, at this moment, is displaying any one of the ten worlds can through encountering the right condition or influence, manifest the world of _____ and become a _____.","o":["Nirvana, Bodhisattva","Karma, Sage","Dharma, Teacher","Animals, Dragon","Buddhahood, Buddha"],"a":4},{"id":"t3-33","s":"t3","q":"The Gohonzon in which the Daishonin directly manifested his life state as a Buddha - a state he had brought forth from within as an ordinary person - is a concrete expression of the principle ______.","o":["Eightfold Path","Karma","Three thousand realms in a single moment of life","Dharma","Eternal Truth"],"a":2},{"id":"t3-34","s":"t3","q":"The ______ is referred to as the \"actual three thousand realms in a single moment of life.\"","o":["Lotus Sutra","Dharma Seal","Nirvana Sutra","Gohonzon","Shinto Talisman"],"a":3},{"id":"t3-35","s":"t3","q":"Nichiren Daishonin called the _____ the \"banner of propagation of the Lotus Sutra.\"","o":["Lotus Flower","Dharma Seal","Gohonzon","Shinto Talisman","Bodhi Leaf"],"a":2},{"id":"t3-36","s":"t3","q":"Meditation, a central element of Buddhist practice, means to focus one's mind on cultivating and bringing forth ____. In particular, it means to observe one’s life or mind based upon the principles taught in Buddhist scriptures.","o":["Karma","Wisdom","Compassion","Courage","Patience"],"a":1},{"id":"t3-37","s":"t3","q":"_______ is a practice carried out in order to attain buddhahood.","o":["Observing the mind","Yoga Nidra","Transcendental practice","Chanting Nembutsu","Following the Eightfold Path"],"a":0},{"id":"t3-38","s":"t3","q":"Prior to Daishonin revealing his teaching, the practice of attaining Buddhahood was based on observation of the mind. But in Nichiren Buddhism, it is accomplished through ____ in and practice to the _____.","o":["Contemplation, Nirvana Sutra","Supplication, Dharma","Study, Theravada Texts","Belief, Buddhist Deities","Faith, Gohonzon"],"a":4},{"id":"t3-39","s":"t3","q":"\"Shakyamuni's practices and the virtues he consequently attained are all contained within the five characters of _______. If we believe in these five characters, we will naturally be granted the same benefits as he was.\"","o":["Myoho-Renge-Kyo","Dharma","Lotus Sutra","Mystic Law","Karma"],"a":0},{"id":"t3-40","s":"t3","q":"All the vast practices (causes) that Shakyamuni carried out enabled him to attain ______. The benefits and virtues (effects) he attained as a result of those practices are encompassed with the seed of Buddhahood, that is in ______.","o":["Nirvana, Dharma","Enlightenment, Karma","Buddhahood, Nam-myoho-renge-kyo","Wisdom, long earlobes","Awakening, his 32 features"],"a":2},{"id":"t3-41","s":"t3","q":"When ordinary people of the Latter Day of the Law embrace the ________ they will be able to obtain for themselves the benefits of all the causes and effects of all the practices carried out by the Buddha.","o":["Dharma Seal","Object of Devotion or Gohonzon","Karma Chakra","Shinto Talisman","Nirvana Pendant"],"a":1},{"id":"t4-1","s":"t4","q":"The ______ are direct disciples whom the eternal Buddha had personally instructed and trained.","o":["Voice Hearers","Bodhisattvas of the Earth","Bodhisattva Medicine King","Bodhisattva Never Disparaging","Bodhisattva Awesome Sound"],"a":1},{"id":"t4-2","s":"t4","q":"The abiding wish of Shakyamuni is expressed at the end of the ‘Life Span’ (16th) chapter as follows: “At all times I think to myself: How can I cause _____ to gain entry into the unsurpassed way and quickly acquire the ______.”","o":["Living beings, body of a Buddha","Devotees, law of cause and effect","Bodhisattvas, wisdom of the Buddha","Disciples, mind of enlightenment","Seekers, eternal wisdom"],"a":0},{"id":"t4-3","s":"t4","q":"In the ‘Emerging from the earth’ (15th) chapter, Shakyamuni urged his disciples to spread the Lotus Sutra in the evil age after his passing, and then summoned forth from beneath the earth ______ who are qualified to be entrusted with this task.","o":["Sea Dragons","Arhats","Bodhisattvas of the Earth","Heavenly Beings","Buddhist Deities"],"a":2},{"id":"t4-4","s":"t4","q":"In the ‘Supernatural powers’ (21st) chapter, the _____ responding to Shakyamuni’s appeal to propagate the sutra in that age, make a vow to teach and spread among the people, the fundamental law for attaining Buddhahood.","o":["Arhats","Cause Awaken Ones","Pratyeka Buddhas","Buddhist Deities","Bodhisattvas of the Earth"],"a":4},{"id":"t4-5","s":"t4","q":"They take to heart, inherit as their own, and strive to actualise the great desire of their teacher, the eternal Buddha. This desire shared by mentor and disciples, is to achieve _______, the widespread propagation of the lotus sutra’s teachings.","o":["Kosen-rufu","Nirvana","Transcendental Powers","Dharma Expansion","Wheel-turning kings"],"a":0},{"id":"t4-6","s":"t4","q":"Had the _____ not made their appearance the compassionate desire of the Buddha would not be realised.","o":["Cause Awaken Ones","Arhats","Bodhisattvas of the Earth","Heavenly Beings","Buddhist Deities"],"a":2},{"id":"t4-7","s":"t4","q":"One person takes a stand with an awareness as a ____ aims to build a world where people can live in peace and happiness based on the mystic law and enables two, three and eventually countless people to awaken as well.","o":["Cause Awaken One","Bodhisattva of the Earth","Heavenly Being","Buddhist God","Pratyeka Buddha"],"a":1},{"id":"t4-8","s":"t4","q":"These Bodhisattvas will then encourage one another to fully display their ________ and will ______ actively to achieve these goals.","o":["Enlightened selves, build stupas","Wisdom, study","Distinctive qualities and abilities, work together","Karma, seek Buddha's path","Talents, achieve distinction"],"a":2},{"id":"t4-9","s":"t4","q":"______ is achieved through the existence of such an active alliance of unique individuals.","o":["Wisdom","Compassion","Nirvana","Kosen-rufu","Buddhahood"],"a":3},{"id":"t4-10","s":"t4","q":"Where there are the power of faith and practice of Bodhisattvas of the earth who persist in fulfilling the vow for kosen rufu, the boundless powers of the _____ and the ______ will clearly emerge, making it possible to transform the suffering filled saha world into the land of eternally tranquil light.","o":["Dharma, Karma","Buddha, Law","Nirvana, Sutra","Buddha, Dharma","Sutra, Wisdom"],"a":1},{"id":"t4-11","s":"t4","q":"When the ______ derived from the great vow pervades all three thousand realms of phenomena- the entire universe- a society of great wellbeing that is embraced in the _____ and _____ of the Buddha will emerge.","o":["Life force, compassion, wisdom","Mystic Law, Dharma, Nirvana","Enlightened Mind, Wisdom, Tranquillity","Enlightenment, Compassion, Karma","Dharma, Law, Teaching"],"a":0},{"id":"t4-12","s":"t4","q":"The heart of the great vow for kosen rufu and the life state of _______ are one and the same.","o":["Heavenly Beings","Buddhahood","Hungry Spirits","Asuras","People of Two Vehicles"],"a":1},{"id":"t4-13","s":"t4","q":"When we remain true to this vow,_____, _____, and ______ of the Buddha flow forth from within us.","o":["Karma, wisdom, virtue","Dharma, wisdom, power","Nirvana, enlightenment, strength","Peace, compassion, serenity","Limitless courage, wisdom, compassion"],"a":4},{"id":"t4-14","s":"t4","q":"When we wholeheartedly strive to realise this vow, the ‘poison’ of even the most difficult challenge can be transformed into _______ and karma transformed into ______.","o":["Enlightenment, peace","Wisdom, courage","Medicine, mission","Power, strength","Virtue, compassion"],"a":2},{"id":"t4-15","s":"t4","q":"Nichiren Daishonin states, The ‘great vow’ refers to the _______.","o":["Propagation of the Lotus Sutra","Attainment of Nirvana","Power of the Law","Protection of the Dharma","Attainment of Buddhahood"],"a":0},{"id":"t4-16","s":"t4","q":"The Lotus Sutra teaches that the lives of all people are endowed with the supremely noble ______.","o":["Dharma","Nirvana","Wisdom","Buddha Nature","Karma"],"a":3},{"id":"t4-17","s":"t4","q":"The mission of spreading the mystic Law, which enables all people to attain Buddhahood, throughout Jambudvipa - the entire world - is entrusted to the ____.","o":["Arhats","Bodhisattvas of the Earth","Buddhist Deities","Heavenly Beings","Voice Hearers"],"a":1},{"id":"t4-18","s":"t4","q":"The Daishonin dedicated his life to the goal of fulfilling this great vow of propagating the Lotus Sutra, the vow to accomplish _____.","o":["Divya Drishti","Nirvana","Dharma Expansion","Kosen-rufu","Transcendental Powers"],"a":3},{"id":"t4-19","s":"t4","q":"The Daishonin awakened to this law within his own life - the law of ___ , which is the essence of the Lotus Sutra - and he made a ____ to spread it widely.","o":["Nirvana, treatise","Dharma, banner","Nam-myoho-renge-kyo, great vow","Karma, proclamation","Enlightenment, dedication"],"a":2},{"id":"t4-20","s":"t4","q":"Daishonin pledged to become the \"___\", the \"____\", and the \"____\" that could protect, support, teach and guide all people.","o":["Pillar, eyes, great ship","Voice, eyes, ears","Coach, tutor, guide","Mentor, leader, protector","Cause Awakened One, Bodhisattva, Buddha"],"a":0},{"id":"t4-21","s":"t4","q":"Urging his followers to take up the same task as him of liberating people from suffering, Daishonin told them, \"My wish is that all my disciples make a ____\" and entrusted them with the mission of achieving ____.","o":["Promise, Nirvana","Great vow, kosen-rufu","Dedication, enlightenment","Pledge, compassion","Decision, wisdom"],"a":1},{"id":"t4-22","s":"t4","q":"The _____ has emerged in modern times in accord with the Buddha's intent and has taken responsibility to fulfill the vow of _____, succeeding to the will of Nichiren Daishonin.","o":["Soka Gakkai, kosen-rufu","Bodhisattva path, Dharma","Arhats, enlightenment","Priesthood, Nichiren","Sangha, Nirvana"],"a":0},{"id":"t4-23","s":"t4","q":"Soka Gakkai president Josei Toda declared that the organisation's name would be recorded in Buddhist scriptures of the future as ______.","o":["Soka Gakkai Enlightened Ones","Soka Gakkai Bodhisattvas","Soka Gakkai Buddha","Soka Gakkai Dharma Protectors","Soka Gakkai Disciples"],"a":2},{"id":"t4-24","s":"t4","q":"The great vow of Nichiren Daishonin is nothing other than_____. This is also the great vow of the _____ of Soka Gakkai.","o":["Enlightenment, followers","Nirvana, leaders","Shinto veneration, Soka members","Kosen-rufu, mentors and disciples","Wisdom, Bodhisattvas"],"a":3},{"id":"t4-25","s":"t4","q":"Dedicated to the mission of spreading the mystic law and realising ______ through compassionate propagation, Soka Gakkai members are all ______.","o":["Buddhahood, Cause Awakened Ones","Kosen-rufu, Bodhisattvas of the Earth","Enlightenment, Pratyeka Buddhas","Nirvana, practitioners","Dharma expansion, Arhats"],"a":1},{"id":"t4-26","s":"t4","q":"Bodhisattva of the earth can be described in today’s world as people who fulfill the _____ of transmitting the fundamental law for attaining _____ in the midst of the most troubled times and social circumstances, allowing those burdened with the greatest ______ and hardship to tap the power to build genuine _______.","o":["Duty, enlightenment, ignorance, peace","Task, Nirvana, struggle, compassion","Mission, Buddhahood, misery, happiness","Purpose, Nirvana, sorrow, wisdom","Role, peace, desire, strength"],"a":2},{"id":"t4-27","s":"t4","q":"With the conviction that those who suffer the most have the right to enjoy the greatest _______, they go to the side of suffering people, teach them the mystic law, and together with them walk the path to transforming their destiny. People who act in this way are the _____.","o":["Happiness, Bodhisattvas of the Earth","Compassion, disciples","Karma, Buddha’s protectors","Enlightenment, mentors","Wisdom, Dharma teachers"],"a":0},{"id":"t4-28","s":"t4","q":"“______ friends” are those who lead one to the correct teaching or help one practice toward enlightenment.","o":["Noble","Compassionate","Good","True","Faithful"],"a":2},{"id":"t4-29","s":"t4","q":"“_____ friends” are those who interfere with or obstruct one’s Buddhist practice, leading one away from enlightenment and towards evil paths and suffering.","o":["Evil","Ignorant","False","Disloyal","Fairweather"],"a":0},{"id":"t4-30","s":"t4","q":"Nichiren Daishonin writes, “Therefore, the best way to attain Buddhahood is to encounter a ______. How far can our own wisdom take us? If we have even enough wisdom to distinguish hot from cold, we should seek out a ______.”","o":["Dharma teacher, leader","Noble friend, noble friend","Wise teacher, good teacher","True mentor, eternal mentor","Good friend, good friend"],"a":4},{"id":"t4-31","s":"t4","q":"“Have no fear of mad elephants. What you should fear are ______! Why? Because a mad elephant can only destroy your body; it cannot destroy your mind. But an ____ can destroy both body and mind.”","o":["Evil people, evil person","Ignorant friends, ignorant friend","Evil friends, evil friend","Bad influences, bad influence","Negative companions, negative companion"],"a":2},{"id":"t4-32","s":"t4","q":"“Even if you are killed by a mad elephant, you will not fall into the _____. But if you are killed by an _____ you are certain to fall into them.”","o":["Three evil paths, evil friend","Cycle of rebirth, false friend","Realms of ignorance, bad influence","Cycle of karma, evil path","Infernal regions, negative karma"],"a":0},{"id":"t4-33","s":"t4","q":"The stronger one’s faith and practice becomes, the more strongly the ________ and the ______ will emerge to interfere.","o":["Threefold path, evil doers","Three obstacles and four devils, three powerful enemies","Eightfold path, forces of ignorance","Fourfold suffering, bad companions","Negative karma, false teachings"],"a":1},{"id":"t4-34","s":"t4","q":"Through summoning even stronger faith and using wisdom gained from Daishonin’s writings, one can clearly perceive the _______ for what they are, they will at that point cease to function as _____.","o":["Conscious, obstacles","Forces of evil, good karma","Devilish functions, devils","Negative influences, protective functions","Obstacles, good friends"],"a":2},{"id":"t4-35","s":"t4","q":"Through challenging and overcoming such obstacles based on faith in the Gohonzon, one will be able to bring forth from within previously untapped power and tremendous potential, strengthen one’s faith, and further develop one’s state of life. In other words, one can transform _____ into ______.","o":["Bad influences, Evil influences","Ignorance, wisdom","Devilish functions, Evil Demons","Evil friends, good friends","Negative forces, Yakshas"],"a":3},{"id":"t4-36","s":"t4","q":"“Devadatta was the foremost _____ to the thus come one Shakyamuni. In this age as well, it is not one’s allies but one’s _______ who assist one’s progress.”","o":["Disciple, good friends","Student, negative forces","Enemy, noble friends","Teacher, negative companions","Good friend, powerful enemies"],"a":4},{"id":"t4-37","s":"t4","q":"“______” means maligning, defaming, or speaking ill of the correct Buddhist teaching.","o":["Karma","Slander of the law","Negative karma","Falsehood","Defamation"],"a":1},{"id":"t4-38","s":"t4","q":"The “_______” means the truth to which the Buddha awakened, the teaching that enables all people to attain _____.","o":["Dharma, Nirvana","Eightfold Path, pure bliss","Correct teaching, Buddhahood","Noble truth, wisdom","Theravada teachings, rebirth"],"a":2},{"id":"t4-39","s":"t4","q":"The correct teaching was expounded by Shakyamuni in the lotus sutra, the essence of which Nichiren Daishonin revealed to be ______.","o":["Dharma","Karma","Nirvana","Rebirth in Pure Land","Nam-myoho-renge-kyo"],"a":4},{"id":"t4-40","s":"t4","q":"To reject the view of life that everyone’s life innately possesses the noble state of Buddhahood or refuse to believe in their unlimited potential constitutes “______”.","o":["Negative karma","Falsehood","Slander of the law","Evil","Deadly sin"],"a":2},{"id":"t4-41","s":"t4","q":"In order to attain buddhahood it is not enough to simply refrain from committing slander oneself. It is also important to strictly admonish and challenge slander of others, endeavour to correct them, and free them from the path of suffering. This is the compassionate practice of “_______”, spreading the teachings while challenging and defeating slander.","o":["Karma cleansing","Wisdom cultivation","Zuiho-bini","Shakubuku","Chanting Nembutsu"],"a":3},{"id":"t4-42","s":"t4","q":"The Daishonin teaches, “to hope to attain Buddhahood without speaking out against _____ is as futile as trying to find water in the midst of fire or fire in the midst of water.”","o":["Slander","Devil king","Ignorance","Karma","Arrogant Sages"],"a":0},{"id":"t4-43","s":"t4","q":"To challenge evil influences that spread _____ of the law serves to empower and increase the virtuous forces of the Buddha and to protect oneself from evil, making attainment of Buddhahood possible.","o":["Fear","Disbelief","Ignorance","Arrogance","Slander"],"a":4},{"id":"t4-44","s":"t4","q":"Nichiren Buddhism in particular recognises and affords utmost respect to cultural diversity, the Daishonin refers to this Buddhist principle called ”______. “","o":["Law of Compassion","Principle of Respect","Percept of Adapting to Local Customs","Universal Law","Dharma of Equality"],"a":2},{"id":"t4-45","s":"t4","q":"“________” teaches that one should respect and abide by the culture and traditions of each country and region, as well as by the customs of the times, to the extent that they do not violate the fundamental teachings of Buddhism.","o":["Principle of Cultural Harmony","Percept of Adapting to Local Customs","Law of Compassion","Cultural Dharma","Social Norms"],"a":1},{"id":"t5-1","s":"t5","q":"The ____ is a religious organization that maintains the orthodox lineage and tradition of Buddhist Humanism that began with Shakyamuni, which affirms respect for life and for all human beings.","o":["Nembutsu School","Pure Land School","Theravada School","Soka Gakkai","Lotus Sect"],"a":3},{"id":"t5-2","s":"t5","q":"The _____ bases itself on the Lotus Sutra, the central scripture of Mahayana Buddhism, and engages in Buddhist practice and activities adapted to modern times.","o":["Vajrayana School","Theravada School","Pure Land School","Lotus Sect","Soka Gakkai"],"a":4},{"id":"t5-3","s":"t5","q":"Soka Gakkai carries on the fundamental spirit of the lotus sutra as taught and exemplified by _____ through his life and actions.","o":["Tipitaka Masters","Vasubandhu","Nichiren Daishonin","Dalai Lama","Kobo Dashi"],"a":2},{"id":"t5-4","s":"t5","q":"In his youth, Shakyamuni witnessed the unavoidable sufferings of existence - ___, ____, ____, and ___.","o":["Birth, aging, sickness, death","Desire, ignorance, karma, suffering","Pain, joy, love, hatred","Life, death, rebirth, enlightenment","Karma, death, rebirth, Nirvana"],"a":0},{"id":"t5-5","s":"t5","q":"Shakyamuni was not satisfied with either the traditional spiritual teachings of India or the new schools of thought and belief prevalent at that time. He sought instead through the practice of ____, to discover the fundamental causes and solutions to life's sufferings.","o":["Calisthenics","Meditation","Asceticism","Secret Incantations","Intermittent Fasting"],"a":1},{"id":"t5-6","s":"t5","q":"Shakyamuni was awakened to the eternal and universal _____ that pervades all life and the universe.","o":["Karma","Nirvana","Dharma or Law","Compassion","Forgiveness"],"a":2},{"id":"t5-7","s":"t5","q":"Shakyamuni is an honorific title meaning “____.”","o":["Great Teacher","Sage of the Shakyas","Awakened One","King of the Shakyas","Wise One"],"a":1},{"id":"t5-8","s":"t5","q":"The title Buddha, by which he came to be universally known means “______.”","o":["Wheel-turning King","Sage of Sages","Awakened One","Great One","Compassionate One"],"a":2},{"id":"t5-9","s":"t5","q":"Shakyamuni declared that people's ignorance of the _____ of their own lives results in their being ruled by egoism.","o":["Karma","Wisdom","Rapture","Eternity","Inherent dignity"],"a":4},{"id":"t5-10","s":"t5","q":"Shakyamuni taught that the noblest and most admirable way for people to live with true dignity is to awaken to the ______ within them and return to their original pure state of life that is free of _____.","o":["Karma, suffering","Law of Cause and Effect, karma","Compassion, suffering","Eternal and universal law, fundamental darkness","Enlightenment, karma"],"a":3},{"id":"t5-11","s":"t5","q":"The Buddha's teaching amounted to what might be called a 'restoration of the value of the human being,\" where people regain the supreme dignity of their lives and realise their ______ by bringing forth their _____.","o":["Wisdom, compassion","Buddha Nature, karma","Infinite potential, inherent wisdom","Inherent compassion, Ego","Eternal wisdom, karmic energy"],"a":2},{"id":"t5-12","s":"t5","q":"By awakening people to the value and dignity of their own lives, Shakyamuni taught them to understand and respect the value and _____ of other’s lives as well. This is the basic spirit of Buddhist _____.","o":["Energy, enlightenment","Dignity, compassion","Ego, wisdom","Karma, courage","Potential, Law"],"a":1},{"id":"t5-13","s":"t5","q":"Compassion as taught in Buddhism is a teaching of _______.","o":["Mutual understanding and respect","Pity and non-violence","Wisdom and courage","Forgiveness and mercy","Generosity and charity"],"a":0},{"id":"t5-14","s":"t5","q":"Shakyamuni expounded his teachings for some 50 years and after his death, his disciples compiled records of his words and actions. Those containing the Buddha's main doctrinal teachings came to be known as ____.","o":["Stupas","Sutras","Shastras","Vedas","Puranas"],"a":1},{"id":"t5-15","s":"t5","q":"Amongst all of Shakyamuni’s teachings, those pertaining to compassion and wisdom are the focus of the _____ Sutras.","o":["Mahayana","Theravada","Vajrayana","Hinayana","Nirvana"],"a":0},{"id":"t5-16","s":"t5","q":"______ amongst the Mahayana sutras is extolled as \"the king of sutras.\"","o":["Diamond Sutra","Heart Sutra","Lotus Sutra","Avatamsaka Sutra","Nirvana Sutra"],"a":2},{"id":"t5-17","s":"t5","q":"In the Lotus Sutra, the Buddha says that, by expounding it, he has fulfilled the wish he has held since the remote past to elevate all people to the same _____ as his own.","o":["Sect","Cast","Karma","Life state","Race"],"a":3},{"id":"t5-18","s":"t5","q":"Shakyamuni repeatedly calls upon his countless disciples to inherit and share his eternal ____ and carry out the practice of _____ in order to fulfill it.","o":["Life state, levitation","Law, wisdom","Vow, compassion","Karma, enlightenment","Dharma, asceticism"],"a":2},{"id":"t5-19","s":"t5","q":"Nichiren Daishonin regarded the suffering of all people as ____ and, in a time of great social turmoil, sought to find a way to relieve their _____.","o":["Temporary, shallowness","His own, suffering","External, emptiness","Universal, karma","Joy, ignorance"],"a":1},{"id":"t5-20","s":"t5","q":"Daishonin vowed to identify and carry on the Buddhist teachings capable of realising _____ and _____ for all people.","o":["Ego, Shame","Rebirth, nirvana","Supernatural powers, trance","Ambition, joy","Genuine happiness, dignity"],"a":4},{"id":"t5-21","s":"t5","q":"Daishonin studied the commentaries and writings of earlier Buddhist scholars, while carefully reading and examining on his own the many Buddhist sutras. As a result, he found the answer he was searching for in the _____, which teaches the way for all people to give expression to their _____ and bring it to life in human society.","o":["Diamond Sutra, Dharma","Lotus Sutra, unlimited potential","Heart Sutra, inner peace","Avatamsaka Sutra, karma","Nirvana Sutra, Buddha nature"],"a":1},{"id":"t5-22","s":"t5","q":"Based on the principles of the Lotus Sutra, the Daishonin strongly resolved to help all people realise true happiness and dignity and to actualize ____ and _____ in society.","o":["Peace, security","Wisdom, enlightenment","Karma, peace","Nirvana, wisdom","Dharma, strength"],"a":0},{"id":"t5-23","s":"t5","q":"He encountered life-threatening persecution by the authorities and fierce opposition from among the populace, owing to their lack of understanding of the _____ and their mistaken attachment to ____.","o":["Dharma, Statues","Mystic Law, desires","Sutras, Talismans","Correct teaching of Buddhism, old ways of thinking","Path of wisdom, false teachers"],"a":3},{"id":"t5-24","s":"t5","q":"Nichiren Daishonin established the practice of chanting ____, and he inscribed the ____ as the object of faith or devotion.","o":["Nam-myoho-renge-kyo, Gohonzon","Namu Amida Butsu, Mandala","Om Mani Padme Hum, Dharma Wheel","Namo Tassa, Lotus Flower","Namo Buddhaya, Golden Buddha"],"a":0},{"id":"t5-25","s":"t5","q":"In his treatise 'On establishing the correct teachings for the peace of the land' he asserts: \"If you care anything about your _____, you should first of all pray for _____ throughout the four quarters of the land, should you not?\"","o":["Wealth, wisdom","Personal security, order and tranquility","Spirituality, peace and prosperity","Health, karma","Inner peace, enlightenment"],"a":1},{"id":"t5-26","s":"t5","q":"The focus of Daishonin's lifelong efforts was to establish the philosophy of ______ as society's guiding principle and build a world where people can live in _____.","o":["Dharma, enlightenment","Wisdom, Nirvana","Respect for the dignity of life, peace and security","Karma, peace and security","Enlightenment, Pure land of bliss"],"a":2},{"id":"t5-27","s":"t5","q":"It marked a new humanistic approach based on the fundamental spirit of Buddhism to enable people to realise happiness for ___ and for ____ - one that sought to foster trust, value creation and harmony.","o":["Arhats, their cohorts","The rich, the elites","Nations, Territories","Teachers, Sages","Themselves, others"],"a":4},{"id":"t5-28","s":"t5","q":"Key to Daishonin’s new humanistic approach was dialogue grounded in ____ and ____.","o":["Karma, Fate","Facts, Figures","Jealousy, pity","Reason, humanity","Knowledge, Meditation"],"a":3},{"id":"t5-29","s":"t5","q":"Through their selfless efforts, the Soka Gakkai's three founding presidents - _____, ____ and _____ - revived the philosophy and practice of Nichiren Daishonin in modern times.","o":["Tsunesaburo Makiguchi, Josei Toda, Daisaku Ikeda","Shakyamuni, Ananda, Bodhidharma","Nagarjuna, Zhiyi, Dogen","Shakyamuni, Nichiren, Daisaku Ikeda","Nichiren, Bodhisattva Superior Practices, Josei Toda"],"a":0},{"id":"t5-30","s":"t5","q":"Soka Gakkai members while challenging themselves in all areas of life, use the practice of chanting ____ to reflect deeply on their lives and bring forth _____ and ____ to deal with problems they encounter.","o":["Nam Amida Buddha, wisdom, compassion","Nam myoho renge kyo, hope, courage","Om Mani Padme Hum, inner peace, wisdom","Namo Buddhaya, happiness, enlightenment","On Namah Shivaya, wisdom, joy"],"a":1},{"id":"t5-31","s":"t5","q":"Soka Gakkai members strive to develop a rich character based on a solid commitment to humanistic values and this is the practice of ____.","o":["Social revolution","Karma cleansing","Wisdom cultivation","Human revolution","Dharma practice"],"a":3},{"id":"t5-32","s":"t5","q":"Through everyday conversations with fellow members and attending Soka Gakkai meetings, members also deepen their understanding of _____ and SGI president Ikeda's guidance, share ____ in faith, and ___ and support one another.","o":["Lotus Sutra, knowledge, inspire","Dharma Sutra, wisdom, challenge","Meditation Sutra, teachings, enlighten","Amida Sutra, joy, motivate","Nichiren Daishonin's writings, experiences, encourage"],"a":4},{"id":"t5-33","s":"t5","q":"In addition, Soka Gakkai members talk with friends and acquaintances about the principles and ideals of Buddhism and how their Buddhist practice has enriched their lives thereby expanding the network of those who embrace ______.","o":["Meditation practices","Faith in the Mystic Law","Faith in Amida Buddha","Tonsure practices","Ascetic practices"],"a":1},{"id":"t5-34","s":"t5","q":"The practice of Nichiren Buddhism aims to","o":["Enable people to realise happiness both for themselves and others","Foster good citizens","Foster people who can build trust at home, work and in society","All of the above","None of the above"],"a":3},{"id":"t5-35","s":"t5","q":"The Soka Gakkai is also actively engaged in addressing the _____ facing humanity today.","o":["Karma","Global issues","Dharma questions","Natural selection","Local politics"],"a":1},{"id":"t5-36","s":"t5","q":"Soka Gakkai through its international antinuclear weapons exhibitions and initiatives in support of refugees, highlights the importance of ____,_____, and ____.","o":["Wisdom, Dharma, Nirvana","Eat, Pray, Love","Peace, respect for dignity of life, human rights","Love, wisdom, knowledge","Karma, joy, rebirth"],"a":2},{"id":"t5-37","s":"t5","q":"Soka Gakkai’s movement which aims to realise the happiness of humanity as well as world peace is called “_____.”","o":["Karma Revolution","Kosen-rufu","Nirvana Movement","Global Peace Initiative","Dharma Propagation"],"a":1},{"id":"t5-38","s":"t5","q":"Buddhism which began in India, traveled eastward to Japan and is now being transmitted back westward, spreading not only to countries of Asia and India but throughout the world across 192 countries and territories. This is referred to as the ______ of Buddhism.","o":["Westward transmission","New Silk Route","Lotus Revival","Eastern movement","Global Humanism"],"a":0},{"id":"t6-1","s":"t6","q":"Since its establishment, the Soka Gakkai has consistently taken action to spread the Daishonin's teachings to create happiness for all people and bring about world peace but a group emerged that sought to destroy this movement of Kosen-rufu known as _____, revealing its true nature as a devilish function.","o":["Pure Land Sect","Nikken Sect","Vajrayana","Nichiren Shu","Theravada Sect"],"a":1},{"id":"t6-2","s":"t6","q":"The ______ refers to the priesthood of Nichiren Shoshu Buddhist school in its corrupt state under the leadership of _____, its 67th high priest.","o":["Nikken Sect, Nikken Abe","Soka Gakkai, Daisaku Ikeda","Lotus Sutra Sect, Shakya","Tendai Sect, Nichiren Daishonin","Nichiren Shu, Nichinyo"],"a":0},{"id":"t6-3","s":"t6","q":"Nikken sect takes the position that its high priest who is also its chief administrator, possesses _____ authority and power.","o":["Limited","Shared","Absolute and uncontestable","Conditional","Voluntary"],"a":2},{"id":"t6-4","s":"t6","q":"In more than a quarter century since instigating what became known as _____ in 1990, the Nikken sect has betrayed the teachings and spirit of Nichiren Buddhism and slandered the Buddhist law.","o":["Pure Land Split","Priesthood Collapse","Lotus Sect Split","Second Priesthood Issue","Great Excommunication"],"a":3},{"id":"t6-5","s":"t6","q":"Though Nikken transferred the office of high priest to a successor _____ in Dec 2005, the lineage he has passed on continues to be muddied by his slander of the law.","o":["Nichinyo","Nichiren","Nichijun","Nichiryo","Nichiko"],"a":0},{"id":"t6-6","s":"t6","q":"Core to the Nikken sect is the deluded belief that venerated its high priest as a special, absolute, and infallible being, a belief that might be called ______.","o":["Temple supremacy","High priest worship","Buddha Nature elevation","Dharma infallibility","Lotus Sutra reverence"],"a":1},{"id":"t6-7","s":"t6","q":"The premise for this claim is that there exists a mysterious ______ that is passed on from one high priest to the next, a presumption that bolstered the priesthood's tendency to look down on lay believers.","o":["Sutra","Mantra","Scriptural authority","Mandala","Heritage or lineage"],"a":4},{"id":"t6-8","s":"t6","q":"The Nikken sect implemented “_____” with the aim of destroying the Soka Gakkai, the organization dedicated to kosen-rufu, and in 1991 sent a notice of excommunication.","o":["Operation C","Operation Enlightenment","Kosen Operation","Lotus Sutra Execution","Operation K"],"a":0},{"id":"t6-9","s":"t6","q":"The attempt to destroy the Soka Gakkai is an attempt to destroy kosen-rufu, an act that constitutes a grave _____ and the great offense of betraying the Daishonin’s spirit and intent to save all people from suffering.","o":["Sectarian corruption","Slander of Buddhist law","Ritual impurity","Karma transgression","Religious heresy"],"a":1},{"id":"t6-10","s":"t6","q":"Which of the five cardinal sins described in the Buddhist teachings is the gravest offense that Nikken committed:","o":["Killing an arhat","Injuring a Buddha","Causing disunity in the Buddhist order","All the above","None of the above"],"a":3},{"id":"t6-11","s":"t6","q":"It is a doctrine of Nikken sect that _____ be regarded as the object of worship or veneration.","o":["Nikken Mandala","The high priest","Daishonin Dojo","Lotus Mudra","Amida Butsu"],"a":1},{"id":"t6-12","s":"t6","q":"The idea of the high priest as an object of faith violates the three treasures - _____, _____, and _____.","o":["The Law, the Buddha, the Priesthood","Adidharma, the Law, the Sangha","The Law, the Priesthood, the High Priest","Amida Buddha, the Mandala, the Sangha","The Buddha, the Law, the Buddhist Order"],"a":4},{"id":"t6-13","s":"t6","q":"A document carried in a publication for Nichiren Shoshu senior priests in July 1991 states that the high priest to whom the heritage of the law has been transmitted is an honourable entity that is one and inseparable from the _______.","o":["Lotus Seal","Daibyakurenge","Dai-Gohonzon","Tendai Mandala","Dharma Wheel"],"a":2},{"id":"t6-14","s":"t6","q":"Nikko Shonin states, “It is specified in the honourable writings [of Nichiren Daishonin] that the _______ should be the object of devotion. This is the object of devotion he inscribed with his own hand.”","o":["Five Characters of Nam Myoho Renge Kyo","Lotus Seal","Daibyakurenge","Tendai Mandala","Dharma Wheel"],"a":0},{"id":"t6-15","s":"t6","q":"In “the twenty-six admonitions of Nikko” he writes, “Do not follow even the ______ if he goes against the Buddha’s law and propounded his own views.”","o":["High minister","High priest","Prime minister","Military general","Great lama"],"a":1},{"id":"t6-16","s":"t6","q":"From the “Admonitions of Nikko,” it is clear that the view that the _____ is infallible, promoted by Nikken sect is completely misguided.","o":["Great lama","High minister","High priest","Prime minister","Military general"],"a":2},{"id":"t6-17","s":"t6","q":"______ in Nichiren Buddhism has always been something open to all people, not exclusive possession of an elite few.","o":["Heritage or lineage","Enlightenment","Buddhahood","All of the above","None of the above"],"a":3},{"id":"t6-18","s":"t6","q":"The idea of the existence of a mysterious _____ is false and bears no relation at all to the teachings of Daishonin or his successor, Nikko Shonin. It amounts to a fiction concocted in later times in order to bolster the status and authority of the high priest.","o":["Transmission of heritage of the law","Secret Law","Eternal Buddha","Universal Dharma","Agama Sutra"],"a":0},{"id":"t6-19","s":"t6","q":"In the Buddhist world of Nichiren Daishonin’s time, heritage predominantly meant the passing on of the deepest Buddhist teachings to a select group of individuals in the form of a _______.","o":["Public transmission","Secret transmission","Classified Advertisement","Radio Announcement","Land transfer document"],"a":1},{"id":"t6-20","s":"t6","q":"In “The Heritage of the Ultimate Law of Life” Daishonin writes, “Nichiren has been trying to awaken all people of Japan to faith in the lotus sutra so that they too can share the ______ and attain _____.","o":["Nirvana, supernatural powers","Mandala, sage-like status","Sutra, rebirth in pure land","Heritage, buddhahood","Secret transmission, political power"],"a":3},{"id":"t6-21","s":"t6","q":"In Nichiren Buddhism, the heritage is ultimately described as ______. On the other hand, the Nikken sect claims a mysterious, exclusive heritage that, upon receipt, automatically makes one a Buddha regardless of ______.","o":["Universal, practice","Buddha Nature, personal qualities","Heritage of faith, faith or practice","Enlightenment, membership","Dharma, meditation"],"a":2},{"id":"t6-22","s":"t6","q":"An idea that permeates the entire Nichiren Shoshu priesthood from Nikken to all priests is the idea that they as priests are _____ and that lay believers are _____.","o":["Ignorant, knowledgeable","Common, blessed","Corrupt, pure","Unenlightened, reincarnations","Superior, inferior"],"a":4},{"id":"t6-23","s":"t6","q":"Gosho states: “Anyone who teaches others even a single phrase of the Lotus Sutra is the _____, whether that person be priest or layman, nun or laywoman.”","o":["Nichiren’s disciple","Bodhisattva Pure Practices","Bodhisattva Never Disparaging","Envoy of the Thus Come One","Wheel-turning king"],"a":3},{"id":"t6-24","s":"t6","q":"The harmful tendencies and errors inherent in the temple parishioner system remain deeply ingrained in the Nikken sect, and this has resulted in the belief that priests are ______ to laity.","o":["Superior","Equal","Inferior","Reincarnation","Subservient"],"a":0},{"id":"t6-25","s":"t6","q":"One of the major errors of Nikken sect is its misuse of ________, turning them into means for making money.","o":["Dharma teachings","Buddhist rituals and ceremonies","Sutra recitations","Temple decorations","Meditation practices"],"a":1},{"id":"t6-26","s":"t6","q":"The Nikken sect asserts that unless a funeral service is conducted by a priest, the deceased will be unable to attain _____.","o":["Nirvana","Atman","Heaven","Soul","Buddhahood"],"a":4},{"id":"t6-27","s":"t6","q":"Nichiren encouraged those who lost loved ones with statements such as “Therefore, because your beloved departed father chanted Nam-myoho-renge-kyo while he was alive, he was a person who attained _____ in his present form”","o":["Peace","Buddhahood","Heaven","Karmic release","Nirvana"],"a":1},{"id":"t6-28","s":"t6","q":"Nichiren Daishonin compared any such irresponsible priests who behaved in a corrupt and self-indulgent manner and used Buddhism for selfish gain to “______” or to “______”","o":["False guides, karma manipulators","Greedy buffoons, thieves of the Law","An animal dressed in priestly robes, law-devouring hungry spirits","Buddha imitators, false priests","Spiritual tyrants, deceivers of faith"],"a":2},{"id":"t6-29","s":"t6","q":"November 28, 1991, marked the day that Soka Gakkai was excommunicated from Nichiren Shoshu school. Soka Gakkai members however mark the day as the day they achieved _______. Freeing themselves from the chains of corrupt and misguided priesthood.","o":["Spiritual independence","Enlightenment","New temple system","Karmic release","Bodhi liberation"],"a":0},{"id":"t6-30","s":"t6","q":"By striving to achieve the Daishonin’s will for kosen-rufu, the Soka Gakkai has succeeded to the true _____ of Nichiren Buddhism.","o":["Wisdom","Aspect","Heritage","Dharma","Power"],"a":2},{"id":"t7-1","s":"t7","q":"\"Therefore, you must quickly reform the tenets that you hold in your heart and embrace the one true vehicle, the single good doctrine [of the ____]. If you do so then the threefold world will become the ______.\"","o":["Mahayana, Pure Land","Lotus Sutra, Buddha land","Theravada, Dharma Realm","Vajrayana, Heaven","Hinayana, Nirvana"],"a":1},{"id":"t7-2","s":"t7","q":"The Daishonin's effort to \"_______\" was a struggle against the fundamental ____ that rejects the attainment of enlightenment by all people.","o":["Spread the Law, rights","Attain Buddhahood, karma","Establish the correct teaching for the peace of the land, evil","Defeat the priesthood, corruption","Create the Dharma, freedom"],"a":2},{"id":"t7-3","s":"t7","q":"The Daishonin confidently teaches the way by which people can free themselves from the chains of ______ and bring ____ to society.","o":["causation, joy","Karma, wisdom","Delusion, prosperity","Misfortune, peace and security","Desire, progress"],"a":3},{"id":"t7-4","s":"t7","q":"A transformation of the \"tenets that we hold in our heart\" means a fundamental revolution of our _____.","o":["Karma","Future","External world","Dharma practice","Innermost state of mind"],"a":4},{"id":"t7-5","s":"t7","q":"What we have ___ in indicates what we hold most precious and what values we cherish.","o":["Faith","Accumulated","Built","Hoped","Desire"],"a":0},{"id":"t7-6","s":"t7","q":"The transformation of our minds, our hearts, our values is the “______” in a single individual.","o":["Mental revolution","Self-Worth","Human revolution","Spiritual milestone","Karma change"],"a":2},{"id":"t7-7","s":"t7","q":"The single good doctrine means","o":["The lotus sutra","The principle that all people can bring forth their inherent buddha nature and attain enlightenment","The one true vehicle","All the above","None of the above"],"a":3},{"id":"t7-8","s":"t7","q":"Dedicating one’s life to the single good doctor the ___ is the sure way to transform the karma of all humankind.","o":["Heart Sutra","Lotus Sutra","Mahayana path","Nirvana","Pure Land"],"a":1},{"id":"t7-9","s":"t7","q":"\"Establishing the correct teachings\" means","o":["Innermost transformation at individual level","Awakening to the fundamental good within us","Establishing in our hearts the principles of respect for human dignity and life","All of the above","None of the above"],"a":3},{"id":"t7-10","s":"t7","q":"The most crucial thing is to _____ dedicated to \"establishing the correct teaching. When one individual takes action to apply this principle in real life, they can reorient those around them in the direction of good and peace.","o":["Change the law","Study diligently","Meditate deeply","Focus on prayer","Foster individuals"],"a":4},{"id":"t7-11","s":"t7","q":"______ ultimately comes down to producing a steady stream of courageous individuals committed to their mission.","o":["Establishing the correct teaching","Attaining enlightenment","Gaining followers","Realizing nirvana","Peace of the Land"],"a":0},{"id":"t7-12","s":"t7","q":"The 'land' in peace of the land means","o":["Actualising a Budhha land","Building a realm of happiness and peace for all","Not restricted to any particular country","All the above","None of the above"],"a":3},{"id":"t7-13","s":"t7","q":"A Buddha land means","o":["A society in which Buddhist spirit of respect for human beings and life is vital","A world that values ideal of realising happiness for ourselves and others","A treasure realm that will never decline or be destroyed","All the above","None of the above"],"a":3},{"id":"t7-14","s":"t7","q":"As long as the ______ of those who reside there are not destroyed, the land will become an enduring Buddha land.","o":["Treasures of wisdom","Treasures of the heart","Treasures of body","Treasures of the storehouse","Treasures of the law"],"a":1},{"id":"t7-15","s":"t7","q":"The name Soka means _____.","o":["True enlightenment","Buddha nature","Value creation","Wisdom cultivation","Peace"],"a":2},{"id":"t7-16","s":"t7","q":"Both the practice of ______ and the mission of actualizing the _____ are encompassed in the spirit of Soka or value creation.","o":["Meditation, Buddha land","Establishing the correct teaching, peace of the land","Enlightenment, Dharma","Prayer, human revolution","Wisdom, path to Nirvana"],"a":1},{"id":"t7-17","s":"t7","q":"Spirit of Soka means","o":["Treasuring each individual","Dedicated to one on one dialogue","Basing our lives on the sound philosophy of the mystic law","All the above","None of the above"],"a":3},{"id":"t7-18","s":"t7","q":"The _____ is the organisation that has truly inherited and is faithfully carrying on Daishonin's struggle of \"establishing the correct teaching for the peace of the land\" in the present day.","o":["Lotus Sutra Sect","Nichiren Shu","Vajrayana Sect","Theravada Order","Soka Gakkai"],"a":4},{"id":"t7-19","s":"t7","q":"\"If Nichiren's compassion is truly great and encompassing, _____ will spread for ten thousand years and more for all eternity.\"","o":["Nam-myoho-renge-kyo","Kosen-rufu","Enlightenment","Mystic Law","Lotus Sutra"],"a":0},{"id":"t7-20","s":"t7","q":"\"It [Nichiren’s compassion] has the beneficial power to open the ____ of every living being in the country of Japan\"","o":["Path to Nirvana","Lotus Sutra","Karma","Blind eyes","True self"],"a":3},{"id":"t7-21","s":"t7","q":"\"It [Nichiren’s compassion] blocks off the road that leads to the _____.","o":["Hell of incessant suffering","Cycle of karma","World of ignorance","Path to delusion","Inferno of pain"],"a":0},{"id":"t7-22","s":"t7","q":"Based on the principle of _____, the Daishonin declares that he has secured the foundation for enlightenment of all people into the eternal future through his own unflagging efforts driven by his profound compassion for his fellow human beings.","o":["Buddha wisdom","The farther the source, the longer the stream","Kosen-rufu","Mystic Law","Dharma succession"],"a":1},{"id":"t7-23","s":"t7","q":"Enabling all people to attain enlightenment is the _____.","o":["Amida Sutra","Tantric’s journey","Buddha's vow","Impossible dream","False teachings"],"a":2},{"id":"t7-24","s":"t7","q":"Daishonin’s towering conviction is that because of his _____ , Nam myoho renge kyo will spread and lead people throughout the world to enlightenment into the eternal future of the Latter day.","o":["Irresistible charm","Towering height","Mystic powers","Deep resolve","Untrammelled vision"],"a":3},{"id":"t7-25","s":"t7","q":"The Gosho “On repaying Debts of Gratitude,” also points to the Daishonin’s three virtues of ____, _____ and ____.","o":["Faith, resolve, strength","Buddha, Law, Sangha","Dharma body, Reward body, Manifest body","Compassion, wisdom, courage","Parent, teacher, sovereign"],"a":4},{"id":"t7-26","s":"t7","q":"\"If Nichiren's compassion is truly great and encompassing\" indicates the virtue of the ____.","o":["Teacher","Parent","Sovereign","Spouse","Sibling"],"a":1},{"id":"t7-27","s":"t7","q":"\"It has the beneficial power to open the blind eyes of every living being\" indicates the virtue of the ____.","o":["Teacher","Parent","Sovereign","Spouse","Sibling"],"a":0},{"id":"t7-28","s":"t7","q":"\"It blocks off the road that leads to the hell of incessant suffering\" indicates the virtue of the ____.","o":["Teacher","Parent","Sovereign","Spouse","Sibling"],"a":2},{"id":"t7-29","s":"t7","q":"The ______ represents the function of nurturing and caring for people.","o":["Virtue of teacher","Virtue of sibling","Virtue of sovereign","Virtue of parent","Virtue of spouse"],"a":3},{"id":"t7-30","s":"t7","q":"Daishonin's compassion is evident having repeatedly faced daunting opposition and persecution in an evil age by the ____.","o":["Three obstacles and four devils","Three powerful enemies","Ten troops","Eightfold Path","Five hindrances"],"a":1},{"id":"t7-31","s":"t7","q":"The _____ represents the function of correctly guiding people.","o":["Virtue of teacher","Virtue of sibling","Virtue of sovereign","Virtue of parent","Virtue of spouse"],"a":0},{"id":"t7-32","s":"t7","q":"In the Gosho, On Repaying the Debts of Gratitude, “blind eyes\" refers to _____ in people's lives.","o":["Physical blindness","Lack of compassion","Fundamental ignorance","Disconnection from the Law","Spiritual distraction"],"a":2},{"id":"t7-33","s":"t7","q":"Breaking through the fundamental darkness requires battling the ____ as a votary of the lotus sutra to cause people to question their assumptions and doubt their misguided beliefs.","o":["Five poisons","Three obstacles and four devils","Dragons and Rakshasas","Three Powerful Enemies","Karma and rebirth"],"a":1},{"id":"t7-34","s":"t7","q":"The _____ represents the function of protecting others.","o":["Virtue of teacher","Virtue of sibling","Virtue of sovereign","Virtue of parent","Virtue of spouse"],"a":2},{"id":"t7-35","s":"t7","q":"The Daishonin manifested his profound and irrepressible wish not to let even a single person fall into the ____.","o":["Cycle of rebirth","Hell of incessant suffering","Depths of ignorance","Wheel of samsara","Pits of desire"],"a":1},{"id":"t7-36","s":"t7","q":"The Daishonin demonstrated a living example of the three virtues of ____,____, and ____ through his fierce and unbegrudging struggle to propagate the correct teaching in the evil age of the Latter day.","o":["Parent, teacher, sovereign","Faith, resolve, strength","Buddha, Law, Sangha","Dharma body, Reward body, Manifest body","Compassion, wisdom, courage"],"a":0},{"id":"t7-37","s":"t7","q":"\"This I will state. Let the _____. Let all ____. Still, I will give my life for the sake of the law...\"","o":["God's forsake me, obstacles arise","Karma test me, hardships befall me","Demons approach me, karma strike at once","God's forsake me, persecutions assail me","Illness test me, fate turn against me"],"a":3},{"id":"t7-38","s":"t7","q":"\"I will be the ____ of Japan. I will be the ____ of Japan. I will be the ____ of Japan. This is my vow and I will never forsake it.\"","o":["Pillar, protector, guide","Buddha, guardian, savior","Pillar, eyes, great ship","Teacher, leader, Buddha","Light, strength, shield"],"a":2},{"id":"t7-39","s":"t7","q":"As far as Daishonin was concerned there is something that is more important than whether or not one receives the protection of the heavenly deities and that is ____ by all people, the highest good which is the actualization of the great vow that is ____.","o":["Peace, enlightenment","Nirvana, wisdom","Justice, human revolution","Karma cleansing, pure bliss","Attainment of Buddhahood, kosen-rufu"],"a":4},{"id":"t7-40","s":"t7","q":"In the defiled age of the Latter day, unless we spread the ____ we will not be able to accomplish the great vow.","o":["Mystic Law","Pure Land teachings","Nembutsu doctrine","Adidharma principles","Esoteric teachings"],"a":0},{"id":"t7-41","s":"t7","q":"_____ is a teaching of life's inner workings and essence.","o":["Sunflower Mandala","Lotus Bloom","Myoho Renge Kyo","Adidharma Sadhana","Transcendental Levitation"],"a":2},{"id":"t7-42","s":"t7","q":"Votary of the lotus sutra in the Latter day must be a person who battles ____ of the law.","o":["Wrath","Pride","Greed","Lust","Slander"],"a":4},{"id":"t7-43","s":"t7","q":"In the Gosho, Opening of the Eyes, “Pillar” refers to _____ of a devastated country or a society in collapse.","o":["Spiritual pillar or mainstay","Legal framework","Governance","Citizenry","Institutional buildings"],"a":0},{"id":"t7-44","s":"t7","q":"In the Gosho, Opening of the Eyes, “Eyes” refers to distinguishing ____ amid the prevailing confusion in Buddhist thought.","o":["Peace and violence","True from false","Want and desire","Karma and rebirth","Wound and trauma"],"a":1},{"id":"t7-45","s":"t7","q":"In the Gosho, Opening of the Eyes, “Great ship” refers to ____ those who are adrift.","o":["Endangering","Draining","Dissipating","Squandering","Saving"],"a":4},{"id":"t7-46","s":"t7","q":"President Toda said, \"For me there is only Kosen-rufu... I will stand up! No matter what anyone says, I will fear nothing! I'm not going to let anyone hold me back.\" In any time and place, Kosen-rufu always begins with the ______.","o":["Support of the community","Stand-alone spirit","Many in Body","One in Mind","Spirit of compassion"],"a":1},{"id":"t7-47","s":"t7","q":"A ______ is the first axiom of propagating the mystic law that will never change across the three existences of past, present and future.","o":["Stand-alone spirit","Many in Body","One in Mind","Spirit of mindfulness","Study of sutras"],"a":0}],"papers":[{"id":"set1","name":"Set 1","secs":["t1"]},{"id":"set2","name":"Set 2","secs":["t2"]},{"id":"set3","name":"Set 3","secs":["t3"]},{"id":"set4","name":"Set 4","secs":["t4"]},{"id":"set5","name":"Set 5","secs":["t5"]},{"id":"set6","name":"Set 6","secs":["t6"]},{"id":"set7","name":"Set 7","secs":["t7"]}]};
+
+const SEC = {}; DATA.sections.forEach(s=>SEC[s.id]=s);
+const QBY = {}; DATA.questions.forEach(q=>{ (QBY[q.s]=QBY[q.s]||[]).push(q); });
+const TOTAL = DATA.questions.length;
+const L = 'ABCDE';
+
+const WORLDS = ['Hell','Hunger','Animality','Anger','Humanity','Rapture','Learning','Realization','Bodhisattva','Buddhahood'];
+
+const RIGHT = [
+ "That is exactly it.","Right — and clearly held, not guessed.","Correct. That one stays with you now.",
+ "Yes. Well studied.","Correct — your conviction just got a little firmer.","That's the one.",
+ "Right again. Keep going.","Correct. This is what practice and study look like."
+];
+const SOFT = [
+ "Not this time — and this is precisely why we study. You will know it now.",
+ "Close. Read the correct answer once more and move on; it will be there when you need it.",
+ "That one's gone to your side now. Nobody arrives knowing all 307.",
+ "A question you get wrong today is a question you own tomorrow.",
+ "No matter. The exam is not the point — the seeking is.",
+ "Let it go gently and carry on. Every practitioner has sat exactly where you are.",
+ "Now you know. That is the entire value of a mock paper.",
+ "This is a good miss — better here than in the hall."
+];
+/* Every passage below is drawn from this question bank, with the blanks filled
+   in from that question's own correct answer. Nothing here is sourced elsewhere. */
+const ENCOURAGE = [
+ ["“I have profound reverence for you, I would never dare treat you with disparagement or arrogance. Why? Because you will all practice the Bodhisattva way and will then be able to attain Buddhahood.”","Topic 1, Q33"],
+ ["“Shakyamuni's practices and the virtues he consequently attained are all contained within the five characters of Myoho-renge-kyo. If we believe in these five characters, we will naturally be granted the same benefits as he was.”","Topic 3, Q39"],
+ ["“Therefore, the best way to attain Buddhahood is to encounter a good friend. How far can our own wisdom take us? If we have even enough wisdom to distinguish hot from cold, we should seek out a good friend.”","Topic 4, Q30"],
+ ["“Have no fear of mad elephants. What you should fear are evil friends.”","Topic 4, Q31"],
+ ["“In this age as well, it is not one's allies but one's powerful enemies who assist one's progress.”","Topic 4, Q36"],
+ ["“If you care anything about your personal security, you should first of all pray for order and tranquility throughout the four quarters of the land, should you not?”","Topic 5, Q25"],
+ ["“Anyone who teaches others even a single phrase of the Lotus Sutra is Nichiren's disciple, whether that person be priest or layman, nun or laywoman.”","Topic 6, Q23"],
+ ["“If Nichiren's compassion is truly great and encompassing, Nam-myoho-renge-kyo will spread for ten thousand years and more for all eternity.”","Topic 7, Q19"],
+ ["“Let the gods forsake me. Let all persecutions assail me. Still, I will give my life for the sake of the Law.”","Topic 7, Q37"],
+ ["“I will be the pillar of Japan. I will be the eyes of Japan. I will be the great ship of Japan. This is my vow and I will never forsake it.”","Topic 7, Q38"],
+ ["“For me there is only kosen-rufu… I will stand up! No matter what anyone says, I will fear nothing! I'm not going to let anyone hold me back.”","Topic 7, Q46"]
+];
+const HINTS = [
+ "Take it slowly. Rule out what you know is not true first — that alone often leaves one answer standing.",
+ "Trust your first reading. In study exams the plainest answer is usually the intended one.",
+ "You don't need certainty to answer. Attempt it — the reveal is where the learning happens.",
+ "If a question offers 'All of the above', ask whether each option is true on its own.",
+ "Watch for questions with two blanks — the answer has to fit both, which usually rules out three options at once.",
+ "Breathe. Nothing is at stake in this room except your own encouragement."
+];
+const TIERS = [
+ {min:0,  h:"You have begun.",       m:"Beginning is the hardest part and you have already done it. Every one of these questions is now familiar in a way it wasn't an hour ago. Sit the same paper again in a few days and watch what happens — that change is the whole point."},
+ {min:35, h:"The ground is forming.", m:"You are holding real ground already. Look at the topics below, pick the one with the shortest bar, and spend one sitting there. Study rewards return visits more than long ones."},
+ {min:55, h:"Well in stride.",       m:"More than half, and on your own steam. What remains is detail — names, chapter numbers, the exact wording of a passage — and detail yields quickly to a second pass. You are in good shape."},
+ {min:70, h:"Strongly prepared.",    m:"This is a confident result. Review the handful below that you'd like back, and otherwise trust what you have built. Walk into the exam knowing the study has already done its work in you."},
+ {min:85, h:"Thoroughly ready.",     m:"Outstanding. You clearly know this material well. The best use of your remaining time is to help someone else prepare — teaching others is where our own understanding truly settles."},
+ {min:97, h:"Remarkable.",           m:"Very nearly the whole paper. Whatever happens in the hall, the conviction you have built through this study is yours to keep. Now go and encourage someone who is nervous about sitting it."}
+];
+
+const $ = s=>document.querySelector(s);
+const $$ = s=>Array.from(document.querySelectorAll(s));
+const pick = a=>a[Math.floor(Math.random()*a.length)];
+const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
+
+/* ---------- storage (never fatal) ---------- */
+const KEY='bsg-bodhisattva-L2-v1';
+let store={topics:{},full:{i:0},best:{}};
+try{ const r=localStorage.getItem(KEY); if(r){ const p=JSON.parse(r); if(p&&typeof p==='object') store=Object.assign(store,p); } }catch(e){}
+store.topics=store.topics||{}; store.full=store.full||{i:0}; store.best=store.best||{};
+function save(){ try{ localStorage.setItem(KEY,JSON.stringify(store)); }catch(e){} }
+
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('on'),4200); }
+
+/* ---------- routing ---------- */
+function show(id){
+  $$('.screen').forEach(s=>s.classList.toggle('on', s.id==='s-'+id));
+  try{ window.scrollTo(0,0); }catch(e){}
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-go]'); if(!b) return;
+  const go=b.dataset.go;
+  if(go==='home'){ show('home'); renderHome(); }
+  else if(go==='topics'){ renderTopics(); show('topics'); }
+  else if(go==='papers'){ renderPapers(); show('papers'); }
+  else if(go==='gen'){ renderGen(); show('gen'); }
+  else if(go==='full'){ startFull(); }
+});
+
+/* ---------- home / lists ---------- */
+function renderHome(){
+  let att=0; DATA.sections.forEach(s=>{ att += ((store.topics[s.id]||{}).attempted||0); });
+  $('#m-topics').textContent = att ? DATA.sections.length+' topics · '+att+' of '+TOTAL+' attempted'
+                                   : DATA.sections.length+' topics · '+TOTAL+' questions';
+  const fi = store.full.i||0;
+  $('#m-full').textContent = fi>0 ? 'Resume at question '+(fi+1)+' of '+TOTAL : 'Resumable · untimed';
+  $('#m-papers').textContent = DATA.papers.map(p=>p.secs.reduce((t,id)=>t+SEC[id].count,0)).join(' · ')+' questions';
+
+  const nT = DATA.sections.filter(s=>store.topics[s.id]).length;
+  const nP = Object.keys(store.best||{}).length;
+  const any = att>0 || fi>0 || nT>0 || nP>0;
+  $('#fresh').hidden = !any;
+  $('#fresh-full').hidden = !(fi>0);
+  disarmFresh();
+  if(any){
+    const bits=[];
+    if(nT) bits.push(nT===1?'one topic':nT+' topics');
+    if(fi>0) bits.push('the Full Climb at question '+(fi+1));
+    if(nP) bits.push(nP===1?'one paper score':nP+' paper scores');
+    $('#fresh-note').innerHTML='This browser is holding your place &mdash; <b>'+bits.join('</b>, <b>')+'</b>. '+
+      'You can set any of it back to the beginning whenever you like. Nothing is lost by starting again; in this hall you only ever climb.';
+  }
+}
+
+/* ---------- starting again ---------- */
+let FA={}; 
+function disarmFresh(){
+  ['fresh-full','fresh-all'].forEach(id=>{
+    const b=$('#'+id); if(!b) return;
+    clearTimeout(FA[id]); FA[id]=null; b.classList.remove('arm');
+    b.textContent = b.dataset.label || b.textContent;
+  });
+}
+function twoPress(id,warn,done){
+  const b=$('#'+id);
+  b.dataset.label = b.dataset.label || b.textContent;
+  b.onclick=()=>{
+    if(!b.classList.contains('arm')){
+      disarmFresh();
+      b.classList.add('arm'); b.textContent='Press again to confirm';
+      toast(warn);
+      FA[id]=setTimeout(()=>{ b.classList.remove('arm'); b.textContent=b.dataset.label; },6000);
+      return;
+    }
+    clearTimeout(FA[id]); b.classList.remove('arm'); b.textContent=b.dataset.label;
+    done();
+  };
+}
+twoPress('fresh-full',
+  'This sets the Full Climb back to question 1. Your topic tallies and paper scores are untouched.',
+  ()=>{ store.full={i:0}; save(); renderHome(); toast('The Full Climb begins again at question 1.'); });
+twoPress('fresh-all',
+  'This clears every topic tally, the Full Climb place and all paper scores, on this browser only. The questions themselves are all still here.',
+  ()=>{ store={topics:{},full:{i:0},best:{}}; try{ localStorage.removeItem(KEY); }catch(e){} save();
+        renderHome(); toast('Everything is open again from the start. Begin wherever you like.'); });
+function renderTopics(){
+  const host=$('#topic-list'); host.innerHTML='';
+  DATA.sections.forEach((s,i)=>{
+    const st=store.topics[s.id]||{attempted:0,correct:0};
+    const pc=Math.round(100*st.attempted/s.count);
+    const b=document.createElement('div'); b.className='row'; b.setAttribute('role','button'); b.tabIndex=0;
+    b.innerHTML='<span class="idx">'+String(i+1).padStart(2,'0')+'</span>'+
+      '<span><span class="nm">'+esc(s.name)+'</span><span class="cat">'+s.count+' questions</span></span>'+
+      '<span class="rt">'+(st.attempted
+        ? '<span class="ct">'+st.correct+'/'+st.attempted+' correct</span><span class="bar"><i style="width:'+pc+'%"></i></span>'
+        : '<span class="ct" style="color:var(--gold-dim)">Not started</span>')+'</span>';
+    const open=()=>startTopic(s.id);
+    b.onclick=open;
+    b.onkeydown=e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } };
+    if(st.attempted){
+      const ag=document.createElement('button');
+      ag.type='button'; ag.className='again'; ag.textContent='Take it again';
+      ag.onkeydown=e=>{ e.stopPropagation(); };
+      ag.onclick=e=>{
+        e.stopPropagation();
+        if(!ag.classList.contains('arm')){
+          host.querySelectorAll('.again.arm').forEach(o=>{ clearTimeout(o._t); o.classList.remove('arm'); o.textContent='Take it again'; });
+          ag.classList.add('arm'); ag.textContent='Press again to confirm';
+          toast('This sets '+s.short+' back to the start, so every question in it counts freshly again.');
+          ag._t=setTimeout(()=>{ ag.classList.remove('arm'); ag.textContent='Take it again'; },6000);
+          return;
+        }
+        clearTimeout(ag._t);
+        delete store.topics[s.id]; save();
+        renderTopics(); renderHome();
+        toast(s.short+' is open from the start again. In this hall you only ever climb.');
+      };
+      b.querySelector('.rt').appendChild(ag);
+    }
+    host.appendChild(b);
+  });
+}
+function renderPapers(){
+  const host=$('#paper-list'); host.innerHTML='';
+  DATA.papers.forEach((p,i)=>{
+    const n=p.secs.reduce((t,id)=>t+SEC[id].count,0);
+    const best=store.best[p.id];
+    const b=document.createElement('button'); b.className='row';
+    b.innerHTML='<span class="idx">'+String(i+1).padStart(2,'0')+'</span>'+
+      '<span><span class="nm">'+esc(p.name)+' &mdash; '+esc(SEC[p.secs[0]].name)+'</span><span class="cat">Original order</span></span>'+
+      '<span class="rt"><span class="ct">'+n+' questions</span>'+(best!=null?'<span class="done">Best '+best+'%</span>':'')+'</span>';
+    b.onclick=()=>startPaper(p);
+    host.appendChild(b);
+  });
+}
+function chipGroup(sel,onchange){
+  const root=$(sel);
+  root.addEventListener('click',e=>{
+    const c=e.target.closest('.chip'); if(!c) return;
+    Array.from(root.children).forEach(x=>x.setAttribute('aria-pressed', x===c?'true':'false'));
+    if(onchange) onchange();
+  });
+  return ()=>{ const a=root.querySelector('[aria-pressed="true"]'); return a?a.dataset.v:''; };
+}
+(function buildScope(){
+  const root=$('#gen-scope');
+  root.innerHTML='<button class="chip" data-v="all" aria-pressed="true">All topics</button>'+
+    DATA.sections.map(s=>'<button class="chip" data-v="'+s.id+'" aria-pressed="false">'+esc(s.short)+'</button>').join('');
+})();
+const getCount=chipGroup('#gen-count',()=>renderGen()),
+      getTime =chipGroup('#gen-time'),
+      getScope=chipGroup('#gen-scope',()=>renderGen());
+function genSections(){ const sc=getScope(); return DATA.sections.filter(s=>sc==='all'||s.id===sc); }
+function renderGen(){
+  const n=+getCount(), pool=genSections().reduce((t,s)=>t+s.count,0);
+  $('#gen-note').textContent='Drawing '+Math.min(n,pool)+' from '+pool+' available';
+}
+
+/* ---------- quiz engine ---------- */
+let Q = null;
+function startTopic(sid){
+  const s=SEC[sid];
+  begin({ title:s.name, sub:'Topic practice', list:QBY[sid].slice(), coach:true, timed:0, kind:'topic', sid:sid });
+}
+function startFull(){
+  begin({ title:'The Full Climb', sub:'All '+TOTAL+' questions, in order', list:DATA.questions.slice(),
+          coach:true, timed:0, kind:'full', at:Math.min(store.full.i||0, TOTAL-1) });
+}
+function startPaper(p){
+  let list=[]; p.secs.forEach(id=>{ list=list.concat(QBY[id]); });
+  begin({ title:p.name+' — '+SEC[p.secs[0]].name, sub:'Original mock paper', list:list,
+          coach:$('#paper-coach').checked, timed:0, kind:'paper', pid:p.id });
+}
+function startGen(){
+  const want=+getCount(), mins=+getTime(), secs=genSections();
+  const total=secs.reduce((t,s)=>t+s.count,0);
+  const quota=secs.map(s=>({s:s, k:Math.min(s.count, Math.max(1, Math.round(want*s.count/total)))}));
+  let sum=quota.reduce((t,q)=>t+q.k,0);
+  quota.sort((a,b)=>b.k-a.k);
+  let gi=0; while(sum>want && gi<2000){ const q=quota[gi%quota.length]; if(q.k>1){q.k--;sum--;} gi++; }
+  gi=0;     while(sum<want && gi<2000){ const q=quota[gi%quota.length]; if(q.k<q.s.count){q.k++;sum++;} gi++; }
+  let list=[];
+  quota.forEach(q=>{ list=list.concat(shuffle(QBY[q.s.id].slice()).slice(0,q.k)); });
+  list=shuffle(list).slice(0,want);
+  const scopeName = getScope()==='all' ? 'all topics' : SEC[getScope()].short;
+  begin({ title:'Mock Exam', sub:list.length+' questions · '+(mins?mins+' minutes':'no clock')+' · '+scopeName,
+          list:list, coach:$('#gen-coach').checked, timed:mins, kind:'gen' });
+}
+
+function begin(cfg){
+  Q = Object.assign({ at:0, kind:'gen', coach:false, timed:0 }, cfg);
+  Q.picks={}; Q.locked={}; Q.cut={}; Q.t0=Date.now(); Q.armSubmit=false; Q.armQuit=false;
+  $('#q-title').textContent = Q.title;
+  $('#q-sub').textContent = Q.sub;
+  $('#t-5050').classList.remove('spent'); $('#t-enc').classList.remove('spent');
+  buildLadder();
+  if(Q.timed>0){ startClock(Q.timed*60); } else { stopClock(); $('#q-timer').hidden=true; }
+  show('quiz'); draw();
+}
+let clockId=null, endAt=0;
+function startClock(secs){
+  const el=$('#q-timer'); el.hidden=false; endAt=Date.now()+secs*1000; stopClock();
+  const tick=()=>{
+    const left=Math.max(0,Math.round((endAt-Date.now())/1000));
+    el.textContent=String(Math.floor(left/60)).padStart(2,'0')+':'+String(left%60).padStart(2,'0');
+    el.classList.toggle('warn', left<=300);
+    if(left<=0){ stopClock(); toast('Time is up — your paper has been submitted. Well sat.'); finish(); }
+  };
+  tick(); clockId=setInterval(tick,1000);
+}
+function stopClock(){ if(clockId){clearInterval(clockId); clockId=null;} }
+
+function buildLadder(){
+  const ol=$('#ladder-list'); ol.innerHTML='';
+  WORLDS.forEach(w=>{ const li=document.createElement('li'); li.innerHTML='<span class="dot"></span>'+w; ol.appendChild(li); });
+  paintLadder();
+}
+function paintLadder(){
+  const done=Object.keys(Q.locked).length, total=Q.list.length;
+  const tier = done===0 ? -1 : Math.min(WORLDS.length-1, Math.floor((done-1)/total*WORLDS.length));
+  Array.from($('#ladder-list').children).forEach((li,i)=>{
+    li.className = i<tier ? 'reached' : (i===tier ? 'reached here' : '');
+  });
+  $('#ladder-cap').textContent = done===0 ? 'The climb ahead' : 'Your climb · '+done+' of '+total;
+}
+
+function draw(){
+  const q=Q.list[Q.at], sec=SEC[q.s];
+  $('#q-pos').textContent='Question '+(Q.at+1)+' of '+Q.list.length;
+  $('#q-topic').textContent=sec.short;
+  $('#q-text').textContent=q.q;
+  $('#q-meter').style.width=(100*(Q.at+(Q.locked[q.id]?1:0))/Q.list.length)+'%';
+  const locked=!!Q.locked[q.id], reveal=locked&&Q.coach;
+  const host=$('#q-answers'); host.innerHTML='';
+  q.o.forEach((txt,i)=>{
+    const b=document.createElement('button'); b.className='ans'; b.type='button';
+    if(locked) b.classList.add('locked');
+    if((Q.cut[q.id]||[]).indexOf(i)>-1) b.classList.add('gone');
+    if(Q.picks[q.id]===i) b.classList.add('sel');
+    if(reveal){
+      if(i===q.a){ b.classList.remove('sel'); b.classList.add('right'); }
+      else if(Q.picks[q.id]===i){ b.classList.remove('sel'); b.classList.add('miss'); }
+    }
+    b.innerHTML='<span class="k">'+L[i]+'</span><span>'+esc(txt)+'</span>';
+    b.onclick=()=>{ if(locked) return; Q.picks[q.id]=i; draw(); };
+    host.appendChild(b);
+  });
+  const v=$('#q-verdict');
+  if(reveal){
+    const ok=Q.picks[q.id]===q.a;
+    v.className='verdict on '+(ok?'good':'soft');
+    $('#v-head').textContent = ok?'Correct':'Now you know it';
+    $('#v-body').textContent = ok ? pick(RIGHT) : pick(SOFT);
+    if(ok){ $('#v-quote').hidden=true; $('#v-quote').innerHTML=''; }
+    else {
+      $('#v-quote').hidden=false;
+      $('#v-quote').innerHTML='<span class="lbl">The answer is '+L[q.a]+'</span>'+esc(q.o[q.a]);
+    }
+  } else if(locked){
+    v.className='verdict on'; $('#v-head').textContent='Answer recorded';
+    $('#v-body').textContent='Held until you submit. You can come back and change it any time before then.';
+    $('#v-quote').hidden=true; $('#v-quote').innerHTML='';
+  } else { v.className='verdict'; }
+
+  const last = Q.at===Q.list.length-1;
+  $('#q-lock').hidden = locked || Q.picks[q.id]==null;
+  $('#q-next').hidden = last;
+  $('#q-prev').disabled = Q.at===0;
+  const alwaysSubmit = (Q.kind==='paper'||Q.kind==='gen');
+  $('#q-submit').hidden = !(last || alwaysSubmit);
+  $('#q-submit').textContent = Q.coach ? 'See how it went' : 'Submit paper';
+  Q.armSubmit=false;
+  let done=Object.keys(Q.locked).length, right=0;
+  Q.list.forEach(x=>{ if(Q.locked[x.id]&&Q.picks[x.id]===x.a) right++; });
+  $('#q-tally').innerHTML = Q.coach
+    ? '<b>'+right+'</b> correct of <b>'+done+'</b> attempted'
+    : '<b>'+done+'</b> of '+Q.list.length+' answered';
+  paintLadder();
+  if(Q.kind==='full'){ store.full={i:Q.at}; save(); }
+}
+
+$('#q-lock').onclick=()=>{
+  const q=Q.list[Q.at];
+  if(Q.picks[q.id]==null||Q.locked[q.id]) return;
+  Q.locked[q.id]=true;
+  if(Q.kind==='topic'||Q.kind==='full'){
+    const st=store.topics[q.s]||{attempted:0,correct:0,seen:{}};
+    st.seen=st.seen||{};
+    if(!st.seen[q.id]){ st.seen[q.id]=1; st.attempted++; if(Q.picks[q.id]===q.a) st.correct++; }
+    store.topics[q.s]=st; save();
+  }
+  draw();
+};
+$('#q-next').onclick=()=>{ if(Q.at<Q.list.length-1){Q.at++; draw();} };
+$('#q-prev').onclick=()=>{ if(Q.at>0){Q.at--; draw();} };
+$('#q-submit').onclick=()=>{
+  const left=Q.list.length-Object.keys(Q.locked).length;
+  if(left>0 && !Q.armSubmit){
+    Q.armSubmit=true;
+    toast(left+' question'+(left>1?'s are':' is')+' still open. Nothing is ever penalised for a blank — press Submit again to finish now.');
+    setTimeout(()=>{ if(Q) Q.armSubmit=false; },6000);
+    return;
+  }
+  finish();
+};
+$('#t-quit').onclick=()=>{
+  if(Object.keys(Q.locked).length && !Q.armQuit){
+    Q.armQuit=true;
+    toast('Press Leave again to step out. Topic and Full Climb progress is saved; a paper in progress is not.');
+    setTimeout(()=>{ if(Q) Q.armQuit=false; },6000);
+    return;
+  }
+  stopClock(); show('home'); renderHome();
+};
+$('#t-5050').onclick=()=>{
+  const q=Q.list[Q.at];
+  if(Q.locked[q.id]) return toast('This one is already locked in.');
+  if(Q.cut[q.id]) return;
+  const wrong=[0,1,2,3,4].filter(i=>i!==q.a);
+  Q.cut[q.id]=shuffle(wrong).slice(0,3);
+  if(Q.picks[q.id]!=null && Q.cut[q.id].indexOf(Q.picks[q.id])>-1) delete Q.picks[q.id];
+  $('#t-5050').classList.add('spent');
+  toast('Three options removed — two left, for this question only.');
+  draw();
+};
+$('#t-enc').onclick=()=>{
+  const v=$('#q-verdict');
+  if(!v.classList.contains('on')){
+    v.className='verdict on';
+    $('#v-head').textContent='A word before you answer';
+    $('#v-body').textContent=pick(HINTS);
+  }
+  const e=pick(ENCOURAGE);
+  $('#v-quote').hidden=false;
+  $('#v-quote').innerHTML='<span class="lbl">From the bank &middot; '+esc(e[1])+'</span>'+esc(e[0]);
+};
+document.addEventListener('keydown',e=>{
+  if(!$('#s-quiz').classList.contains('on')) return;
+  if(e.target && e.target.matches && e.target.matches('input,textarea,select')) return;
+  const k=(e.key||'').toLowerCase();
+  if('abcde'.indexOf(k)>-1 && k.length===1){
+    const q=Q.list[Q.at];
+    if(!Q.locked[q.id]){ const i='abcde'.indexOf(k); if((Q.cut[q.id]||[]).indexOf(i)===-1){ Q.picks[q.id]=i; draw(); } }
+  }
+  else if(e.key==='Enter'){
+    const q=Q.list[Q.at];
+    if(!Q.locked[q.id]&&Q.picks[q.id]!=null) $('#q-lock').click();
+    else if(Q.at<Q.list.length-1) $('#q-next').click();
+  }
+  else if(e.key==='ArrowRight'){ if(Q.at<Q.list.length-1) $('#q-next').click(); }
+  else if(e.key==='ArrowLeft'){ if(Q.at>0) $('#q-prev').click(); }
+});
+
+/* ---------- results ---------- */
+let lastRun=null;
+function finish(){
+  stopClock();
+  const rows=Q.list.map(q=>({q:q, pick:Q.locked[q.id]?Q.picks[q.id]:null}));
+  const right=rows.filter(r=>r.pick===r.q.a).length;
+  const pct=Math.round(100*right/rows.length);
+  const mins=Math.max(1,Math.round((Date.now()-Q.t0)/60000));
+  lastRun={rows:rows,right:right,pct:pct,mins:mins,cfg:Q};
+
+  if(Q.kind==='paper'&&Q.pid){ if(!(store.best[Q.pid]>=pct)) store.best[Q.pid]=pct; save(); }
+
+  const arc=521.5;
+  $('#r-arc').style.strokeDashoffset=arc;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{ $('#r-arc').style.strokeDashoffset = arc*(1-pct/100); }));
+  $('#r-pct').textContent=pct+'%';
+  $('#r-frac').textContent=right+' of '+rows.length;
+  const tier=TIERS.filter(t=>pct>=t.min).pop();
+  $('#r-head').textContent=tier.h; $('#r-msg').textContent=tier.m;
+
+  const unans=rows.filter(r=>r.pick===null).length;
+  $('#r-stats').innerHTML=[
+    ['Held',right],['To revisit',rows.length-right-unans],['Left blank',unans],[mins===1?'Minute':'Minutes',mins]
+  ].map(x=>'<div class="stat"><b>'+x[1]+'</b><span>'+x[0]+'</span></div>').join('');
+
+  const bys={};
+  rows.forEach(r=>{ const s=r.q.s; bys[s]=bys[s]||{n:0,c:0}; bys[s].n++; if(r.pick===r.q.a) bys[s].c++; });
+  $('#r-breakdown').innerHTML=Object.keys(bys).sort((a,b)=>(bys[a].c/bys[a].n)-(bys[b].c/bys[b].n)).map(sid=>{
+    const b=bys[sid], p=Math.round(100*b.c/b.n);
+    return '<div class="bdrow"><span>'+esc(SEC[sid].name)+'</span><span class="bar"><i style="width:'+p+'%"></i></span><span class="pc">'+b.c+'/'+b.n+'</span></div>';
+  }).join('');
+
+  $$('[data-rv]').forEach(x=>x.setAttribute('aria-pressed', x.dataset.rv==='all'?'true':'false'));
+  drawReview('all');
+  $('#r-foot').innerHTML = pct>=70
+    ? 'Take a paper again in a week rather than tomorrow — spacing is what makes study stick. And do share this hall with anyone in your district who is nervous about sitting the exam.'
+    : 'Go to the topic with the shortest bar above and spend one quiet sitting there. That single step is worth more than re-taking the whole paper today.';
+  show('result');
+}
+function drawReview(mode){
+  const host=$('#r-review');
+  const rows = mode==='wrong' ? lastRun.rows.filter(r=>r.pick!==r.q.a) : lastRun.rows;
+  if(!rows.length){ host.innerHTML='<p class="msg" style="text-align:left;margin-left:0">Nothing to revisit — you held every question in this paper. Beautifully done.</p>'; return; }
+  host.innerHTML=rows.map(r=>{
+    const ok=r.pick===r.q.a;
+    return '<div class="rq '+(ok?'':'bad')+'">'+
+      '<div class="qh"><span>'+esc(SEC[r.q.s].short)+'</span><span>'+(ok?'Held':(r.pick===null?'Not attempted':'To revisit'))+'</span></div>'+
+      '<div class="qt">'+esc(r.q.q)+'</div>'+
+      (r.pick!==null&&!ok?'<div class="line no"><span class="lb">You chose</span><span class="tx">'+L[r.pick]+' — '+esc(r.q.o[r.pick])+'</span></div>':'')+
+      '<div class="line ok"><span class="lb">Answer</span><span class="tx">'+L[r.q.a]+' — '+esc(r.q.o[r.q.a])+'</span></div>'+
+    '</div>';
+  }).join('');
+}
+$$('[data-rv]').forEach(c=>c.onclick=()=>{
+  $$('[data-rv]').forEach(x=>x.setAttribute('aria-pressed', x===c?'true':'false'));
+  drawReview(c.dataset.rv);
+});
+$('#r-again').onclick=()=>{
+  const k=lastRun.cfg.kind;
+  if(k==='gen') startGen();
+  else if(k==='paper'){ renderPapers(); show('papers'); }
+  else if(k==='topic'){ renderTopics(); show('topics'); }
+  else { show('home'); renderHome(); }
+};
+$('#gen-start').onclick=startGen;
+
+renderHome(); renderGen();
+</script>
+</body>
+</html>

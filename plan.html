@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F6F1E7">
+<meta name="description" content="BSG Introductory Exam 2026 - two-week study plan. Seven topics, one an evening, Tue/Thu 9:30-10:00 pm with two longer Saturdays.">
+<title>Introductory Exam Study Plan</title>
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="icon" type="image/png" sizes="180x180" href="icon-180.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Intro Plan">
+<meta name="mobile-web-app-capable" content="yes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BSG Introductory Exam · Study Plan">
+<meta property="og:description" content="Two weeks, seven topics, one an evening. Timetable, run-sheets and the Meet link.">
+<meta property="og:image" content="https://sunilrpappu-arch.github.io/bsg-intro/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://sunilrpappu-arch.github.io/bsg-intro/plan.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ink:#F6F1E7; --ink-2:#FFFFFF; --ink-3:#F2EBDC;
+  --gold:#7F611D; --gold-dim:#75590F; --gold-bright:#543D0C; --gold-ghost:rgba(138,106,34,.10);
+  --ivory:#161C3E; --ivory-2:#434A6B; --ivory-3:#62687F;
+  --jade:#12735A; --lotus:#A8455F; --l1:#4B3E7A;
+  --line:rgba(22,28,62,.11); --grule:rgba(138,106,34,.26);
+  --f-disp:"Bodoni Moda",'Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --f-body:"Archivo",'Helvetica Neue',Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,'SF Mono',Menlo,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--ink); color:var(--ivory); color-scheme:light;
+  font-family:var(--f-body); font-size:16px; line-height:1.55;
+  background-image:
+    radial-gradient(120% 70% at 50% -15%, rgba(96,88,168,.13) 0%, rgba(246,241,231,0) 60%),
+    radial-gradient(90% 55% at 50% 115%, rgba(138,106,34,.14) 0%, rgba(246,241,231,0) 58%);
+  background-attachment:fixed;
+}
+h1,h2,h3,h4{font-family:var(--f-disp); font-weight:500; margin:0; text-wrap:balance}
+p{margin:0}
+button{font:inherit; color:inherit; background:none; border:none; cursor:pointer}
+:focus-visible{outline:2px solid var(--gold); outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.wrap{max-width:880px; margin:0 auto; padding:0 20px}
+.eyebrow{font-family:var(--f-mono); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold)}
+
+/* masthead */
+.mast{padding:52px 0 8px}
+.seal{display:inline-block; font-family:var(--f-disp); font-size:11px; letter-spacing:.32em; font-weight:700;
+  color:var(--gold-bright); border:1px solid var(--gold-dim); border-radius:999px; padding:3px 12px 3px 15px; margin-bottom:14px}
+.mast h1{
+  font-size:clamp(30px,5.6vw,50px); line-height:1.05; font-weight:700; margin-top:10px;
+  background:linear-gradient(176deg,#8A6A22 2%,#6B5013 46%,#402D05 100%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.mast .lede{margin-top:16px; color:var(--ivory-2); font-size:15.5px; max-width:62ch; line-height:1.62}
+.facts{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:1px; background:var(--grule); border:1px solid var(--grule); margin:32px 0 8px; border-radius:3px; overflow:hidden}
+.fact{background:var(--ink-2); padding:17px 16px}
+.fact b{display:block; font-family:var(--f-mono); font-size:20px; color:var(--gold-bright); line-height:1.2; font-variant-numeric:tabular-nums}
+.fact span{font-family:var(--f-mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--ivory-3); display:block; margin-top:4px}
+.join{display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin:30px 0 0; padding:18px 22px; border:1px solid var(--gold-dim); border-radius:3px; background:var(--gold-ghost)}
+.join .lb{font-family:var(--f-mono); font-size:10px; letter-spacing:.19em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:4px}
+.join a{font-family:var(--f-mono); font-size:16px; color:var(--gold-bright); text-decoration:none; border-bottom:1px solid var(--gold-dim); word-break:break-all}
+.join a:hover{border-bottom-color:var(--gold-bright)}
+.join .sp{flex:1}
+.join button{padding:10px 18px; border:1px solid var(--gold-dim); border-radius:2px; font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; color:var(--gold-bright); background:#fff; transition:all .18s; white-space:nowrap}
+.join button:hover{background:rgba(138,106,34,.12); border-color:var(--gold)}
+.join .note2{flex-basis:100%; font-size:12px; color:var(--ivory-2); line-height:1.5; margin:0}
+.creed{max-width:64ch; margin:30px 0 0; padding:20px 24px; border-left:2px solid var(--gold-dim); font-family:var(--f-disp); font-style:italic; font-size:17px; line-height:1.6}
+.creed span{display:block; margin-top:10px; font-family:var(--f-body); font-style:normal; font-size:13.5px; color:var(--ivory-2); line-height:1.55}
+
+/* controls */
+.bar{display:flex; gap:9px; align-items:center; flex-wrap:wrap; margin:44px 0 22px; position:sticky; top:0; z-index:20; padding:14px 0; background:linear-gradient(180deg,var(--ink) 76%,rgba(246,241,231,0)); backdrop-filter:blur(6px)}
+.chip{padding:9px 16px; border-radius:999px; border:1px solid rgba(22,28,62,.20); background:#fff; font-family:var(--f-mono); font-size:11.5px; letter-spacing:.1em; color:var(--ivory-2); transition:all .18s}
+.chip:hover{border-color:var(--gold); color:var(--ivory)}
+.chip[aria-pressed="true"]{border-color:var(--gold); color:var(--gold-bright); background:rgba(138,106,34,.13)}
+.chip.leader[aria-pressed="true"]{border-color:var(--lotus); color:#8C2F47; background:rgba(168,69,95,.10)}
+.bar .sp{flex:1}
+.bar .hint{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.1em; color:var(--ivory-3)}
+
+/* phase headers */
+.phase{display:flex; align-items:baseline; gap:14px; margin:40px 0 16px; flex-wrap:wrap}
+.phase b{font-family:var(--f-mono); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); font-weight:500; min-width:0}
+.phase i{font-style:normal; font-size:12.5px; color:var(--ivory-3)}
+.phase hr{flex:1; border:none; border-top:1px solid var(--grule); margin:0; min-width:20px}
+
+/* session cards */
+.sess{border:1px solid var(--grule); border-radius:3px; background:var(--ink-2); margin-bottom:10px; overflow:hidden; transition:border-color .2s; box-shadow:0 1px 2px rgba(22,28,62,.04)}
+.sess:hover{border-color:var(--gold)}
+.sess.recap{background:linear-gradient(170deg,#FFFFFF,#F7F5FC); border-left:3px solid var(--l1)}
+.sess.long{border-left:3px solid var(--gold)}
+.sess.exam{border-color:var(--lotus); background:linear-gradient(165deg,rgba(168,69,95,.09),#fff)}
+.sess.done{opacity:.6}
+.shead{display:grid; grid-template-columns:auto 1fr auto; gap:16px; align-items:center; width:100%; text-align:left; padding:17px 20px}
+.tick{width:20px; height:20px; flex:none; border:1px solid var(--gold-dim); border-radius:2px; display:grid; place-items:center; font-size:12px; color:var(--jade); background:#fff; cursor:pointer; transition:all .18s}
+.tick:hover{border-color:var(--gold)}
+.tick[aria-pressed="true"]{background:rgba(18,115,90,.13); border-color:var(--jade)}
+.when{display:flex; flex-direction:column; gap:2px; min-width:0}
+.when .d{font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold)}
+.when .d em{font-style:normal; color:var(--ivory-3)}
+.when h3{font-size:19px; color:var(--gold-bright); line-height:1.25}
+.when .t{font-size:13px; color:var(--ivory-2); margin-top:4px; line-height:1.45}
+.rt{display:flex; flex-direction:column; align-items:flex-end; gap:5px; flex:none}
+.qn{font-family:var(--f-mono); font-size:11.5px; color:var(--ivory-2); font-variant-numeric:tabular-nums}
+.mins{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.1em; color:var(--gold); padding:2px 8px; border:1px solid rgba(138,106,34,.34); border-radius:999px}
+.caret{font-family:var(--f-mono); font-size:10px; letter-spacing:.12em; color:var(--ivory-3)}
+.sbody{padding:2px 20px 22px; border-top:1px solid var(--line); margin-top:2px}
+.sub{margin:20px 0 9px; font-family:var(--f-mono); font-size:10px; letter-spacing:.19em; text-transform:uppercase; color:var(--gold)}
+.run{display:grid; grid-template-columns:auto 1fr; gap:0 16px; font-size:13.5px}
+.run dt{font-family:var(--f-mono); font-size:11.5px; color:var(--gold); padding:7px 0; white-space:nowrap; font-variant-numeric:tabular-nums; border-top:1px solid var(--line)}
+.run dd{margin:0; padding:7px 0; color:var(--ivory-2); line-height:1.5; border-top:1px solid var(--line)}
+.run dt:first-of-type,.run dd:first-of-type{border-top:none}
+.run dd b{color:var(--ivory); font-weight:600}
+.pts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:7px; font-size:13.5px; color:var(--ivory-2); line-height:1.5}
+.pts li{padding-left:16px; position:relative}
+.pts li::before{content:"—"; position:absolute; left:0; color:var(--gold-dim)}
+.pts b{color:var(--ivory); font-weight:600}
+.pts .q{font-family:var(--f-disp); font-style:italic; color:var(--ivory)}
+.dates{display:grid; grid-template-columns:auto 1fr; gap:0 16px; font-size:13px}
+.dates dt{font-family:var(--f-mono); font-size:11.5px; color:var(--gold); padding:6px 0; white-space:nowrap; font-variant-numeric:tabular-nums}
+.dates dd{margin:0; padding:6px 0; color:var(--ivory-2); line-height:1.45}
+.hw{margin-top:20px; padding:15px 18px; border-radius:3px; background:rgba(18,115,90,.06); border-left:2px solid var(--jade)}
+.hw .l{font-family:var(--f-mono); font-size:10px; letter-spacing:.19em; text-transform:uppercase; color:#0B5A44; margin-bottom:6px}
+.hw p{font-size:13.5px; color:var(--ivory-2); line-height:1.55}
+.lead{margin-top:14px; font-size:12.5px; color:var(--ivory-3); line-height:1.5; font-style:italic}
+.tags{display:flex; gap:7px; flex-wrap:wrap; margin-top:10px}
+.tag{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; padding:4px 10px; border-radius:999px; border:1px solid rgba(138,106,34,.34); color:var(--gold-bright); background:rgba(138,106,34,.07)}
+.tag.l1{border-color:rgba(75,62,122,.40); color:var(--l1); background:rgba(75,62,122,.08)}
+.tag.l2{border-color:rgba(18,115,90,.38); color:#0B5A44; background:rgba(18,115,90,.07)}
+
+/* leader-only blocks */
+.lo{margin-top:14px; border-left:2px solid var(--lotus); background:#FBF2F4; padding:12px 16px; border-radius:3px; font-size:13px; line-height:1.5; color:var(--ivory-2)}
+.lo.ask{border-left-color:var(--jade); background:#F1F8F5}
+.lo .l{font-family:var(--f-mono); font-size:9.5px; letter-spacing:.17em; text-transform:uppercase; color:#8C2F47; display:block; margin-bottom:5px}
+.lo.ask .l{color:#0B5A44}
+.lo b{color:var(--ivory); font-weight:600}
+.lobar{margin:16px 0 0; padding:11px 16px; border:1px dashed var(--lotus); border-radius:3px; background:rgba(168,69,95,.05);
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.09em; color:#8C2F47}
+
+.note{margin:52px 0 0; padding:24px 26px; border:1px solid var(--grule); border-radius:3px; background:var(--ink-2)}
+.note h4{font-size:19px; color:var(--gold-bright); margin-bottom:12px}
+.note p{font-size:13.5px; color:var(--ivory-2); line-height:1.6; margin-bottom:10px}
+.note p:last-child{margin-bottom:0}
+.note b{color:var(--ivory)}
+.banktab{width:100%; border-collapse:collapse; margin-top:14px; font-size:13px}
+.banktab td{padding:5px 0; border-bottom:1px solid var(--line); color:var(--ivory-2)}
+.banktab tr:last-child td{border-bottom:none}
+.banktab td.c{font-family:var(--f-mono); font-size:11.5px; color:var(--gold); width:26px}
+.banktab td.q{font-family:var(--f-mono); font-size:12px; text-align:right; width:40px}
+.banktab tr.l1 td.c,.banktab tr.l1 td.q{color:var(--l1)}
+.foot{margin:44px 0 60px; padding-top:22px; border-top:1px solid var(--grule); font-size:12.5px; color:var(--ivory-3); line-height:1.6; text-align:center}
+@media(max-width:620px){
+  .phase{gap:9px}
+  .phase hr{display:none}
+  .phase i{flex-basis:100%}
+  .shead{grid-template-columns:auto 1fr; padding:15px 16px}
+  .rt{grid-column:2; align-items:center; flex-direction:row; gap:10px; margin-top:4px}
+  .sbody{padding:2px 16px 20px}
+  .run{grid-template-columns:1fr; gap:0}
+  .run dt{padding-bottom:0; border-top:1px solid var(--line)}
+  .run dd{padding-top:2px; border-top:none}
+  .dates{grid-template-columns:1fr; gap:0}
+  .dates dd{padding-top:0; padding-bottom:9px}
+}
+@media print{
+  body{background:#fff}
+  .bar,.tick,.caret,.join button{display:none!important}
+  .sess{break-inside:avoid; page-break-inside:avoid}
+  .sbody{display:block!important}
+}
+
+.banktab td.bar2{width:150px; padding-right:12px}
+.banktab td.bar2 i{display:block; height:4px; border-radius:2px; background:linear-gradient(90deg,var(--gold-dim),var(--gold))}
+@media(max-width:620px){ .banktab td.bar2{width:60px; padding-right:8px} }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="mast">
+    <span class="seal">LEVEL II</span>
+    <p class="eyebrow">BSG Introductory Exam &middot; 2026</p>
+    <h1>Two Weeks to the<br>Introductory Exam</h1>
+    <p class="lede">A study plan for our four divisional members &mdash; 30 minutes on Tuesday and Thursday evenings and a full hour on Saturdays, so nobody has to choose between work and study. Seven topics, one a night, an open Q&amp;A at the halfway point, then a paper night. The whole exam bank is 307 questions and every one of them belongs to one of these seven.</p>
+    <div class="facts" id="facts"></div>
+    <div class="join">
+      <div>
+        <span class="lb">Same link, every session</span>
+        <a href="https://meet.google.com/ncw-ihcm-onf" target="_blank" rel="noopener">meet.google.com/ncw-ihcm-onf</a>
+      </div>
+      <span class="sp"></span>
+      <button id="copy">Copy link</button>
+      <p class="note2">Google Meet. <b>Tuesdays and Thursdays 9:30&ndash;10:00 pm; Saturdays 9:00&ndash;10:00 pm.</b> This link is for the Introductory group only &mdash; the Entrance group has its own. It does not change and does not expire, and the room is <b>open</b>: nobody has to ask to be let in, and you do not have to wait for whoever is leading. If you are first, start the daimoku.</p>
+    </div>
+    <blockquote class="creed">
+      &ldquo;Exert yourself in the two ways of practice and study.&rdquo;
+      <span>Nobody here is being measured. We sit this exam to deepen conviction in our own faith and practice &mdash; that is the whole of it. Seven topics over two weeks is one topic every other evening. Come as you are, on whichever evenings you can.</span>
+    </blockquote>
+  </header>
+
+  <div class="bar">
+    <button class="chip" data-view="brief" aria-pressed="true">Timetable</button>
+    <button class="chip" data-view="full" aria-pressed="false">Full run-sheets</button>
+    <button class="chip leader" id="leadtoggle" aria-pressed="false">Leader's notes</button>
+    <span class="sp"></span>
+    <span class="hint" id="prog"></span>
+  </div>
+
+  <div class="lobar" id="lobar" hidden>Leader's notes are showing &mdash; these are for whoever is running the evening, not for the group.</div>
+
+  <div id="plan"></div>
+
+  <section class="note">
+    <h4>How each evening runs</h4>
+    <p>The shape is the same every time, so nobody has to wonder what is coming. Three daimoku to open, three minutes of recall from last time, then the evening's topic, then a minute to name the homework and close. One topic per evening &mdash; nothing is shared between two nights, and nothing is split across them.</p>
+    <p><b>Saturdays run for an hour</b>, and each one uses the extra half hour differently. The 12th gives Three Thousand Realms &mdash; the hardest topic in the bank &mdash; the room it needs. The 19th carries the lightest topic and then an open Q&amp;A at the halfway point. The 26th is the timed paper, read together. Tuesdays and Thursdays are thirty minutes.</p>
+    <p><b>Rotate who leads.</b> Give each of the four divisional members one or two evenings to present. Teaching a topic is the fastest way to own it &mdash; and it turns the group from a class into a study team.</p>
+    <p><b>If someone misses an evening</b>, nothing is lost. Every evening is exactly one topic in the app, so they can take it in their own time and rejoin without falling behind.</p>
+  </section>
+
+  <section class="note">
+    <h4>The whole bank, and how it is weighted</h4>
+    <p>All <b>307 questions</b> live in these seven topics, and the nights are ordered so the heaviest come first, while everyone is freshest and the fortnight still has room to do the spacing for you.</p>
+    <table class="banktab">
+      <tr><td class="c">1</td><td>Nichiren Daishonin and the Lotus Sutra</td><td class="bar2"><i style="width:100%"></i></td><td class="q">55</td></tr>
+      <tr><td class="c">2</td><td>Three Thousand Realms in a Single Moment of Life</td><td class="bar2"><i style="width:93%"></i></td><td class="q">51</td></tr>
+      <tr><td class="c">7</td><td>Gosho Passages</td><td class="bar2"><i style="width:85%"></i></td><td class="q">47</td></tr>
+      <tr><td class="c">4</td><td>The Mission and Practice of the Bodhisattvas of the Earth</td><td class="bar2"><i style="width:82%"></i></td><td class="q">45</td></tr>
+      <tr><td class="c">3</td><td>Embracing the Gohonzon Is in Itself Observing One's Own Mind</td><td class="bar2"><i style="width:75%"></i></td><td class="q">41</td></tr>
+      <tr><td class="c">5</td><td>The Lineage and Tradition of Buddhist Humanism</td><td class="bar2"><i style="width:69%"></i></td><td class="q">38</td></tr>
+      <tr><td class="c">6</td><td>Repudiating the Nichiren Shoshu Priesthood under Nikken</td><td class="bar2"><i style="width:55%"></i></td><td class="q">30</td></tr>
+    </table>
+    <p style="margin-top:14px">Each topic in this list is one topic in the practice hall, question for question and in the same order &mdash; and each one is also one of the original mock papers. There is nothing to map or convert: night four is Topic 4 is Set 4.</p>
+  </section>
+
+  <section class="note">
+    <h4>A word on the Gosho passages</h4>
+    <p>They are the second largest topic on the paper &mdash; <b>47 questions, 15%</b> &mdash; and they are pure recall. Forty-seven quotations met for the first time on the evening of the 24th, three days before the exam, is the worst possible shape for memorising anything.</p>
+    <p>So although the passages have their own evening, <b>the homework starts them from night three onward</b>, one block at a time:</p>
+    <p style="margin-left:2px">
+      <b>Block A</b> &mdash; <i>On Establishing the Correct Teaching for the Peace of the Land</i>, and the spirit of Soka. Start after night three.<br>
+      <b>Block B</b> &mdash; <i>On Repaying Debts of Gratitude</i>: the three virtues of parent, teacher and sovereign. Start after night four.<br>
+      <b>Block C</b> &mdash; <i>The Opening of the Eyes</i>: pillar, eyes, great ship &mdash; and Toda's stand-alone spirit. Start after night five.
+    </p>
+    <p>By night seven all three have been seen, and the evening becomes consolidation rather than first contact. Five minutes a day beats an hour on the last Saturday, every time.</p>
+  </section>
+
+  <p class="foot">
+    Tue &amp; Thu 9:30&ndash;10:00 pm &middot; Sat 9:00&ndash;10:00 pm &middot; Exam Sunday 27 September, 12:00&ndash;1:30 pm<br>
+    Tick evenings off as you go &mdash; your ticks stay in this browser and are shared with nobody.
+  </p>
+</main>
+
+<script>
+const P=[
+{
+ phase:'The seven topics &mdash; one an evening', phaseNote:'Ordered heaviest first, so the biggest topics land while everyone is freshest',
+ n:'01', date:'Thu 10 Sep', time:'9:30–10:00 pm', mins:'30 MIN',
+ title:'Nichiren Daishonin and the Lotus Sutra',
+ topics:'Chapter 1 &mdash; the largest topic on the paper', q:55, pc:'18% of the paper',
+ tags:[['l2','App · Topic 1'],['','Mock paper: Set 1']],
+ run:[['9:30','<b>Open.</b> Three daimoku. One line: we are not here to pass anything, we are here to deepen conviction. Say the exam is 27 Sep, 12:00&ndash;1:30, and that nothing is deducted for a blank &mdash; say it tonight, not on the last evening.'],
+      ['9:34','<b>True aspect of all phenomena</b> (8 min).'],
+      ['9:42','<b>Theoretical versus essential teaching</b> (8 min).'],
+      ['9:50','<b>Persecution and identity</b> (7 min).'],
+      ['9:57','<b>Homework and close.</b>']],
+ pts:['<b>True aspect of all phenomena</b> &mdash; Expedient Means, the <b>2nd</b> chapter. Two definitions, precisely: <i>all phenomena</i> = the world around us and its workings, including the affairs of life and society; <i>true aspect</i> = the ultimate reality or true nature. The two are <b>not separate things</b>.',
+      'The Daishonin clarifies that "all phenomena" means <b>all living beings of the ten worlds and their environments</b>, and that "true aspect" is <b>Myoho-renge-kyo</b>.',
+      '<b>Theoretical teaching</b> (first 14 chapters) = true aspect + attainment of Buddhahood <b>by persons of the two vehicles</b>. <b>Essential teaching</b> (latter 14) = attainment of Buddhahood <b>in the remote past</b> (Life Span, 16th).',
+      'Bodhisattvas of the Earth are summoned in the <b>15th</b> chapter, led by <b>Bodhisattva Superior Practices</b>. <b>Bodhisattva Never Disparaging</b> practises in the <b>20th</b>; his words are the <b>twenty-four-character Lotus Sutra</b>.',
+      '<span class="q">"If you are of the same mind as Nichiren, you must be a Bodhisattva of the Earth."</span> Everyone who accepts the teaching, propagates it and works for kosen-rufu is without exception one &mdash; say that to the four of them directly.',
+      '<b>Six difficult and nine easy acts</b> (11th chapter). <b>Three powerful enemies</b> (13th) &mdash; arrogant lay people, arrogant priests, <b>arrogant false sages</b>, of which Ryokan of Gokuraku-ji is the example.',
+      'Daishonin calls himself the <b>votary of the Lotus Sutra</b>. At Tatsunokuchi, 12 Sep 1271, he <b>casts off the transient and reveals the true</b>, and expresses that life state as the <b>Gohonzon</b>, modelled on the Ceremony in the Air.',
+      'He took the name <b>Nichiren</b> &mdash; <b>Sun Lotus</b> &mdash; expressing his conviction that he fulfils the role of Superior Practices.'],
+ hw:'<b>Topic 1</b> in the app &mdash; all 55 questions, Topic by Topic mode. About 25 minutes. Read chapter 1 alongside it.',
+ lead:'Suggested lead: divisional member 1.',
+ lo:[['note','<b>Trip-up.</b> Questions 6 and 7 sit next to each other and look identical. Q6 asks about the Lotus Sutra <i>as a whole</i> &mdash; true aspect + remote past. Q7 asks about the <i>first 14 chapters only</i> &mdash; true aspect + attainment by persons of the two vehicles. Everyone gets one of these wrong. Teach them as a pair, deliberately. <i>(The 2024 answer key has Q7 wrong; the slide is right.)</i>'],
+     ['ask','<b>Set the tone tonight, not later.</b> Whatever else slips, land two things on the first evening: nobody is being measured, and nothing is deducted for a blank. Both change how people study for the next two weeks.']]
+},
+{
+ long:true, n:'02', date:'Sat 12 Sep', time:'9:00–10:00 pm', mins:'60 MIN',
+ title:'Three Thousand Realms in a Single Moment of Life',
+ topics:'Chapter 2 &mdash; the hardest topic, and the reason this evening runs long', q:51, pc:'17% of the paper',
+ tags:[['l2','App · Topic 2'],['','Mock paper: Set 2'],['','The long evening']],
+ run:[['9:00','<b>Open.</b> Three daimoku. Five questions of recall from Thursday.'],
+      ['9:05','<b>Where it comes from</b> (7 min) &mdash; T\'ien-t\'ai and <i>Great Concentration and Insight</i>.'],
+      ['9:12','<b>The arithmetic</b> (6 min) &mdash; make all four say it out loud, more than once.'],
+      ['9:18','<b>Mutual possession of the ten worlds</b> (10 min) &mdash; the core principle underneath everything else.'],
+      ['9:28','<b>Breath.</b> Stand up, one minute.'],
+      ['9:29','<b>The ten factors, in order</b> (16 min). This is the single hardest thing on the paper. Do not rush it.'],
+      ['9:45','<b>The three realms of existence</b> (10 min).'],
+      ['9:55','<b>Homework and close.</b>']],
+ pts:['Formulated by <b>T\'ien-t\'ai (Chih-i)</b> of China in <i>Great Concentration and Insight</i>, so that people could <b>put into practice</b> the Lotus Sutra\'s teaching that all can attain Buddhahood.',
+      'The arithmetic, said cold: <b>10 worlds &times; 10 worlds &times; 10 factors &times; 3 realms</b>. It is asked directly &mdash; free marks.',
+      '<b>"A single moment of life"</b> = one\'s life as it exists at any given moment. <b>"Three thousand realms"</b> = all phenomena, all things and their varied functions. Life at each moment contains <b>limitless potential</b>.',
+      '<b>Mutual possession of the ten worlds</b> is the core principle: the nine worlds have the potential for Buddhahood, and Buddhahood retains the nine. Buddhas and ordinary people are <b>equally endowed</b> with all ten.',
+      '<b>The ten factors</b>, in order and grouped 3&ndash;2&ndash;4&ndash;1: appearance, nature, entity / power, influence / internal cause, relation, latent effect, manifest effect / consistency from beginning to end. The grouping is itself asked.',
+      'Appearance, nature and entity <b>constitute the existence and essence</b> of a living being. Internal cause, relation, latent effect and manifest effect <b>express the law of causality</b>. They are recited daily in gongyo, each prefaced by <i>nyoze</i>.',
+      '<b>Three realms of existence</b>: the realm of the five components, of living beings, and of the environment. The <b>five components</b>: form, perception, conception, volition, consciousness.',
+      'When the state of the five components changes, so does that of living beings and their environment. <span class="q">"A great human revolution in just a single individual will help achieve a change in the destiny of a nation."</span>'],
+ hw:'<b>Topic 2</b> in the app &mdash; all 51 questions. Run the ten factors twice; that is where the marks are. Read chapter 2. <b>Then start Gosho block A</b> &mdash; you have an evening in hand before the next one.',
+ lead:'Suggested lead: whoever wants the hardest one. Consider pairing up on this evening.',
+ lo:[['note','<b>Trip-up.</b> Topic 2 Q3 in the original slide deck had the wrong question text &mdash; it repeated Q1\'s stem. The real question is the T\'ien-t\'ai one and the answer is <i>three thousand realms in a single moment of life</i>. The app is corrected; warn anyone studying from the original PDFs.'],
+     ['note','<b>This is the evening that justifies the hour.</b> If the ten factors do not land tonight they will not land at all &mdash; there is no second session on this topic. Budget the sixteen minutes and protect them; everything else here can be caught up in the app.'],
+     ['ask','<b>If the room goes quiet.</b> "Give me one thing that changed in your life this year, and let\'s find which of the ten factors that was." It turns a memorised list into something they own.']]
+},
+{
+ n:'03', date:'Tue 15 Sep', time:'9:30–10:00 pm', mins:'30 MIN',
+ title:'Embracing the Gohonzon Is in Itself Observing One\'s Own Mind',
+ topics:'Chapter 3', q:41, pc:'13% of the paper',
+ tags:[['l2','App · Topic 3'],['','Mock paper: Set 3'],['','Gosho block A starts']],
+ run:[['9:30','<b>Open.</b> Three daimoku. Recall from Saturday &mdash; make one of them recite the ten factors.'],
+      ['9:34','<b>The caged bird</b> (5 min).'],
+      ['9:39','<b>The Ceremony in the Air, and the Gohonzon</b> (10 min).'],
+      ['9:49','<b>The names of the Gohonzon, and the pivot to faith</b> (8 min).'],
+      ['9:57','<b>Homework and close</b> &mdash; and set Gosho block A.']],
+ pts:['<b>The caged bird.</b> The bird singing = <b>chanting Nam-myoho-renge-kyo</b>. The birds in the sky gathering = the Buddha nature of Brahma, Shakra, Buddhas and Bodhisattvas being <b>summoned</b>. Asked from both directions.',
+      'When one believes in the Gohonzon and chants, one summons the world of Buddhahood within, and calls forth the <b>protective forces in one\'s environment</b>.',
+      '<b>The Ceremony in the Air</b> begins in the <b>11th</b> chapter with the treasure tower of <b>Many Treasures</b>. The Daishonin took that motif into the Gohonzon, depicting the treasure tower as <b>Nam-myoho-renge-kyo</b> down the centre.',
+      'Shakyamuni and Many Treasures represent the world of <b>Buddhahood</b> inherent in all life; the Bodhisattvas of the Earth represent the world of <b>Bodhisattva</b>. Representatives of all <b>ten worlds</b> are assembled, which is why the Gohonzon is <b>perfectly endowed</b>.',
+      'Its names, each asked separately: <b>mandala</b>; <b>cluster of blessings</b>; the <b>actual</b> three thousand realms in a single moment of life; the <b>banner of propagation</b>. <span class="q">"I, Nichiren, have inscribed my life in sumi ink."</span>',
+      'The pivot that defines the topic: before the Daishonin, attaining Buddhahood rested on <b>observing the mind</b>. In Nichiren Buddhism it rests on <b>faith</b> in the Gohonzon. That single substitution is the title.',
+      '<span class="q">"Shakyamuni\'s practices and the virtues he consequently attained are all contained within the five characters of Myoho-renge-kyo. If we believe in these five characters, we will naturally be granted the same benefits as he was."</span>'],
+ hw:'<b>Topic 3</b> in the app &mdash; 41 questions. Read chapter 3. <b>Begin Gosho block A</b>: <i>On Establishing the Correct Teaching for the Peace of the Land</i>, and the spirit of Soka. Five minutes a day.',
+ lead:'Suggested lead: divisional member 2.',
+ lo:[['note','<b>Trip-up.</b> "Actual three thousand realms" (the Gohonzon, Topic 3) versus "three thousand realms in a single moment of life" (the principle, Topic 2). The word <i>actual</i> is doing all the work, and the options are written to exploit it. They met the principle on Saturday, so ask for the difference rather than telling them.'],
+     ['ask','<b>Start the Gosho drip tonight.</b> This is the first evening the homework carries a Gosho block. If it does not start here, night seven becomes forty-seven passages from cold. Name the block out loud and make sure they know where it is in the app.']]
+},
+{
+ n:'04', date:'Thu 17 Sep', time:'9:30–10:00 pm', mins:'30 MIN',
+ title:'The Mission and Practice of the Bodhisattvas of the Earth',
+ topics:'Chapter 4', q:45, pc:'15% of the paper',
+ tags:[['l2','App · Topic 4'],['','Mock paper: Set 4'],['','Gosho block B starts']],
+ run:[['9:30','<b>Open.</b> Three daimoku. Recall from Tuesday.'],
+      ['9:34','<b>The great vow</b> (10 min).'],
+      ['9:44','<b>Good friends and evil friends</b> (8 min).'],
+      ['9:52','<b>Slander of the Law, and adapting to local customs</b> (5 min).'],
+      ['9:57','<b>Homework and close</b> &mdash; and set Gosho block B.']],
+ pts:['The <b>great vow</b> refers to the <b>propagation of the Lotus Sutra</b>. Chapters 15 and 21: summoned from beneath the earth, they vow to spread the fundamental law in the evil age after the Buddha\'s passing.',
+      'Daishonin pledged to become the <b>pillar</b>, the <b>eyes</b> and the <b>great ship</b> of Japan. <span class="q">"My wish is that all my disciples make a great vow."</span>',
+      'Toda declared the organisation\'s name would be recorded in the scriptures of the future as <b>Soka Gakkai Buddha</b>. The great vow of the Daishonin is <b>kosen-rufu</b> &mdash; and that is also the great vow of the <b>mentors and disciples</b> of the Soka Gakkai.',
+      'When we remain true to the vow, <b>limitless courage, wisdom and compassion</b> flow forth. The "poison" of even the hardest challenge is transformed into <b>medicine</b>, and karma into <b>mission</b>.',
+      '<b>Good friends</b> lead one to the correct teaching; <b>evil friends</b> obstruct it. <span class="q">"Have no fear of mad elephants. What you should fear are evil friends."</span> A mad elephant destroys the body; an evil friend destroys body and mind.',
+      '<b>Devadatta was the foremost good friend</b> to Shakyamuni &mdash; counter-intuitive, and therefore asked. <span class="q">"It is not one\'s allies but one\'s powerful enemies who assist one\'s progress."</span>',
+      'The stronger the faith, the more strongly the <b>three obstacles and four devils</b> and the <b>three powerful enemies</b> emerge to interfere.',
+      '<b>Slander of the law.</b> Refraining oneself is not enough &mdash; one must admonish it, which is <b>shakubuku</b>. Close on the <b>precept of adapting to local customs</b>, which matters here.'],
+ hw:'<b>Topic 4</b> in the app &mdash; 45 questions. Read chapter 4. <b>Begin Gosho block B</b>: <i>On Repaying Debts of Gratitude</i> &mdash; the three virtues of parent, teacher and sovereign. Keep block A going.',
+ lead:'Suggested lead: divisional member 3.',
+ lo:[['ask','<b>If the room goes quiet.</b> "Who was a good friend to you in your practice this year?" Then: "Whose good friend have you been?" This is the warmest topic on the paper &mdash; use it.'],
+     ['note','<b>Four topics down, three to go.</b> Enough of the bank is covered now to sit a first mock. Say so tonight and name a day for it &mdash; a mock in week one finds gaps while there is still time to fill them.']]
+},
+{
+ long:true, n:'05', date:'Sat 19 Sep', time:'9:00–10:00 pm', mins:'60 MIN',
+ title:'The Lineage and Tradition of Buddhist Humanism &middot; Open Q&amp;A',
+ topics:'Chapter 5 &mdash; the lightest topic, which is why the mid-point Q&amp;A sits here', q:38, pc:'12% of the paper',
+ tags:[['l2','App · Topic 5'],['','Mock paper: Set 5'],['','Gosho block C starts'],['','Open Q&amp;A · 25 min']],
+ run:[['9:00','<b>Open.</b> Three daimoku. Recall from Thursday.'],
+      ['9:05','<b>Shakyamuni</b> (9 min).'],
+      ['9:14','<b>The line through to the Daishonin</b> (8 min).'],
+      ['9:22','<b>The Soka Gakkai in modern times</b> (8 min).'],
+      ['9:30','<b>Breath.</b> Stand up, one minute. Then the room changes shape.'],
+      ['9:31','<b>Open Q&amp;A</b> (25 min) &mdash; anything from the first five topics. This is the halfway point of the fortnight and the last unhurried chance to clear things up before the papers.'],
+      ['9:56','<b>Homework and close</b> &mdash; and set Gosho block C.']],
+ pts:['The <b>Soka Gakkai</b> is the religious organisation that maintains the orthodox lineage and tradition of <b>Buddhist humanism</b> begun with Shakyamuni, basing itself on the Lotus Sutra and adapting its practice to modern times.',
+      'In his youth Shakyamuni witnessed the four unavoidable sufferings: <b>birth, aging, sickness, death</b>. Unsatisfied with the teachings of his time, he turned to <b>meditation</b>, and was awakened to the eternal and universal <b>Law</b>.',
+      '<b>Shakyamuni</b> means <b>Sage of the Shakyas</b>; <b>Buddha</b> means <b>Awakened One</b>. He declared that people\'s ignorance of the <b>inherent dignity</b> of their own lives leaves them ruled by egoism.',
+      'His teaching amounted to a <b>restoration of the value of the human being</b> &mdash; people regaining the infinite potential and inherent wisdom of their own lives. Compassion in Buddhism is a teaching of <b>mutual understanding and respect</b>.',
+      'Among the Mahayana sutras the <b>Lotus Sutra</b> is extolled as the <b>king of sutras</b>.',
+      'Daishonin regarded the suffering of all people as <b>his own</b>. In <i>On Establishing the Correct Teaching for the Peace of the Land</i>: <span class="q">"If you care anything about your personal security, you should first of all pray for order and tranquility throughout the four quarters of the land."</span>',
+      'The three founding presidents &mdash; <b>Tsunesaburo Makiguchi, Josei Toda, Daisaku Ikeda</b> &mdash; revived the philosophy and practice of Nichiren Buddhism through selfless effort. <b>Human revolution</b> is developing character on a commitment to humanistic values.',
+      '<b>Westward transmission.</b> Buddhism began in India, travelled east to Japan, and is now being transmitted back westward. Worth a beat &mdash; the four of them are that return.'],
+ hw:'<b>Topic 5</b> in the app &mdash; 38 questions, the lightest of the fortnight. Read chapter 5. <b>Begin Gosho block C</b>: <i>The Opening of the Eyes</i> &mdash; pillar, eyes, great ship &mdash; and the stand-alone spirit. <b>Sit a full mock this weekend.</b>',
+ lead:'Suggested lead: divisional member 4.',
+ lo:[['ask','<b>Running the Q&amp;A.</b> Do not wait for questions &mdash; nobody goes first. Open by naming the two things most likely to be shaky: the ten factors from Saturday, and the difference between "three thousand realms in a single moment of life" and "the <i>actual</i> three thousand realms". Ask each of the four for one thing they would not want to see on the paper, then work through them.'],
+     ['note','<b>Chapter 5 quotes the Rissho Ankoku Ron, which is Gosho block A.</b> That is not a coincidence &mdash; use it. Ask them for the passage rather than reading it out; block A has been running as homework for four days now.'],
+     ['note','<b>If the Q&amp;A runs dry early</b>, do not fill it with more chapter 5. Put a mock paper on the screen and work through Set 2 aloud together &mdash; the hardest set, and the one they will have found hardest at home.']]
+},
+{
+ n:'06', date:'Tue 22 Sep', time:'9:30–10:00 pm', mins:'30 MIN',
+ title:'Repudiating the Nichiren Shoshu Priesthood under Nikken',
+ topics:'Chapter 6 &mdash; the smallest topic, and the most factual', q:30, pc:'10% of the paper',
+ tags:[['l2','App · Topic 6'],['','Mock paper: Set 6'],['','All three Gosho blocks running']],
+ run:[['9:30','<b>Open.</b> Three daimoku. Recall from Saturday.'],
+      ['9:34','<b>Facts and dates</b> (12 min) &mdash; this topic is almost entirely recall, so drill it as recall.'],
+      ['9:46','<b>Heritage</b> (8 min) &mdash; the one idea that has to land properly.'],
+      ['9:54','<b>Homework and close.</b> Set the timed mock for before Thursday.']],
+ pts:['The <b>Nikken sect</b> is the priesthood of Nichiren Shoshu in its corrupt state under <b>Nikken Abe</b>, its <b>67th high priest</b>. It claims the high priest possesses <b>absolute and uncontestable</b> authority.',
+      '<b>Operation C</b> &mdash; the scheme to destroy the Soka Gakkai, followed in 1991 by the notice of excommunication. Members mark <b>28 November 1991</b> as the day of <b>spiritual independence</b>.',
+      'Nikken transferred the office to <b>Nichinyo</b> in Dec 2005, but the lineage he passed on remains muddied by his slander of the Law.',
+      '<b>High priest worship</b> &mdash; venerating the high priest as special, absolute and infallible &mdash; violates the <b>three treasures</b>: the Buddha, the Law and the Buddhist Order.',
+      'From <b>The Twenty-six Admonitions of Nikko</b>: <span class="q">"Do not follow even the high priest if he goes against the Buddha\'s law and propounded his own views."</span> That alone shows the claim of infallibility to be misguided.',
+      '<b>Heritage</b> &mdash; the idea to land properly. In Nichiren Buddhism it is the <b>heritage of faith</b>, open to all people, never the exclusive possession of an elite few. The claimed <b>secret transmission</b> bears no relation to the Daishonin or to Nikko Shonin.',
+      '<span class="q">"Anyone who teaches others even a single phrase of the Lotus Sutra is the envoy of the Thus Come One, whether that person be priest or layman, nun or laywoman."</span>',
+      'Other errors: priests held as <b>superior</b> and lay believers inferior; the misuse of <b>Buddhist rituals and ceremonies</b> as a means of making money; the claim that without a priest at a funeral the deceased cannot attain Buddhahood.'],
+ hw:'<b>Topic 6</b> in the app &mdash; 30 questions, the shortest of the fortnight. Read chapter 6. Push all three <b>Gosho blocks</b> hard this week &mdash; Thursday is the consolidation. <b>Sit the timed mock before Thursday</b>: 40 questions, 90 minutes, answers held back.',
+ lead:'Suggested lead: divisional member 1.',
+ lo:[['note','<b>Keep the tone right.</b> This topic is about repudiating an error, not about resentment. It is the one evening where the warmth of the room can slip. Frame it as protecting the heritage of faith for ordinary people &mdash; which is what it is.'],
+     ['ask','<b>Make sure the mock actually gets sat.</b> Saturday\'s review only works if everyone arrives with a results screen. Name a day out loud tonight and ask each of the four to confirm it &mdash; do not leave it as "sometime this week".']]
+},
+{
+ n:'07', date:'Thu 24 Sep', time:'9:30–10:00 pm', mins:'30 MIN',
+ title:'Gosho Passages',
+ topics:'Chapter 7 &mdash; drawn from across the booklet. Consolidation, not first contact', q:47, pc:'15% of the paper',
+ tags:[['l2','App · Topic 7'],['','Mock paper: Set 7'],['','All three blocks together']],
+ run:[['9:30','<b>Open.</b> Three daimoku. No recall round tonight &mdash; the whole evening is recall.'],
+      ['9:33','<b>Block A</b> (8 min) &mdash; <i>On Establishing the Correct Teaching for the Peace of the Land</i>.'],
+      ['9:41','<b>Block B</b> (8 min) &mdash; <i>On Repaying Debts of Gratitude</i>, the three virtues.'],
+      ['9:49','<b>Block C</b> (8 min) &mdash; <i>The Opening of the Eyes</i>, and the stand-alone spirit.'],
+      ['9:57','<b>Close.</b> Confirm everyone has sat the timed mock before Saturday.']],
+ pts:['<b>Block A &mdash; Establishing the Correct Teaching.</b> <span class="q">"You must quickly reform the tenets that you hold in your heart and embrace the one true vehicle."</span> A transformation of "the tenets we hold in our heart" means a fundamental revolution of our <b>innermost state of mind</b> &mdash; the <b>human revolution</b> in a single individual.',
+      '"Establishing the correct teaching" comes down to <b>fostering individuals</b>. <b>Soka</b> means <b>value creation</b>; the spirit of Soka encompasses both establishing the correct teaching and actualising the peace of the land. As long as the <b>treasures of the heart</b> are not destroyed, the land becomes an enduring Buddha land.',
+      '<b>Block B &mdash; On Repaying Debts of Gratitude.</b> The <b>three virtues</b>, each tied to its phrase. <span class="q">"If Nichiren\'s compassion is truly great and encompassing, Nam-myoho-renge-kyo will spread for ten thousand years and more"</span> &mdash; the virtue of <b>parent</b>, the function of nurturing.',
+      '<span class="q">"It has the beneficial power to open the blind eyes of every living being"</span> &mdash; the virtue of <b>teacher</b>, the function of correctly guiding. "Blind eyes" refers to <b>fundamental ignorance</b>.',
+      '<span class="q">"It blocks off the road that leads to the hell of incessant suffering"</span> &mdash; the virtue of <b>sovereign</b>, the function of protecting. Learn the three in that order; the paper asks which phrase belongs to which virtue.',
+      '<b>Block C &mdash; The Opening of the Eyes.</b> <span class="q">"This I will state. Let the gods forsake me. Let all persecutions assail me. Still, I will give my life for the sake of the Law."</span>',
+      '<span class="q">"I will be the pillar of Japan. I will be the eyes of Japan. I will be the great ship of Japan."</span> <b>Pillar</b> = the spiritual mainstay of a society in collapse. <b>Eyes</b> = distinguishing true from false. <b>Great ship</b> = saving those who are adrift.',
+      'President Toda: <span class="q">"For me there is only kosen-rufu. I will stand up! No matter what anyone says, I will fear nothing."</span> Kosen-rufu always begins with the <b>stand-alone spirit</b> &mdash; the first axiom of propagating the mystic law across the three existences.'],
+ hw:'<b>Topic 7</b> in the app &mdash; all 47 questions, twice if you can. Then stop adding new material. <b>Everyone arrives Saturday having sat a timed mock:</b> 40 questions, 90 minutes, answers held back.',
+ lead:'Suggested lead: whoever has been keeping the Gosho blocks alive.',
+ lo:[['note','<b>This evening only works if the blocks have been running as homework since night three.</b> If they have not, do not try to cover all forty-seven tonight &mdash; pick block B, land the three virtues properly, and set the other two as reading. Half of it held is worth more than all of it skimmed.'],
+     ['ask','<b>Run it as a round, not a lecture.</b> You read the first half of a passage, they finish it, going round the four. Forty-seven quotations in twenty-four minutes only works if they are doing the talking.']]
+},
+{
+ phase:'The paper, and the walk-through', phaseNote:'Everyone arrives having sat a timed mock at home. Bring your results screen',
+ long:true, rev:true, n:'08', date:'Sat 26 Sep', time:'9:00–10:00 pm', mins:'60 MIN',
+ title:'The timed paper, and last questions',
+ topics:'Sit 40 questions in 90 minutes at home first', q:40, pc:'the night before',
+ tags:[['l2','Generate a Mock Exam · 40 Q · 90 min'],['','The long evening']],
+ run:[['Before','Sit <b>40 questions in 90 minutes</b> in the app &mdash; exam mode, answers held back until you submit. Note your two weakest topics from the breakdown screen.'],
+      ['9:00','Three daimoku. Round the room: each person reads out their two shortest bars. Write all eight down.'],
+      ['9:06','<b>The two topics that came up most</b>, gone through together (24 min). Not the ones that went well.'],
+      ['9:30','<b>The Gosho passages, one last round</b> (12 min).'],
+      ['9:42','<b>Anything still unclear</b> (8 min). Open floor &mdash; by now the gaps are theirs to name.'],
+      ['9:50','<b>The practical briefing</b> (8 min).'],
+      ['9:58','Close together. No new material the night before.']],
+ pts:['The exam is <b>Sunday 27 September, 12:00&ndash;1:30 pm &mdash; ninety minutes</b>. Eat beforehand. Reach early; arriving unhurried is worth more than one last revision.',
+      '<b>Answer every question.</b> Nothing is deducted for a blank, so a blank is the only certain zero.',
+      'Where a question offers <b>"All of the above"</b>, check each option on its own before deciding. A good number of questions in the bank turn on exactly that.',
+      'Read every question fully before answering and rule out what is clearly wrong first &mdash; with five options, that usually leaves two.',
+      'A low mock score the night before is <b>information</b>, not a verdict. Everyone here has done the two weeks, and that was always the part that counted.'],
+ hw:'Sunday morning: gongyo, eat, read the Gosho passages once and then leave them alone. Nothing new.',
+ lead:'Suggested lead: whoever has been holding the group together. This evening is about steadiness, not content.',
+ lo:[['ask','<b>Watch the mood, not the marks.</b> Someone will score lower than they expected and go quiet. The app deliberately never says "wrong" &mdash; match it. The lowest result tier reads "You have begun" and means it. A mock exists to find gaps while there is still time.'],
+     ['note','<b>Do not overrun.</b> Finishing at 10:00 and sending them to bed is worth more than another ten minutes of revision. Say so plainly if the room wants to keep going.']]
+},
+{
+ exam:true, n:'', date:'Sun 27 Sep', time:'12:00–1:30 pm', mins:'90 MIN',
+ title:'BSG Introductory Exam',
+ topics:'Ninety minutes', q:0, pc:'',
+ tags:[['','Exam day']],
+ run:[['Morning','Gongyo. Eat something. Reach early &mdash; arriving unhurried is worth more than one last revision.'],
+      ['12:00','Read every question fully before answering. Rule out what is clearly wrong first.'],
+      ['Throughout','Attempt everything &mdash; nothing is deducted for a blank. A blank is the only certain zero.'],
+      ['1:30','Done. Whatever happens, you spent two weeks deepening your practice. That part is already yours.']],
+ pts:[]
+}];
+
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const KEY='bsg-intro-plan-v2';
+let ticks={}; try{ const r=localStorage.getItem(KEY); if(r){ const p=JSON.parse(r); if(p&&typeof p==='object') ticks=p; } }catch(e){}
+const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(ticks)); }catch(e){} };
+
+(function(){
+  const exam=new Date(2026,8,27,12,0,0);
+  const days=Math.max(0,Math.ceil((exam-new Date())/86400000));
+  $('#facts').innerHTML=[
+    [days, days===1?'day to the exam':'days to the exam'],
+    ['7','topics'],['8','evenings'],['307','questions in the bank'],['330','minutes together']
+  ].map(([b,s])=>`<div class="fact"><b>${b}</b><span>${s}</span></div>`).join('');
+})();
+
+const host=$('#plan');
+P.forEach((s,i)=>{
+  if(s.phase){
+    const h=document.createElement('div'); h.className='phase';
+    h.innerHTML=`<b>${s.phase}</b><hr><i>${s.phaseNote}</i>`;
+    host.appendChild(h);
+  }
+  const key='s'+i;
+  const el=document.createElement('article');
+  el.className='sess'+(s.long?' long':'')+(s.exam?' exam':'')+(ticks[key]?' done':'');
+  const runHtml = s.run&&s.run.length ? `<div class="sub">Run of the evening</div><dl class="run">${s.run.map(([t,d])=>`<dt>${t}</dt><dd>${d}</dd>`).join('')}</dl>`:'';
+  const ptsHtml = s.pts&&s.pts.length ? `<div class="sub">What to land</div><ul class="pts">${s.pts.map(p=>`<li>${p}</li>`).join('')}</ul>`:'';
+  const hwHtml = s.hw ? `<div class="hw"><div class="l">Before the next session</div><p>${s.hw}</p></div>`:'';
+  const ldHtml = s.lead ? `<p class="lead">${s.lead}</p>`:'';
+  const loHtml = s.lo ? s.lo.map(([k,t])=>`<div class="lo ${k==='ask'?'ask':''} leaderonly" hidden><span class="l">${k==='ask'?'Leading it':'Leader’s note'}</span>${t}</div>`).join('') : '';
+  el.innerHTML=`
+    <div class="shead">
+      <button class="tick" aria-pressed="${!!ticks[key]}" aria-label="Mark ${s.date} done">${ticks[key]?'✓':''}</button>
+      <button class="when" style="text-align:left;cursor:pointer" aria-expanded="false">
+        <span class="d">${s.n?s.n+' · ':''}${s.date}${s.time?' · <em>'+s.time+'</em>':''}</span>
+        <h3>${s.title}</h3>
+        <span class="t">${s.topics}</span>
+        <span class="tags">${(s.tags||[]).map(([c,t])=>`<span class="tag ${c}">${t}</span>`).join('')}</span>
+      </button>
+      <span class="rt"><span class="mins">${s.mins}</span>${s.q?`<span class="qn">${s.q} Q${s.pc?' · '+s.pc:''}</span>`:''}<span class="caret">DETAIL +</span></span>
+    </div>
+    <div class="sbody" hidden>${runHtml}${ptsHtml}${hwHtml}${loHtml}${ldHtml}</div>`;
+  const body=el.querySelector('.sbody'), toggle=el.querySelector('.when'), caret=el.querySelector('.caret');
+  const setOpen=o=>{ body.hidden=!o; toggle.setAttribute('aria-expanded',o); caret.textContent=o?'DETAIL −':'DETAIL +'; };
+  toggle.onclick=()=>setOpen(body.hidden);
+  caret.onclick=e=>{ e.stopPropagation(); setOpen(body.hidden); };
+  el._setOpen=setOpen;
+  const tick=el.querySelector('.tick');
+  tick.onclick=()=>{ ticks[key]=!ticks[key]; save(); tick.setAttribute('aria-pressed',!!ticks[key]); tick.textContent=ticks[key]?'✓':''; el.classList.toggle('done',!!ticks[key]); prog(); };
+  host.appendChild(el);
+});
+
+function prog(){
+  const total=P.filter(s=>!s.exam).length;
+  const done=P.filter((s,i)=>!s.exam&&ticks['s'+i]).length;
+  $('#prog').textContent=`${done} of ${total} evenings ticked off`;
+}
+prog();
+
+const cp=$('#copy');
+cp.onclick=async()=>{
+  const url='https://meet.google.com/ncw-ihcm-onf';
+  try{ await navigator.clipboard.writeText(url); cp.textContent='Copied'; }
+  catch(e){ cp.textContent='Select the link above'; }
+  setTimeout(()=>{ cp.textContent='Copy link'; },2200);
+};
+
+$$('[data-view]').forEach(c=>c.onclick=()=>{
+  $$('[data-view]').forEach(x=>x.setAttribute('aria-pressed', x===c?'true':'false'));
+  const full=c.dataset.view==='full';
+  $$('.sess').forEach(el=>el._setOpen(full));
+});
+
+const lt=$('#leadtoggle');
+lt.onclick=()=>{
+  const on=lt.getAttribute('aria-pressed')!=='true';
+  lt.setAttribute('aria-pressed',on);
+  $('#lobar').hidden=!on;
+  $$('.leaderonly').forEach(el=>{ el.hidden=!on; });
+};
+</script>
+</body>
+</html>
