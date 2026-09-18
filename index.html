@@ -13,11 +13,11 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Who Wants to Be a Bodhisattva · Level 2">
-<meta property="og:description" content="307 questions across seven topics for the BSG Introductory Exam. Four ways to practise. Nothing is scored against anyone.">
+<meta property="og:description" content="307 questions across seven topics for the BSG Introductory Exam. Four ways to practise, and the papers to print. Nothing is scored against anyone.">
+<meta property="og:url" content="https://sunilrpappu-arch.github.io/bsg-intro/">
 <meta property="og:image" content="https://sunilrpappu-arch.github.io/bsg-intro/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://sunilrpappu-arch.github.io/bsg-intro/">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -129,6 +129,11 @@ button{font:inherit; color:inherit; background:none; border:none; cursor:pointer
 .bar{width:88px; height:3px; background:rgba(22,28,62,.12); border-radius:2px; overflow:hidden}
 .bar i{display:block; height:100%; background:linear-gradient(90deg,var(--gold-dim),var(--gold)); border-radius:2px}
 .done{font-family:var(--f-mono); font-size:10px; color:#0B5A44; letter-spacing:.1em}
+.dl{display:flex; align-items:center; gap:18px; flex-wrap:wrap; margin:0 0 28px;
+  padding:18px 22px; border-radius:3px; border:1px dashed rgba(138,106,34,.34); background:rgba(138,106,34,.045)}
+.dl p{margin:0; flex:1; min-width:240px; font-size:13px; line-height:1.55; color:var(--ivory-2)}
+.dl p b{display:block; font-size:14.5px; color:var(--gold-bright); font-weight:600; margin-bottom:3px}
+.dl .btn{padding:11px 18px; font-size:12px; letter-spacing:.1em; text-decoration:none}
 .again{font-family:var(--f-mono); font-size:9.5px; letter-spacing:.13em; text-transform:uppercase;
   color:var(--gold-dim); border:1px solid rgba(138,106,34,.32); background:#FFFFFF;
   padding:5px 9px; border-radius:2px; transition:border-color .2s, color .2s, background .2s; white-space:nowrap}
@@ -308,6 +313,8 @@ button{font:inherit; color:inherit; background:none; border:none; cursor:pointer
   .bdrow{grid-template-columns:1fr 56px 46px; gap:10px; font-size:12.5px}
   .row .ct{white-space:nowrap; font-size:11.5px}
   .row .bar{width:52px}
+  .dl{flex-direction:column; align-items:stretch; padding:16px 17px}
+  .dl .btn{width:100%}
   .fresh{flex-direction:column; align-items:stretch; gap:14px; padding:16px 17px}
   .fresh .acts{flex-direction:column}
   .fresh .btn{width:100%}
@@ -360,7 +367,7 @@ button{font:inherit; color:inherit; background:none; border:none; cursor:pointer
       <button class="mode" data-go="papers">
         <span class="n">03</span>
         <h3>The Seven Mock Papers</h3>
-        <p>Sets 1&ndash;7 exactly as they were written, in their original order &mdash; one topic per paper. Answers held back until you submit.</p>
+        <p>Sets 1&ndash;7 exactly as they were written, in their original order &mdash; one topic per paper. Answers held back until you submit. Downloadable as a printed paper too.</p>
         <span class="meta" id="m-papers"></span>
       </button>
       <button class="mode" data-go="gen">
@@ -410,6 +417,11 @@ button{font:inherit; color:inherit; background:none; border:none; cursor:pointer
         <h2>The Seven Mock Papers</h2>
         <p>These are the original sets, question for question, in their original order &mdash; each paper covers one topic. Together they make up the whole question bank.</p>
       </div>
+    </div>
+    <div class="dl">
+      <p><b>Would you rather do it on paper?</b>
+      Every paper here, printed and ready for a pen &mdash; plus two exam-condition papers of forty questions drawn across all seven topics, the same shape as the real thing. All the answers are at the back.</p>
+      <a class="btn primary" href="https://sunilrpappu-arch.github.io/bsg-intro/BSG-Level2-Mock-Papers.pdf" target="_blank" rel="noopener" download>Download the PDF</a>
     </div>
     <div class="field" style="margin-bottom:28px">
       <label>Before you begin</label>
